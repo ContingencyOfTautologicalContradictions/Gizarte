@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+    <title>Gizarte - Crear persona</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./crear-persona.css">
+    <script src="./header.js" defer></script>
+    <script src="./crear-persona.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-element">
+            <div id="gizarte-logo">
+                <div>Gizarte</div>
+                <div id="gizarte-logo-plus">+</div>
+            </div>
+            <div id="gobierno-vasco-logo">
+                <div>Departamento de Igualdad, Justicia y Políticas sociales</div>
+                <img id="gobierno-vasco-logo-img" loading="lazy" alt="Logo del gobierno vasco" src="./assets/gobierno-vasco-logo.png">
+            </div>
+        </div>
+        <div class="header-element">
+            <div id="links">
+                <div id="inicio" class="current">
+                    <div>Inicio</div>
+                    <div id="underline"></div>
+                </div>
+                <div id="aes">AES</div>
+                <div id="censo-personas">Censo de personas</div>
+                <div>Estadísticas e informes</div>
+                <div id="agenda">Agenda</div>
+                <div>Tareas</div>
+                <div>Campus virtual</div>
+                <div>Administración</div>
+            </div>
+            <div id="icons">
+                <img id="notifications" loading="lazy" alt="Icono de notificaciones" src="./assets/notificaciones.svg">
+                <div id="icons-img">
+                    <img id="settings" loading="lazy" alt="Icono de configuración" src="./assets/configuración.svg">
+                    <img id="profile" loading="lazy" alt="Icono de perfil" src="./assets/perfil.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="path">
+            <div id="inicio-link">Inicio</div>
+            <img loading="lazy" alt="" src="./assets/flecha-derecha.svg">
+            <div id="create-person-path">Crear persona</div>
+        </div>
+        <h1>Crear persona</h1>
+        <div id="mandatory-fields">
+            <div>Los campos marcados con (</div>
+            <div class="asterisk">*</div>
+            <div>) son obligatorios.</div>
+        </div>
+        <div class="display-list">
+            <img id="personal-data-arrow" loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+            <h3 class="section">Datos personales</h3>
+        </div>
+        <div class="personal-data line">
+            <div class="field">
+                <div class="mandatory">
+                    <div>Nombre</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <input class="textbox" type="text" placeholder="José">
+            </div>
+            <div class="field">
+                <div class="mandatory">
+                    <div>Primer apellido</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <input class="textbox" type="text" placeholder="Aranburu">
+            </div>
+            <div class="field">
+                <div class="mandatory">
+                    <div>¿Tiene segundo apellido?</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="options">
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>Sí</div>
+                    </div>
+                    <div class="option">No</div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="mandatory">
+                    <div>Segundo apellido</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <input class="textbox" type="text" placeholder="Ruiz">
+            </div>
+        </div>
+        <div class="personal-data line">
+            <div class="field">
+                <div class="mandatory">
+                    <div>Documento identificativo</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="display-box">
+                    <div>DNI</div>
+                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                </div>
+            </div>
+            <div id="document-number" class="field">
+                <div class="mandatory">
+                    <div>Número de documento</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="textbox-image">
+                    <input class="no-textbox" type="text" placeholder="69569834P">
+                    <img loading="lazy" src="./assets/correcto.svg">
+                </div>
+            </div>
+            <div id="date-birth" class="field">
+                <div class="mandatory">
+                    <div>Fecha de nacimiento</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="textbox-image">
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div>18/09/1960</div>
+                    </div>
+                    <img loading="lazy" src="./assets/incorrecto.svg">
+                </div>
+            </div>
+        </div>
+        <div class="personal-data line">
+            <div class="field">
+                <div>Número de tarjeta sanitaria</div>
+                <input class="no-textbox" type="text" placeholder="09787654">
+            </div>
+            <div id="sexo" class="field">
+                <div class="mandatory">
+                    <div>Sexo</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="options">
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>Hombre</div>
+                    </div>
+                    <div class="option">Mujer</div>
+                    <div class="option">Otro</div>
+                </div>
+            </div>
+            <div class="field">
+                <div>Estado civil</div>
+                <div class="display-box">
+                    <div>Soltero</div>
+                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                </div>
+            </div>
+        </div>
+        <div class="display-list">
+            <img id="registration-data-arrow" loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+            <h3 class="section">Datos de empadronamiento</h3>
+        </div>
+        <div class="registration-data line">
+            <div class="field">
+                <div>Fecha empadronamiento CAPV</div>
+                <div class="calendar">
+                    <img loading="lazy" src="./assets/calendario.svg">
+                    <div>18/09/1960</div>
+                </div>
+            </div>
+            <div id="registration-data-th" class="field">
+                <div>Fecha empadronamiento TH</div>
+                <div class="calendar">
+                    <img loading="lazy" src="./assets/calendario.svg">
+                    <div>18/09/1960</div>
+                </div>
+            </div>
+            <div id="registration-data-municipality" class="field">
+                <div class="mandatory">
+                    <div>Fecha empadronamiento municipio</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="calendar">
+                    <img loading="lazy" src="./assets/calendario.svg">
+                    <div>18/09/1960</div>
+                </div>
+            </div>
+        </div>
+        <div class="display-list">
+            <img id="cohabitation-home-arrow" loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+            <h3 class="section">Domicilio convivencial</h3>
+        </div>
+        <div class="cohabitation-home line">
+            <div class="field">
+                <div class="mandatory">
+                    <div>Territorio Histórico</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="options">
+                    <div class="option">Álava</div>
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>Vizcaya</div>
+                    </div>
+                    <div class="option">Guipúzcoa</div>
+                </div>
+            </div>
+            <div id="municipality" class="field">
+                <div class="mandatory">
+                    <div>Municipio</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="display-box">
+                    <div>Lezama</div>
+                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                </div>
+            </div>
+            <div id="location" class="field">
+                <div class="mandatory">
+                    <div>Localidad</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="display-box">
+                    <div>Lezama</div>
+                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                </div>
+            </div>
+            <div class="field">
+                <div class="mandatory">
+                    <div>¿Es una persona sin hogar?</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="options">
+                    <div class="option">Sí</div>
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>No</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cohabitation-home line">
+            <div class="field">
+                <div class="mandatory">
+                    <div>Fecha inicio</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="calendar">
+                    <img loading="lazy" src="./assets/calendario.svg">
+                    <div>12/03/2024</div>
+                </div>
+            </div>
+            <div id="street" class="field">
+                <div class="mandatory">
+                    <div>Calle</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="display-box">
+                    <div>Río Alto</div>
+                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                </div>
+            </div>
+            <div id="number" class="field">
+                <div class="mandatory">
+                    <div>Número</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="small-display-box">
+                    <div>23</div>
+                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                </div>
+            </div>
+            <div class="field">
+                <div>Bis</div>
+                <input class="small-textbox" type="text" placeholder="">
+            </div>
+            <div class="field">
+                <div>Piso</div>
+                <input class="small-textbox" type="text" placeholder="2">
+            </div>
+            <div class="field">
+                <div>Puerta</div>
+                <input class="textbox" type="text" placeholder="Izquierda">
+            </div>
+            <div class="field">
+                <div>Código postal</div>
+                <input class="small-blocked-textbox" type="text" placeholder="48196">
+            </div>
+        </div>
+        <div class="cohabitation-home line">
+            <div class="field">
+                <div>Bloque</div>
+                <input class="small-textbox" type="text" placeholder="">
+            </div>
+            <div class="field">
+                <div>Escalera</div>
+                <input class="small-textbox" type="text" placeholder="">
+            </div>
+            <div class="field">
+                <div>Mano</div>
+                <input class="small-textbox" type="text" placeholder="">
+            </div>
+            <div class="field">
+                <div>Kilómetro</div>
+                <input class="small-textbox" type="text" placeholder="">
+            </div>
+            <div id="unregularized-home" class="field">
+                <div>Domicilio no regularizado</div>
+                <input class="blocked-textbox" type="text" placeholder="">
+            </div>
+        </div>
+        <div class="display-list">
+            <img id="other-information-arrow" loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+            <h3 class="section">Otra información</h3>
+        </div>
+        <div class="other-information line">
+            <div class="field">
+                <div class="mandatory">
+                    <div>Número de referencia</div>
+                    <div class="asterisk">*</div>
+                </div>
+                <div class="display-box">
+                    <div>Julia Pardo Iriondo</div>
+                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                </div>
+            </div>
+            <div class="field">
+                <div>Número de expediente municipal</div>
+                <input class="textbox" type="text" placeholder="83838783787">
+            </div>
+            <div class="field">
+                <div>Consentimiento informado</div>
+                <div class="options">
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>Sí</div>
+                    </div>
+                    <div class="option">No</div>
+                </div>
+            </div>
+            <div id="download">
+                <img loading="lazy" alt="Icono de descarga" src="./assets/descargar.svg">
+                <div>Descargar documento</div>
+            </div>
+        </div>
+        <div id="resolution">
+            <button id="create-person">Crear</button>
+            <button id="cancel-creation">Cancelar</button>
+        </div>
+    </main>
+    <footer>
+        <div>>> Aviso Legal</div>
+        <div>&copy; 2023 - Eusko Jaurlaritza - Gobierno Vasco</div>
+    </footer>
+</body>
+</html>

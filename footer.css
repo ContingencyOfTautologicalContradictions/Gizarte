@@ -1,0 +1,16 @@
+footer
+{
+    min-width: 90vw;
+    max-width: 90vw;
+    background-color: gray;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: var(--neutral-white);
+    font-size: large;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+    <title>Gizarte - Inicio</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./inicio.css">
+    <script src="./header.js" defer></script>
+    <script src="./inicio.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-element">
+            <div id="gizarte-logo">
+                <div>Gizarte</div>
+                <div id="gizarte-logo-plus">+</div>
+            </div>
+            <div id="gobierno-vasco-logo">
+                <div>Departamento de Igualdad, Justicia y Políticas sociales</div>
+                <img id="gobierno-vasco-logo-img" loading="lazy" alt="Logo del gobierno vasco" src="./assets/gobierno-vasco-logo.png">
+            </div>
+        </div>
+        <div class="header-element">
+            <div id="links">
+                <div id="inicio" class="current">
+                    <div>Inicio</div>
+                    <div id="underline"></div>
+                </div>
+                <div id="aes">AES</div>
+                <div id="censo-personas">Censo de personas</div>
+                <div>Estadísticas e informes</div>
+                <div id="agenda">Agenda</div>
+                <div>Tareas</div>
+                <div>Campus virtual</div>
+                <div>Administración</div>
+            </div>
+            <div id="icons">
+                <img id="notifications" loading="lazy" alt="Icono de notificaciones" src="./assets/notificaciones.svg">
+                <div id="icons-img">
+                    <img id="settings" loading="lazy" alt="Icono de configuración" src="./assets/configuración.svg">
+                    <img id="profile" loading="lazy" alt="Icono de perfil" src="./assets/perfil.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="search-not-found">
+            <div id="search-not-found-panel">
+                <div id="search-not-found-header">
+                    <div id="search-not-found-text">No se ha encontrado ningún resultado</div>
+                    <div id="search-not-found-close">X</div>
+                </div>
+                <h4 id="search-not-found-question">¿Desea crear una persona con los datos introducidos?</h4>
+                <div id="search-not-found-answer">
+                    <button id="create-person">Crear persona</button>
+                    <button id="search-not-found-cancel">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <div id="localization">
+            <img loading="lazy" alt="Icono de localización" src="./assets/localización.svg">
+            <div id="municipality">Municipio:</div>
+            <div>Lezama</div>
+        </div>
+        <div id="greetings">Hola, Julia</div>
+        <div id="search">
+            <div id="search-data">
+                <img id="search-img" alt="Icono de búsqueda" src="./assets/búsqueda.png">
+                <input id="search-text" placeholder="Busque por documento identificativo" type="text">
+                <div id="search-cancel">X</div>
+            </div>
+            <button id="search-action">Buscar</button>
+        </div>
+        <div id="recent-searches">
+            <div id="recent-searches-text">Búsquedas recientes:</div>
+            <button class="recent-search">14354623Q</button>
+            <button class="recent-search">57889817K</button>
+        </div>
+        <div id="pending-tasks-text">4 tareas pendientes</div>
+        <div id="pending-tasks">
+            <div class="first-row">Descripción</div>
+            <div class="first-row">Persona</div>
+            <div class="first-row">Domicilio</div>
+            <div class="pending-tasks-date first-row">
+                <div>Fecha de inicio</div>
+                <div>Fecha límite</div>
+            </div>
+            <div class="warning-task warning-row">
+                <img loading="lazy" alt="Icono de alerta" src="./assets/alerta.svg">
+                <div>Elaboración de la Propuesta de Resolución</div>
+            </div>
+            <div class="warning-row">José Fernández Cárdenas</div>
+            <div class="warning-row">Trav. de Uribitarte, 2</div>
+            <div class="pending-tasks-date warning-row">
+                <div>24/11/2023</div>
+                <div>Hoy</div>
+            </div>
+            <div class="normal-row">Registro de solicitud</div>
+            <div class="normal-row">Paula Carrera Mendoza</div>
+            <div class="normal-row">Gral. Concha, 5</div>
+            <div class="pending-tasks-date normal-row">
+                <div>24/11/2023</div>
+                <div>24/11/2023</div>
+            </div>
+            <div class="gray-row">Visita domiciliaria</div>
+            <div class="gray-row">Juan López Martinez</div>
+            <div class="gray-row">Arkotxa, 15</div>
+            <div class="pending-tasks-date gray-row">
+                <div>24/11/2023</div>
+                <div>24/11/2023</div>
+            </div>
+            <div class="normal-row">Solicitud de cambio de domicilio</div>
+            <div class="normal-row">Pedro Díaz Ramiro</div>
+            <div class="normal-row">Bizkargi, 20</div>
+            <div class="pending-tasks-date normal-row">
+                <div>24/11/2023</div>
+                <div>24/11/2023</div>
+            </div>
+        </div>
+        <div id="all-tasks">
+            <div id="all-tasks-text">Ver todas las tareas</div>
+            <img id="all-tasks-img" loading="lazy" alt="Icono de redirección a todas las tareas" src="./assets/flecha-derecha.svg">
+        </div>
+        <img id="entities" loading="lazy" alt="Entidades colaboradoras" src="./assets/entities.png">
+    </main>
+    <footer>
+        <div>>> Aviso Legal</div>
+        <div>&copy; 2023 - Eusko Jaurlaritza - Gobierno Vasco</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,355 @@
+#search-not-found
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(150, 150, 150, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+#search-not-found-panel
+{
+    z-index: 1;
+    background-color: var(--neutral-white);
+    min-width: 40vw;
+    max-width: 40vw;
+    padding: 15px;
+}
+
+#search-not-found-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+#search-not-found-text
+{
+    font-size: larger;
+    font-weight: bold;
+    font-family: var(--font-open-sans);
+}
+
+#search-not-found-close
+{
+    font-size: x-large;
+    color: darkgray;
+    font-family: var(--font-montserrat);
+}
+
+#search-not-found-close:hover
+{
+    cursor: pointer;
+}
+
+#search-not-found-question
+{
+    font-weight: normal;
+    font-family: var(--font-open-sans);
+}
+
+#search-not-found-answer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+#create-person
+{
+    color: var(--neutral-white);
+    background-color: var(--brand-blue-900-aa);
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    min-width: 8vw;
+    max-width: 8vw;
+    min-height: 6vh;
+    max-height: 6vh;
+}
+
+#create-person:hover
+{
+    cursor: pointer;
+}
+
+#search-not-found-cancel
+{
+    color: var(--brand-blue-900-aa);
+    background-color: var(--neutral-white);
+    font-size: medium;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--brand-blue-900-aa);
+    border-radius: 10px;
+    margin-left: 10px;
+    min-width: 8vw;
+    max-width: 8vw;
+    min-height: 6vh;
+    max-height: 6vh;
+}
+
+#search-not-found-cancel:hover
+{
+    cursor: pointer;
+}
+
+#localization
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+#municipality
+{
+    margin-left: 1vw;
+    margin-right: 5px;
+    color: darkgray;
+}
+
+#lezama
+{
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#greetings
+{
+    margin-top: 3vh;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: var(--font-open-sans);
+}
+
+#search
+{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+#search-data
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+#search-img
+{
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+}
+
+#search-text
+{
+    margin-left: 20px;
+    border: none;
+    min-width: 35vw;
+    max-width: 35vw;
+    min-height: 6vh;
+    max-height: 6vh;
+    font-size: large;
+}
+
+#search-text:focus
+{
+    outline: none;
+}
+
+#search-cancel
+{
+    display: none;
+    font-size: x-large;
+    color: darkgray;
+    font-family: var(--font-montserrat);
+}
+
+#search-cancel:hover
+{
+    cursor: pointer;
+}
+
+#search-action
+{
+    color: var(--neutral-white);
+    background-color: var(--brand-blue-900-aa);
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    min-width: 7vw;
+    max-width: 7vw;
+    min-height: 6vh;
+    max-height: 6vh;
+}
+
+#search-action:hover
+{
+    cursor: pointer;
+}
+
+#recent-searches
+{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+
+#recent-searches-text
+{
+    color: darkgray;
+}
+
+.recent-search
+{
+    background-color: var(--brand-blue-100);
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.recent-search:hover
+{
+    cursor: pointer;
+}
+
+#pending-tasks-text
+{
+    margin-top: 3vh;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: var(--font-open-sans);
+}
+
+#pending-tasks
+{
+    margin-top: 3vh;
+    min-width: 90vw;
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border-color:rgb(203, 200, 186);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.pending-tasks-date
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.first-row
+{
+    background-color: var(--brand-blue-100);
+    text-align: center;
+    padding: 20px;
+}
+
+.warning-task
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.warning-row
+{
+    background-color: lightyellow;
+    text-align: center;
+    padding: 20px;
+    border-bottom-color:rgb(203, 200, 186);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: large;
+}
+
+.normal-row
+{
+    text-align: center;
+    padding: 20px;
+    border-bottom-color:rgb(203, 200, 186);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: large;
+}
+
+.gray-row
+{
+    background-color: rgba(220, 220, 220, 0.3);
+    text-align: center;
+    padding: 20px;
+    border-bottom-color:rgb(203, 200, 186);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: large;
+}
+
+#all-tasks
+{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+}
+
+#all-tasks-text
+{
+    font-size: large;
+    color: var(--brand-blue-900-aa);
+    text-decoration-line: underline;
+    text-decoration-color: var(--brand-blue-900-aa);
+}
+
+#all-tasks-text:hover
+{
+    cursor: pointer;
+}
+
+#all-tasks-img:hover
+{
+    cursor: pointer;
+}
+
+#entities
+{
+    margin-top: 10vh;
+    border-top-color: black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    min-width: 90vw;
+    max-width: 90vw;
+}

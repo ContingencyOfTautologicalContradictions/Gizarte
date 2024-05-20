@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+    <title>Gizarte - Persona</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./persona.css">
+    <script src="./header.js" defer></script>
+    <script src="./persona.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-element">
+            <div id="gizarte-logo">
+                <div>Gizarte</div>
+                <div id="gizarte-logo-plus">+</div>
+            </div>
+            <div id="gobierno-vasco-logo">
+                <div>Departamento de Igualdad, Justicia y Políticas sociales</div>
+                <img id="gobierno-vasco-logo-img" loading="lazy" alt="Logo del gobierno vasco" src="./assets/gobierno-vasco-logo.png">
+            </div>
+        </div>
+        <div class="header-element">
+            <div id="links">
+                <div id="inicio">Inicio</div>
+                <div id="aes">AES</div>
+                <div id="censo-personas" class="current">
+                    <div>Censo de personas</div>
+                    <div id="underline"></div>
+                </div>
+                <div>Estadísticas e informes</div>
+                <div id="agenda">Agenda</div>
+                <div>Tareas</div>
+                <div>Campus virtual</div>
+                <div>Administración</div>
+            </div>
+            <div id="icons">
+                <img id="notifications" loading="lazy" alt="Icono de notificaciones" src="./assets/notificaciones.svg">
+                <div id="icons-img">
+                    <img id="settings" loading="lazy" alt="Icono de configuración" src="./assets/configuración.svg">
+                    <img id="profile" loading="lazy" alt="Icono de perfil" src="./assets/perfil.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="change-history-background">
+            <div id="change-history-panel">
+                <div id="change-history-head">
+                    <h2>Histórico de cambios</h2>
+                    <div id="change-history-close">X</div>
+                </div>
+                <div class="line">
+                    <div class="field">
+                        <div>Información</div>
+                        <div class="display-box">
+                            <div>Persona</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Apartado</div>
+                        <div class="display-box">
+                            <div>Datos personales</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Dato</div>
+                        <div class="display-box">
+                            <div>Estado civil</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="field">
+                        <div>Fecha desde</div>
+                        <div class="calendar">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Fecha hasta</div>
+                        <div class="calendar">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Profesional</div>
+                        <div class="display-box">
+                            <div></div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div id="actions">
+                        <button id="search">Buscar</button>
+                        <button id="clear">Limpiar</button>
+                    </div>
+                </div>
+                <div id="results-text">56 resultados</div>
+                <div id="results">
+                    <div class="first-row">Fecha</div>
+                    <div class="first-row">Usuario modificación</div>
+                    <div class="first-row">Tipo de información</div>
+                    <div class="first-row">Dato</div>
+                    <div class="first-row">Dato anterior</div>
+                    <div class="first-row">Dato nuevo</div>
+                    <div class="gray-row">10/09/2023 11:34</div>
+                    <div class="gray-row">Iñigo Gómez Sanz</div>
+                    <div class="gray-row">Persona - Datos personales</div>
+                    <div class="gray-row">Estado civil</div>
+                    <div class="gray-row">Casado</div>
+                    <div class="gray-row">Divorciado</div>
+                    <div class="normal-row">17/07/2023 19:20</div>
+                    <div class="normal-row">Iñigo Gómez Sanz</div>
+                    <div class="normal-row">Persona - Datos personales</div>
+                    <div class="normal-row">Estado civil</div>
+                    <div class="normal-row">Soltero</div>
+                    <div class="normal-row">Casado</div>
+                    <div class="gray-row">01/04/2023 15:50</div>
+                    <div class="gray-row">Iñigo Gómez Sanz</div>
+                    <div class="gray-row">Persona - Datos personales</div>
+                    <div class="gray-row">Estado civil</div>
+                    <div class="gray-row"></div>
+                    <div class="gray-row">Soltero</div>
+                </div>
+                <div id="results-navigator">
+                    <div id="pages">
+                        <div>Resultados por página</div>
+                        <div>3</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                    <div>1 de 18</div>
+                    <div id="controls">
+                        <img loading="lazy" src="./assets/paginador-izquierda.svg">
+                        <img loading="lazy" src="./assets/flecha-izquierda.svg">
+                        <img loading="lazy" src="./assets/flecha-derecha.svg">
+                        <img loading="lazy" src="./assets/paginador-derecha.svg">
+                    </div>
+                </div>
+                <div id="results-person">
+                    <div class="first-row">Persona</div>
+                    <div class="first-row">Número de documento</div>
+                    <div class="first-row">Fecha nacimiento</div>
+                    <div class="first-row">Fecha alta UF</div>
+                    <div class="first-row">Parentesco</div>
+                    <div class="normal-row">Juan Ustáriz Rodríguez</div>
+                    <div class="normal-row">33333333H</div>
+                    <div class="normal-row">20/08/1980</div>
+                    <div class="normal-row">24/11/2023</div>
+                    <div class="normal-row">Persona no emparentada con la persona de referencia</div>
+                </div>
+                <div class="display-list">
+                    <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+                    <h3 class="section">12/03/2022 - 11/03/2023 - Cambio en composición de UF sin cambios en domicilio</h3>
+                </div>
+            </div>
+        </div>
+        <div id="path">
+            <div id="censo-personas-link">Censo de personas</div>
+            <img loading="lazy" alt="" src="./assets/flecha-derecha.svg">
+            <div id="person-path">695669834P - José Aranburu Ruiz</div>
+        </div>
+        <div id="person-info">
+            <div id="person-head">
+                <h1>695669834P - José Aranburu Ruiz</h1>
+                <div id="person-head-links">
+                    <div id="change-history">
+                        <img loading="lazy" src="./assets/cambios.svg">
+                        <div>Ver histórico de cambios</div>
+                    </div>
+                    <div id="cancel-person">
+                        <img loading="lazy" alt="Icono de cancelar persona" src="./assets/cancelar-persona.svg">
+                        <div>Dar de baja a esta persona</div>
+                    </div>
+                </div>
+            </div>
+            <div class="person-head-line">
+                <div class="person-head-entity">
+                    <div class="title">Fecha de nacimiento</div>
+                    <div class="person-head-calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div class="content">18/09/1960</div>
+                    </div>
+                </div>
+                <div class="person-head-entity">
+                    <div class="title">Municipio</div>
+                    <div class="content">Lezama</div>
+                </div>
+                <div class="person-head-entity">
+                    <div class="title">Domicilio</div>
+                    <div class="content">Río Alto 23, 2 Izquierda</div>
+                </div>
+                <div class="person-head-entity">
+                    <div class="title">Estado Ficha Social</div>
+                    <div class="content" id="social-file-status">Activa</div>
+                </div>
+                <div></div>
+                <div class="person-head-entity">
+                    <div class="title">Fecha alta</div>
+                    <div class="person-head-calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div class="content">29/02/2024</div>
+                    </div>
+                </div>
+                <div class="person-head-entity">
+                    <div class="title">Usuario alta</div>
+                    <div class="content">Julia Pardo Iriondo</div>
+                </div>
+                <div class="person-head-entity">
+                    <div class="title">Fecha modificación</div>
+                    <div class="person-head-calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div class="content">01/03/2024</div>
+                    </div>
+                </div>
+                <div class="person-head-entity">
+                    <div class="title">Usuario modificación</div>
+                    <div class="content">Julia Pardo Iriondo</div>
+                </div>
+                <div class="person-head-entity">
+                    <div class="title">Profesional de referencia</div>
+                    <div class="content">Julia Pardo Iriondo</div>
+                </div>
+            </div>
+        </div>
+        <div id="person-sections">
+            
+        </div>
+    </main>
+    <footer>
+        <div>>> Aviso Legal</div>
+        <div>&copy; 2023 - Eusko Jaurlaritza - Gobierno Vasco</div>
+    </footer>
+</body>
+</html>

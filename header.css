@@ -1,0 +1,333 @@
+:root
+{
+    --font-open-sans: "Open Sans";
+    --font-montserrat: Montserrat;
+    --font-roboto: Roboto;
+    --text-text-base: Inter;
+    --font-size-base: 16px;
+    --text-text-base-size: 14px;
+    --font-size-xl: 20px;
+    --font-size-9xl: 28px;
+    --font-size-3xl: 22px;
+    --font-size-xs: 12px;
+    --font-size-lg: 18px;
+    --font-size-mini: 15px;
+    --neutral-white: #fff;
+    --color-dimgray: #5b6266;
+    --color-steelblue-100: #3b99c9;
+    --brand-blue-900-aa: #1472a4;
+    --color-gainsboro-100: #e6e6e6;
+    --color-gainsboro-200: #e5e5e5;
+    --color-gainsboro-300: #d9dbdb;
+    --neutral-neutral-200: #d4d9dc;
+    --color-gray-100: #fafafa;
+    --neutral-neutral-300: #8d959a;
+    --color-gray-200: #737a80;
+    --neutral-neutral-600-aa: #6f767b;
+    --neutral-neutral-900: #333;
+    --colors-black-1-primary-text: #313131;
+    --neutral-neutral-100: #f2f4f4;
+    --color-oldlace: #fffae8;
+    --brand-blue-100: #d8f2fe;
+    --brand-blue-500: #c5e1ed;
+    --color-lightblue-100: #bfd9e6;
+    --status-closed: #d14541;
+    --color-deepskyblue: #52b9f0;
+    --color-seagreen-100: #549e69;
+    --status-solved: #3b8450;
+    --status-pending: #90730c;
+    --color-salmon: #eb5e5c;
+    --gap-5xl: 24px;
+    --gap-xl: 20px;
+    --gap-5xs: 8px;
+    --gap-10xl: 29px;
+    --gap-19xl: 38px;
+    --gap-sm: 14px;
+    --gap-52xl: 71px;
+    --gap-mini: 15px;
+    --gap-14xl: 33px;
+    --gap-22xl: 41px;
+    --gap-13xl: 32px;
+    --gap-base: 16px;
+    --gap-2xl: 21px;
+    --gap-11xs: 2px;
+    --gap-9xs: 4px;
+    --gap-3xs: 10px;
+    --gap-smi: 13px;
+    --gap-29xl: 48px;
+    --gap-11xl: 30px;
+    --gap-28xl: 47px;
+    --gap-4xl: 23px;
+    --gap-21xl: 40px;
+    --gap-16xl: 35px;
+    --gap-8xs: 5px;
+    --gap-8xl: 27px;
+    --gap-26xl: 45px;
+    --gap-3xl: 22px;
+    --gap-15xl: 34px;
+    --gap-50xl: 69px;
+    --gap-mid: 17px;
+    --gap-base-5: 15.5px;
+    --gap-45xl: 64px;
+    --gap-12xl: 31px;
+    --gap-37xl: 56px;
+    --gap-9xl: 28px;
+    --gap-42xl: 61px;
+    --gap-31xl: 50px;
+    --gap-6xl: 25px;
+    --gap-116xl: 135px;
+    --gap-36xl: 55px;
+    --gap-7xl: 26px;
+    --gap-21xl-5: 40.5px;
+    --gap-49xl: 68px;
+    --gap-2xs: 11px;
+    --gap-17xl: 36px;
+    --gap-lg: 18px;
+    --gap-84xl: 103px;
+    --gap-32xl: 51px;
+    --gap-66xl: 85px;
+    --gap-23xl: 42px;
+    --gap-43xl: 62px;
+    --gap-4xl-5: 23.5px;
+    --gap-27xl: 46px;
+    --gap-156xl: 175px;
+    --gap-113xl: 132px;
+    --gap-lgi: 19px;
+    --gap-124xl: 143px;
+    --gap-77xl: 96px;
+    --gap-86xl: 105px;
+    --gap-33xl: 52px;
+    --gap-62xl: 81px;
+    --gap-47xl: 66px;
+    --gap-68xl: 87px;
+    --gap-24xl: 43px;
+    --gap-48xl: 67px;
+    --gap-57xl: 76px;
+    --gap-46xl: 65px;
+    --gap-65xl: 84px;
+    --gap-55xl-5: 74.5px;
+    --gap-58xl-5: 77.5px;
+    --gap-205xl: 224px;
+    --gap-93xl: 112px;
+    --gap-xs: 12px;
+    --padding-base: 16px;
+    --padding-56xl: 75px;
+    --padding-18xl: 37px;
+    --padding-10xs: 3px;
+    --padding-146xl: 165px;
+    --padding-88xl: 107px;
+    --padding-51xl: 70px;
+    --padding-11xs: 2px;
+    --padding-sm: 14px;
+    --padding-lg: 18px;
+    --padding-xl: 20px;
+    --padding-xs: 12px;
+    --padding-3xs: 10px;
+    --padding-4xs: 9px;
+    --padding-9xs: 4px;
+    --padding-5xl: 24px;
+    --padding-mini: 15px;
+    --padding-10xs-5: 2.5px;
+    --padding-13xl: 32px;
+    --padding-52xl: 71px;
+    --padding-7xs: 6px;
+    --padding-5xs: 8px;
+    --padding-smi: 13px;
+    --padding-7xl: 26px;
+    --padding-6xs: 7px;
+    --padding-lg-5: 18.5px;
+    --padding-3xl: 22px;
+    --padding-lgi: 19px;
+    --padding-17xl: 36px;
+    --padding-21xl: 40px;
+    --padding-8xl: 27px;
+    --padding-27xl: 46px;
+    --padding-26xl: 45px;
+    --padding-4xl: 23px;
+    --padding-12xs: 1px;
+    --padding-2xs: 11px;
+    --padding-mid: 17px;
+    --padding-2xl: 21px;
+    --padding-71xl: 90px;
+    --padding-9xl: 28px;
+    --padding-6xl: 25px;
+    --padding-37xl: 56px;
+    --padding-23xl: 42px;
+    --padding-59xl: 78px;
+    --padding-11xl: 30px;
+    --padding-8xs: 5px;
+    --padding-86xl: 105px;
+    --padding-103xl: 122px;
+    --padding-69xl: 88px;
+    --padding-base-4: 16.4px;
+    --padding-6xs-5: 6.5px;
+    --padding-29xl: 48px;
+    --padding-46xl: 65px;
+    --padding-78xl: 97px;
+    --padding-11xs-5: 1.5px;
+    --padding-12xl: 31px;
+    --padding-14xl: 33px;
+    --padding-smi-5: 12.5px;
+    --br-5xs: 8px;
+    --br-base: 16px;
+    --br-7xl: 26px;
+    --br-81xl: 100px;
+    --br-xl: 20px;
+    --br-smi: 13px;
+    --br-9xs: 4px;
+    --sombra-1: 0px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+body
+{
+    margin: 0;
+    line-height: normal;
+    background-color: var(--neutral-white);
+}
+
+header
+{
+    background-color: var(--brand-blue-100);
+    padding-top: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.header-element
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+#gizarte-logo
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    color: var(--brand-blue-900-aa);
+    font-family: var(--font-montserrat);
+    font-size: xx-large;
+}
+
+#gizarte-logo-plus
+{
+    font-style: italic;
+    color: var(--color-deepskyblue);
+}
+
+#gobierno-vasco-logo
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--text-text-base-size);
+    font-family: var(--font-open-sans);
+    color: #3b99c9;
+}
+
+#gobierno-vasco-logo-img
+{
+    margin-left: 2vw;
+    min-width: 15vw;
+    max-width: 15vw;
+    min-height: 8vh;
+    max-height: 8vh;
+}
+
+#links
+{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    font-size: large;
+    gap: 3vw;
+}
+
+.current
+{
+    margin-top: 2vh;
+    color: var(--brand-blue-900-aa);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#underline
+{
+    margin-top: 2vh;
+    width: 3vw;
+    height: 4px;
+    background-color: var(--brand-blue-900-aa);
+}
+
+#inicio:hover
+{
+    cursor: pointer;
+}
+
+#aes:hover
+{
+    cursor: pointer;
+}
+
+#censo-personas:hover
+{
+    cursor: pointer;
+}
+
+#agenda:hover
+{
+    cursor: pointer;
+}
+
+#icons
+{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+#notifications
+{
+    margin-right: 5vw;
+}
+
+#icons-img
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--neutral-white);
+    border-radius: 40%;
+    padding: 5px;
+}
+
+#settings
+{
+    margin-right: 1vh;
+}
+
+#profile
+{
+    min-width: 2vw;
+    max-width: 2vw;
+    min-height: 2vw;
+    max-height: 2vw;
+}
+
+main
+{
+    background-color: var(--neutral-white);
+    padding-left: 5vw;
+    padding-top: 3vh;
+}
