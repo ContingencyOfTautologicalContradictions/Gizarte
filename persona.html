@@ -233,8 +233,263 @@
                 </div>
             </div>
         </div>
-        <div id="person-sections">
-            
+        <div class="person-sections">
+            <button class="selected-person-control">
+                <img loading="lazy" src="./assets/persona.svg">
+                <div>Persona</div>
+            </button>
+            <button class="person-control">
+                <img loading="lazy" src="./assets/casa.svg">
+                <div>Domicilio y Unidad Familiar</div>
+            </button>
+            <button class="person-control">
+                <img loading="lazy" src="./assets/documento.svg">
+                <div>Ficha Social</div>
+            </button>
+            <button class="person-control">
+                <img loading="lazy" src="./assets/intercambio.svg">
+                <div>Historial social</div>
+            </button>
+            <button class="person-control">
+                <img loading="lazy" src="./assets/carpeta.svg">
+                <div>Documentación</div>
+            </button>
+        </div>
+        <div id="person-fields">
+            <div id="personal-data">Datos personales</div>
+            <div id="advanced-data">Datos avanzados</div>
+            <div id="observations">Observaciones</div>
+        </div>
+        <div id="personal-data-elements">
+            <div id="mandatory-fields">
+                <div>Los campos marcados con (</div>
+                <div class="asterisk">*</div>
+                <div>) son obligatorios.</div>
+            </div>
+            <div class="display-list">
+                <img id="personal-data-arrow" loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Datos personales</h3>
+            </div>
+            <div class="data-displayer">
+                <div class="field">
+                    <div class="mandatory">
+                        <div>Nombre</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="José">
+                </div>
+                <div class="field">
+                    <div class="mandatory">
+                        <div>Primer apellido</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="Aranburu">
+                </div>
+                <div class="field">
+                    <div class="mandatory">
+                        <div>¿Tiene segundo apellido?</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="options">
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Sí</div>
+                        </div>
+                        <div class="option">No</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory">
+                        <div>Segundo apellido</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="Ruiz">
+                </div>
+                <div class="field">
+                    <div class="mandatory">
+                        <div>Documento identificativo</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="display-box">
+                        <div>DNI</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory">
+                        <div>Número de documento</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="textbox-image">
+                        <input class="no-textbox" type="text" placeholder="69569834P">
+                        <img loading="lazy" src="./assets/correcto.svg">
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div id="date-birth" class="field">
+                    <div class="mandatory">
+                        <div>Fecha de nacimiento</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="textbox-image">
+                        <div class="calendar">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <div>18/09/1960</div>
+                        </div>
+                        <img loading="lazy" src="./assets/incorrecto.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Origen</div>
+                    <div class="display-box">
+                        <div>Comunidad Autónoma del País Vasco</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>País de nacimiento</div>
+                    <input class="blocked-textbox" type="text" placeholder="España">
+                </div>
+                <div class="field">
+                    <div>Provincia de nacimiento</div>
+                    <div class="display-box">
+                        <div>Guipúzcoa
+                        </div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory">
+                        <div>Sexo</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="options">
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Hombre</div>
+                        </div>
+                        <div class="option">Mujer</div>
+                        <div class="option">Otro</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Estado civil</div>
+                    <div class="display-box">
+                        <div>Soltero</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Custodia compartida</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="option">No</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Fecha de fallecimiento</div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="advanced-data-elements">
+            <div id="mandatory-fields">
+                <div>Los campos marcados con (</div>
+                <div class="asterisk">*</div>
+                <div>) son obligatorios.</div>
+            </div>
+            <div class="display-list">
+                <img id="handicap-arrow" loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Discapacidad</h3>
+            </div>
+            <div class="data-displayer">
+                <div class="field">
+                    <div>¿Es una persona con discapacidad?</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Tipo de discapacidad</div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Grado de discapacidad</div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="observations-block field">
+                <div>Observaciones</div>
+                <textarea id="observations-text" type="text" placeholder="Añada comentarios adicionales..."></textarea>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Dependencia</h3>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Datos de persona de contacto</h3>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Datos económicos</h3>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Datos sanitarios</h3>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Datos jurídico-administrativos</h3>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Datos de migración</h3>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Datos académicos y laborales</h3>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Datos adicionales</h3>
+            </div>
+        </div>
+        <div id="observations-elements">
+            <div id="pending-tasks-text">1 observación</div>
+            <div id="pending-tasks">
+                <div class="first-row">Observación</div>
+                <div class="first-row">Usuario alta</div>
+                <div class="first-row">Fecha alta</div>
+                <div class="first-row">Fecha modificación</div>
+                <div class="first-row">Acciones</div>
+                <div class="normal-row">Se solicita contactar siempre con la persona responsable</div>
+                <div class="normal-row">Julia Pardo Iriondo</div>
+                <div class="normal-row">18/11/2023</div>
+                <div class="normal-row">20/11/2023</div>
+                <div class="normal-row actions-img">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+            </div>
+            <div class="observations-block field">
+                <h3 id="jaja">Añadir nueva observación</h3>
+                <textarea class="observations-text" type="text" placeholder="Añada sus observaciones..."></textarea>
+            </div>
         </div>
     </main>
     <footer>

@@ -245,7 +245,7 @@ header
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    font-size: large;
+    font-family: "Open Sans";
     gap: 3vw;
 }
 
