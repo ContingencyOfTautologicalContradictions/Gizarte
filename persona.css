@@ -450,7 +450,7 @@
     cursor: pointer;
 }
 
-#person-fields
+.person-fields-class
 {
     margin-top: 2vh;
     min-width: 90vw;
@@ -764,4 +764,39 @@
     align-items: center;
     flex-direction: row;
     gap: 15px;
+}
+
+#download
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    text-decoration-line: underline;
+    text-decoration-color: var(--brand-blue-900-aa);
+    color: var(--brand-blue-900-aa);
+    font-size: large;
+    gap: 10px;
+}
+
+#home-and-family-fields,
+#cohabitation-home-elements,
+#registered-address-elements,
+#notification-address-elements,
+#social-record-fields,
+#complementary-personal-data-elements,
+#socio-biographical-data-elements,
+#reason-for-attention-and-evaluation-elements,
+#observations1-elements
+{
+    display: none;
+}
+
+.flexbox
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
 }
