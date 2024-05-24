@@ -246,19 +246,19 @@
                 <img loading="lazy" src="./assets/documento.svg">
                 <div>Ficha Social</div>
             </button>
-            <button class="person-control">
+            <button id="social-history" class="person-control">
                 <img loading="lazy" src="./assets/intercambio.svg">
                 <div>Historial social</div>
             </button>
-            <button class="person-control">
+            <button id="documentation" class="person-control">
                 <img loading="lazy" src="./assets/carpeta.svg">
                 <div>Documentación</div>
             </button>
         </div>
         <div id="person-fields" class="person-fields-class">
-            <div id="personal-data">Datos personales</div>
-            <div id="advanced-data">Datos avanzados</div>
-            <div id="observations">Observaciones</div>
+            <div id="personal-data" class="selected-person-control-option">Datos personales</div>
+            <div id="advanced-data" class="person-control-option">Datos avanzados</div>
+            <div id="observations" class="person-control-option">Observaciones</div>
         </div>
         <div id="personal-data-elements">
             <div id="mandatory-fields">
@@ -459,6 +459,10 @@
                     <div>Descargar documento</div>
                 </div>
             </div>
+            <div class="person-answer">
+                <button class="save-changes">Guardar cambios</button>
+                <button class="cancel">Cancelar</button>
+            </div>
         </div>
         <div id="advanced-data-elements">
             <div id="mandatory-fields">
@@ -498,7 +502,7 @@
             </div>
             <div class="observations-block field">
                 <div>Observaciones</div>
-                <textarea id="observations-text" type="text" placeholder="Añada comentarios adicionales..."></textarea>
+                <textarea class="observations-text" type="text" placeholder="Añada comentarios adicionales..."></textarea>
             </div>
             <div class="display-list">
                 <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
@@ -532,10 +536,14 @@
                 <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
                 <h3 class="section">Datos adicionales</h3>
             </div>
+            <div class="person-answer">
+                <button class="save-changes">Guardar cambios</button>
+                <button class="cancel">Cancelar</button>
+            </div>
         </div>
         <div id="observations-elements">
-            <div id="pending-tasks-text">1 observación</div>
-            <div id="pending-tasks">
+            <div class="pending-tasks-text">1 observación</div>
+            <div class="pending-tasks">
                 <div class="first-row">Observación</div>
                 <div class="first-row">Usuario alta</div>
                 <div class="first-row">Fecha alta</div>
@@ -551,7 +559,7 @@
                 </div>
             </div>
             <div class="observations-block field">
-                <h3 id="jaja">Añadir nueva observación</h3>
+                <h3 class="new-observation">Añadir nueva observación</h3>
                 <textarea class="observations-text" type="text" placeholder="Añada sus observaciones..."></textarea>
             </div>
             <div class="field">
@@ -564,16 +572,39 @@
                     </div>
                 </div>
             </div>
+            <div class="share" class="field">
+                <div>¿Con quién quiere compartir la observación?</div>
+                <div class="search">
+                    <div class="search-data">
+                        <img class="search-img" alt="Icono de búsqueda" src="./assets/búsqueda.png">
+                        <input class="search-text" placeholder="Busque usuarios para compartir" type="text">
+                        <div class="search-cancel">X</div>
+                    </div>
+                    <button class="search-action">Buscar</button>
+                </div>
+            </div>
+            <button class="blocked-button">Guardar observación</button>
+            <div class="person-answer">
+                <button class="save-changes">Guardar cambios</button>
+                <button class="cancel">Cancelar</button>
+            </div>
         </div>
         <div id="home-and-family-fields" class="person-fields-class">
-            <div id="cohabitation-home">Domicilio convivencial</div>
-            <div id="registered-address">Domicilio padronal</div>
-            <div id="notification-address">Domicilio de notificación</div>
+            <div id="cohabitation-home" class="person-control-option">Domicilio convivencial</div>
+            <div id="registered-address" class="person-control-option">Domicilio padronal</div>
+            <div id="notification-address" class="person-control-option">Domicilio de notificación</div>
         </div>
         <div id="cohabitation-home-elements">
+            <div id="home-and-uf-history">
+                <img loading="lazy" src="./assets/cambios.svg">
+                <div>Histórico de domicilios y UF</div>
+            </div>
             <div class="display-list">
                 <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
-                <h3 class="section">Río Alto 23, 2 izquierda</h3>
+                <div class="separated-flexbox">
+                    <h3 class="section">Río Alto 23, 2 izquierda</h3>
+                    <h3 class="section">Desde 12/03/2024 hasta la actualidad</h3>
+                </div>
             </div>
             <div class="data-displayer">
                 <div class="field">
@@ -665,46 +696,200 @@
                     </div>
                     <div class="field">
                         <div>Bis</div>
-                        <div class="small-textbox"></div>
+                        <input class="small-textbox" type="text" placeholder="">
                     </div>
                     <div class="field">
                         <div>Piso</div>
-                        <div class="small-textbox">2</div>
+                        <input class="small-textbox" type="text" placeholder="2">
                     </div>
                 </div>
                 <div class="flexbox">
                     <div class="field">
                         <div>Puerta</div>
-                        <div class="textbox">Izquierda</div>
+                        <input class="textbox" type="text" placeholder="Izquierda">
                     </div>
                     <div class="field">
                         <div>Código postal</div>
-                        <div class="small-blocked-textbox">48196</div>
+                        <input class="small-blocked-textbox" type="text" placeholder="48196">
                     </div>
                 </div>
                 <div></div>
                 <div class="flexbox">
                     <div class="field">
                         <div>Bloque</div>
-                        <div class="small-textbox"></div>
+                        <input class="small-textbox" type="text" placeholder="">
                     </div>
                     <div class="field">
                         <div>Escalera</div>
-                        <div class="small-textbox"></div>
+                        <input class="small-textbox" type="text" placeholder="">
                     </div>
                     <div class="field">
                         <div>Mano</div>
-                        <div class="small-textbox"></div>
+                        <input class="small-textbox" type="text" placeholder="">
                     </div>
                 </div>
                 <div class="field">
                     <div>Kilómetro</div>
-                    <div class="small-textbox"></div>
+                    <input class="small-textbox" type="text" placeholder="">
                 </div>
                 <div class="field">
                     <div>Domicilio no regularizado</div>
-                    <div class="blocked-textbox"></div>
+                    <input class="blocked-textbox" type="text" placeholder="">
                 </div>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Información adicional del Domicilio convivencial</h3>
+            </div>
+            <div class="data-displayer">
+                <div class="field">
+                    <div>Tipo de domicilio</div>
+                    <div class="display-box">
+                        <div>Domicilio de la unidad familiar/convivencial</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Nombre del centro</div>
+                    <input class="blocked-textbox" type="text" placeholder="">
+                </div>
+                <div class="field">
+                    <div>Régimen de tenencia</div>
+                    <div class="display-box">
+                        <div>Vivienda en alquiler</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Situación del alojamiento</div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Superficie en m2</div>
+                    <input class="textbox" type="text" placeholder="80">
+                </div>
+                <div class="field">
+                    <div>Nº de habitaciones</div>
+                    <input class="textbox" type="text" placeholder="3">
+                </div>
+                <div class="field">
+                    <div>Nº de habitaciones ocupadas por propietario</div>
+                    <input class="textbox" type="text" placeholder="1">
+                </div>
+                <div class="field">
+                    <div>Nº de habitaciones con contrato</div>
+                    <input class="textbox" type="text" placeholder="2">
+                </div>
+                <div class="field">
+                    <div>Condiciones habitabilidad</div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Accesibilidad interior</div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Accesibilidad exterior</div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Equipamiento</div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Vivienda de protección pública</div>
+                    <div class="options">
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Sí</div>
+                        </div>
+                        <div class="option">No</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Precio mensual</div>
+                    <input class="textbox" type="text" placeholder="700,00€">
+                </div>
+                <div class="field">
+                    <div>Gastos mensuales intereses y amortización crédito</div>
+                    <input class="textbox" type="text" placeholder="">
+                </div>
+            </div>
+            <div class="observations-block field">
+                <div>Observaciones</div>
+                <textarea class="observations-text" type="text" placeholder="Añada comentarios adicionales..."></textarea>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Unidades Familiares de Domicilio</h3>
+            </div>
+            <div class="pending-tasks-text">2 unidades familiares</div>
+            <div class="pending-tasks">
+                <div class="first-row">Persona</div>
+                <div class="first-row">Número de documento</div>
+                <div class="first-row">Fecha nacimiento</div>
+                <div class="first-row">Fecha alta UF</div>
+                <div class="first-row">Parentesco</div>
+                <div class="warning-row">José Aranburu Ruiz</div>
+                <div class="warning-row">69569834P</div>
+                <div class="warning-row">18/09/1960</div>
+                <div class="warning-row">22/11/2023</div>
+                <div class="warning-row">Persona de referencia</div>
+                <div class="gray-row">Marisa Ariza Jimeno</div>
+                <div class="gray-row">22222222T</div>
+                <div class="gray-row">27/10/1958</div>
+                <div class="gray-row">24/11/2023</div>
+                <div class="gray-row">Conyuge/Pareja</div>
+                <div class="normal-row">Aritz Aranburu Ariza</div>
+                <div class="normal-row">66666666Q</div>
+                <div class="normal-row">11/05/1990</div>
+                <div class="normal-row">22/11/2023</div>
+                <div class="normal-row">Hijo/a</div>
+            </div>
+            <div class="pending-tasks">
+                <div class="first-row">Persona</div>
+                <div class="first-row">Número de documento</div>
+                <div class="first-row">Fecha nacimiento</div>
+                <div class="first-row">Fecha alta UF</div>
+                <div class="first-row">Parentesco</div>
+                <div class="normal-row">Juan Ustáriz Rodríguez</div>
+                <div class="normal-row">33333333H</div>
+                <div class="normal-row">20/08/1980</div>
+                <div class="normal-row">24/11/2023</div>
+                <div class="normal-row">Persona no emparentada con la persona de referencia</div>
+            </div>
+            <div class="person-answer">
+                <button class="cancel person-answer-control">
+                    <img loading="lazy" src="./assets/más.svg">
+                    <div>Nuevo domicilio</div>
+                </button>
+                <button class="cancel person-answer-control">
+                    <img loading="lazy" src="./assets/persona.svg">
+                    <div>Crear persona</div>
+                </button>
+                <button class="cancel person-answer-control">
+                    <img id="cambios-img" loading="lazy" src="./assets/cambios.png">
+                    <div>Cambios UF</div>
+                </button>
+            </div>
+            <div class="person-answer">
+                <button class="save-changes">Guardar cambios</button>
+                <button class="cancel">Cancelar</button>
             </div>
         </div>
         <div id="registered-address-elements">
@@ -714,10 +899,10 @@
 
         </div>
         <div id="social-record-fields" class="person-fields-class">
-            <div id="complementary-personal-data">Datos personales complementarios</div>
-            <div id="socio-biographical-data">Datos socio-biográficos</div>
-            <div id="reason-for-attention-and-evaluation">Motivo de atención y valoración</div>
-            <div id="observations1">Observaciones</div>
+            <div id="complementary-personal-data" class="person-control-option">Datos personales complementarios</div>
+            <div id="socio-biographical-data" class="person-control-option">Datos socio-biográficos</div>
+            <div id="reason-for-attention-and-evaluation" class="person-control-option">Motivo de atención y valoración</div>
+            <div id="observations1" class="person-control-option">Observaciones</div>
         </div>
         <div id="complementary-personal-data-elements">
             <div id="mandatory-fields">
@@ -735,15 +920,14 @@
                         <div>Nombre</div>
                         <div class="asterisk">*</div>
                     </div>
-                    <div class="textbox">Manuel
-                    </div>
+                    <input class="textbox" type="text" placeholder="Manuel">
                 </div>
                 <div class="field">
                     <div class="mandatory">
                         <div>Primer apellido</div>
                         <div class="asterisk">*</div>
                     </div>
-                    <div class="textbox">Aranburu</div>
+                    <input class="textbox" type="text" placeholder="Aranburu">
                 </div>
                 <div class="field">
                     <div class="mandatory">
@@ -763,8 +947,91 @@
                         <div>Segundo apellido</div>
                         <div class="asterisk">*</div>
                     </div>
-                    <div class="textbox">Ruiz</div>
+                    <input class="textbox" type="text" placeholder="Ruiz">
                 </div>
+                <div class="field">
+                    <div class="mandatory">
+                        <div>Documento identificativo</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="display-box">
+                        <div>DNI</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory">
+                        <div>Número de documento</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="small-textbox" type="text" placeholder="67889834P">
+                </div>
+                <div></div>
+                <div></div>
+                <div class="field">
+                    <div>Teléfono fijo</div>
+                    <input class="textbox" type="text" placeholder="94 558 34 56">
+                </div>
+                <div class="field">
+                    <div>Teléfono móvil</div>
+                    <input class="textbox" type="text" placeholder="676 25 32 76">
+                </div>
+                <div class="field">
+                    <div>Correo electrónico</div>
+                    <input class="textbox" type="text" placeholder="manuelaranburu@gmail.com">
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>¿Es representante legal?</div>
+                    <div class="options">
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Sí</div>
+                        </div>
+                        <div class="option">No</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dotted-flexbox">
+                <img loading="lazy" src="./assets/más.svg">
+                <div>Añadir persona responsable</div>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Datos de contacto</h3>
+            </div>
+            <div class="field">
+                <div>Idioma</div>
+                <div class="options">
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>Castellano</div>
+                    </div>
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>Euskera</div>
+                    </div>
+                    <div class="option">Dificultad de comunicación</div>
+                    <div class="option">No habla ninguno</div>
+                </div>
+            </div>
+            <div class="data-displayer">
+                <div class="field">
+                    <div>Teléfono fijo</div>
+                    <input class="textbox" type="text" placeholder="94 567 89 23">
+                </div>
+                <div class="field">
+                    <div>Teléfono móvil</div>
+                    <input class="textbox" type="text" placeholder="678 45 33 56">
+                </div>
+                <div class="field">
+                    <div>Correo electrónico</div>
+                    <input class="textbox" type="text" placeholder="">
+                </div>
+            </div>
+            <div class="person-answer">
+                <button class="save-changes">Guardar cambios</button>
+                <button class="cancel">Cancelar</button>
             </div>
         </div>
         <div id="socio-biographical-data-elements">
@@ -789,12 +1056,302 @@
                     <div class="option">Apatriada</div>
                 </div>
             </div>
+            <div class="field">
+                <div>Situación de alojamiento</div>
+                <div class="display-box">
+                    <div>Vivienda o alojamiento familiar particular</div>
+                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                </div>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Grupo de convivencia</h3>
+            </div>
+            <div class="field">
+                <div>Grupo de convivencia</div>
+                <div class="options">
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>Institucional o de establecimiento colectivo</div>
+                    </div>
+                    <div class="option">Hogar unipersonal</div>
+                    <div class="option">Con grupo convivencial</div>
+                </div>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <h3 class="section">Indicadores para diagnóstico</h3>
+            </div>
+            <h3>Indicador 3.1 / Valoración exclusión 6: Empadronamiento</h3>
+            <div class="field">
+                <div>Empadronamiento</div>
+                <div class="options">
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>Empadronado</div>
+                    </div>
+                    <div class="option">Con dificultades o ficticio</div>
+                    <div class="option">No empadronado</div>
+                </div>
+                <div class="display-box">
+                    <div>Empadronada en otro municipio de la CAPV</div>
+                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                </div>
+            </div>
+            <h3>Indicador 9.A.1 / Valoración exclusión 15: Habilidades básicas de interacción y comunicación</h3>
+            <div class="field">
+                <div>Habilidades básicas de interacción y comunicación</div>
+                <div class="display-box">
+                    <div>Desempeño y puesta en práctica</div>
+                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                </div>
+            </div>
+            <div class="person-answer">
+                <button class="save-changes">Guardar cambios</button>
+                <button class="cancel">Cancelar</button>
+            </div>
         </div>
         <div id="reason-for-attention-and-evaluation-elements">
-
+            <h3>Motivo de atención</h3>
+            <div class="display-box">
+                <div class="option">
+                    <div>Dependencia</div>
+                    <img class="small-cruz" loading="lazy" src="./assets/cruz.svg">
+                </div>
+                <div class="option">
+                    <div>Desprotección</div>
+                    <img class="small-cruz" loading="lazy" src="./assets/cruz.svg">
+                </div>
+                <img loading="lazy" src="./assets/flecha-abajo.svg">
+            </div>
+            <h3>Valoración profesional</h3>
+            <div class="display-box">
+                <div class="option">
+                    <div>Dependencia</div>
+                    <img class="small-cruz" loading="lazy" src="./assets/cruz.svg">
+                </div>
+                <div class="option">
+                    <div>Medios de subsistencia</div>
+                    <img class="small-cruz" loading="lazy" src="./assets/cruz.svg">
+                </div>
+                <img loading="lazy" src="./assets/flecha-abajo.svg">
+            </div>
+            <div class="field">
+                <div>Resultado de la valoración inicial</div>
+                <div class="options">
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>No requiere intervención del sistema vasco</div>
+                    </div>
+                    <div class="option">Precisa una intervención puntual</div>
+                    <div class="option">Precisa una intervención que requerirá seguimiento</div>
+                </div>
+            </div>
+            <div class="person-answer">
+                <button class="save-changes">Guardar cambios</button>
+                <button class="cancel">Cancelar</button>
+            </div>
         </div>
         <div id="observations1-elements">
-
+            <div class="pending-tasks-text">2 observaciones</div>
+            <div class="pending-tasks">
+                <div class="first-row">Observación</div>
+                <div class="first-row">Usuario alta</div>
+                <div class="first-row">Fecha alta</div>
+                <div class="first-row">Fecha modificación</div>
+                <div class="first-row">Acciones</div>
+                <div class="normal-row">Se observa que esta persona requiere de una serie de actuaciones para solucionar...</div>
+                <div class="normal-row">Julia Pardo Iriondo</div>
+                <div class="normal-row">20/11/2023</div>
+                <div class="normal-row">22/11/2023</div>
+                <div class="normal-row actions-img">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="gray-row">Se observa que esta persona requiere de una serie de actuaciones para solucionar...</div>
+                <div class="gray-row">Julia Pardo Iriondo</div>
+                <div class="gray-row">23/11/2023</div>
+                <div class="gray-row">24/11/2023</div>
+                <div class="gray-row actions-img">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+            </div>
+            <div class="observations-block field">
+                <h3 class="new-observation">Añadir nueva observación</h3>
+                <textarea class="observations-text" type="text" placeholder="Añada sus observaciones..."></textarea>
+            </div>
+            <div class="field">
+                <div>Tipo de observación</div>
+                <div class="options">
+                    <div class="option">Pública</div>
+                    <div class="selected-option">
+                        <img loading="lazy" src="./assets/afirmativo.svg">
+                        <div>Privada</div>
+                    </div>
+                </div>
+            </div>
+            <div class="share" class="field">
+                <div>¿Con quién quiere compartir la observación?</div>
+                <div class="search">
+                    <div class="search-data">
+                        <img class="search-img" alt="Icono de búsqueda" src="./assets/búsqueda.png">
+                        <input class="search-text" placeholder="Busque usuarios para compartir" type="text">
+                        <div class="search-cancel">X</div>
+                    </div>
+                    <button class="search-action">Buscar</button>
+                </div>
+            </div>
+            <button class="blocked-button">Guardar observación</button>
+            <div class="person-answer">
+                <button class="save-changes">Guardar cambios</button>
+                <button class="cancel">Cancelar</button>
+            </div>
+        </div>
+        <div id="social-history-fields" class="person-fields-class">
+            <div id="interventions" class="person-control-option">Intervenciones</div>
+            <div class="person-control-option">Diagnóstico</div>
+            <div class="person-control-option">PAP</div>
+            <div id="aes1" class="person-control-option">AES</div>
+        </div>
+        <div id="interventions-elements">
+            <div class="separated-flexbox">
+                <div class="flexbox">
+                    <div class="field">
+                        <div>Vista</div>
+                        <div class="display-box">
+                            <div>Historial social personal</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Ordenado por</div>
+                        <div class="display-box">
+                            <div>Intervenciones más recientes</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="save-changes">
+                    <img loading="lazy" src="./assets/más.svg">
+                    <div>Nueva intervención</div>
+                </div>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <div class="separated-flexbox">
+                    <h3 class="section">Motivo: Información sobre otros sistemas. Dependencia</h3>
+                    <div class="flexbox">
+                        <h3 class="section">Desde 01/02/2024 hasta la actualidad</h3>
+                        <div class="flexbox">
+                            <img loading="lazy" src="./assets/vista.svg">
+                            <img loading="lazy" src="./assets/papelera.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pending-tasks-big">
+                <div class="first-row">Fecha</div>
+                <div class="first-row">Actuación</div>
+                <div class="first-row">Tipo de actuación</div>
+                <div class="first-row">Profesional</div>
+                <div class="first-row">Persona involucrada</div>
+                <div class="first-row">Urgente</div>
+                <div class="first-row">Asistencia</div>
+                <div class="first-row">Acciones</div>
+                <div class="normal-row">15/02/2024 09:30</div>
+                <div class="normal-row">Entrevista conjunta</div>
+                <div class="normal-row">General</div>
+                <div class="normal-row">Julia Pardo Iriondo</div>
+                <div class="normal-row">José Aranduru Ruiz<br>Marisa Ariza Jimeno</div>
+                <div class="normal-row">No</div>
+                <div class="normal-row">Sí</div>
+                <div class="normal-row actions-img">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="gray-row">02/02/2024 11:00</div>
+                <div class="gray-row">Maltrato doméstico</div>
+                <div class="gray-row">Individual</div>
+                <div class="gray-row">Julia Pardo Iriondo</div>
+                <div class="gray-row">José Aranduru Ruiz</div>
+                <div class="gray-row">No</div>
+                <div class="gray-row">Sí</div>
+                <div class="gray-row actions-img">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="normal-row">01/02/2024 10:00</div>
+                <div class="normal-row">Primera entrevista</div>
+                <div class="normal-row">Individual</div>
+                <div class="normal-row">Julia Pardo Iriondo</div>
+                <div class="normal-row">José Aranduru Ruiz</div>
+                <div class="normal-row">Sí</div>
+                <div class="normal-row">Sí</div>
+                <div class="normal-row actions-img">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+            </div>
+            <div class="separator">
+                <button class="cancel flexbox">
+                    <img loading="lazy" src="./assets/más.svg">
+                    <div>Nueva actuación</div>
+                </button>
+            </div>
+            <div class="display-list">
+                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <div class="separated-flexbox">
+                    <h3 class="section">Motivo: Información sobre otros sistemas. Desprotección</h3>
+                    <div class="flexbox">
+                        <h3 class="section">Desde 01/01/2024 hasta 18/01/2024</h3>
+                        <div class="flexbox">
+                            <img loading="lazy" src="./assets/vista.svg">
+                            <img loading="lazy" src="./assets/papelera.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+        </div>
+        <div id="aes-elements">
+            <div class="save-changes">
+                <img loading="lazy" src="./assets/más.svg">
+                <div>Nueva AES</div>
+            </div>
+            <div class="pending-tasks-very-big">
+                <div class="first-row">Número AES</div>
+                <div class="first-row">Fecha solicitud</div>
+                <div class="first-row">Origen</div>
+                <div class="first-row">Municipio</div>
+                <div class="first-row">Tipo de ayuda</div>
+                <div class="first-row">Condición persona</div>
+                <div class="first-row">Resolución</div>
+                <div class="first-row">Importe solicitado</div>
+                <div class="first-row">Importe concedido</div>
+                <div class="first-row">Estado</div>
+                <div class="normal-row">2024/00000000</div>
+                <div class="normal-row">29/02/2024</div>
+                <div class="normal-row">Actuación</div>
+                <div class="normal-row">Lezama</div>
+                <div class="normal-row">Alquiler</div>
+                <div class="normal-row">Titular</div>
+                <div class="normal-row">Denegada</div>
+                <div class="normal-row">100,00€</div>
+                <div class="normal-row">0.00€</div>
+                <div class="normal-row">Finalizada</div>
+                <div class="gray-row">2024/00000001</div>
+                <div class="gray-row">01/03/2023</div>
+                <div class="gray-row">Solicitud directa</div>
+                <div class="gray-row">Lezama</div>
+                <div class="gray-row">Necesidad primaria<br>Alquiler</div>
+                <div class="gray-row">Beneficiario</div>
+                <div class="gray-row">Parcialmente aceptada</div>
+                <div class="gray-row">1000,00€</div>
+                <div class="gray-row">500,00€</div>
+                <div class="gray-row">Realización de pagos</div>
+            </div>
+            <div class="separator"></div>
         </div>
     </main>
     <footer>
