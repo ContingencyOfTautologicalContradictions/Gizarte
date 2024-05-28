@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+    <title>Gizarte - Nueva solicitud</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./nueva-solicitud.css">
+    <script src="./header.js" defer></script>
+    <script src="./nueva-solicitud.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-element">
+            <div id="gizarte-logo">
+                <div>Gizarte</div>
+                <div id="gizarte-logo-plus">+</div>
+            </div>
+            <div id="gobierno-vasco-logo">
+                <div>Departamento de Igualdad, Justicia y Políticas sociales</div>
+                <img id="gobierno-vasco-logo-img" loading="lazy" alt="Logo del gobierno vasco" src="./assets/gobierno-vasco-logo.png">
+            </div>
+        </div>
+        <div class="header-element">
+            <div id="links">
+                <div id="inicio">Inicio</div>
+                <div id="aes" class="current">
+                    <div>AES</div>
+                    <div id="underline"></div>
+                </div>
+                <div id="censo-personas">Censo de personas</div>
+                <div>Estadísticas e informes</div>
+                <div id="agenda">Agenda</div>
+                <div>Tareas</div>
+                <div>Campus virtual</div>
+                <div>Administración</div>
+            </div>
+            <div id="icons">
+                <img id="notifications" loading="lazy" alt="Icono de notificaciones" src="./assets/notificaciones.svg">
+                <div id="icons-img">
+                    <img id="settings" loading="lazy" alt="Icono de configuración" src="./assets/configuración.svg">
+                    <img id="profile" loading="lazy" alt="Icono de perfil" src="./assets/perfil.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="aes-path">
+            <div id="aes-link">AES</div>
+            <img loading="lazy" alt="" src="./assets/flecha-derecha.svg">
+            <div id="new-request-path">Nueva solicitud 695669834P - José Aranburu Ruiz</div>
+        </div>
+        <div id="aes-info">
+            <div id="aes-head">
+                <h2>695669834P - José Aranburu Ruiz</h2>
+                <h4 id="aes-number">N.º AES 2024/00000001</h4>
+            </div>
+            <div id="aes-head-options">
+                <div class="aes-head-option">
+                    <div>Trámite</div>
+                    <div class="aes-head-option-content">
+                        <h3>Solicitud</h3>
+                        <img loading="lazy" src="./assets/fases.svg">
+                        <h3 id="guide">Ver guía de tramitación</h3>
+                    </div>
+                </div>
+                <div class="aes-head-option">
+                    <div>Estado</div>
+                    <h3>Solicitud en revisión</h3>
+                </div>
+                <div class="aes-head-option">
+                    <div>Municipio</div>
+                    <h3>Lezama</h3>
+                </div>
+                <div class="aes-head-option">
+                    <div>Tipo ayuda</div>
+                    <h3>Alquiler, Necesidades primarias</h3>
+                </div>
+                <div class="aes-head-option">
+                    <div>Fecha solicitud</div>
+                    <div class="aes-head-option-content">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <h3>23/11/2023</h3>
+                    </div>
+                </div>
+                <div class="aes-head-option">
+                    <div>Fecha resolución</div>
+                    <h3>-</h3>
+                </div>
+                <div class="aes-head-option">
+                    <div>Resolución</div>
+                    <h3>-</h3>
+                </div>
+                <div class="aes-head-option">
+                    <div>Fecha última modificación</div>
+                    <div class="aes-head-option-content">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <h3>11/12/2023</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aes-links">
+            <div class="aes-links">
+                <img loading="lazy" src="./assets/visión.svg">
+                <h3>Visión global</h3>
+            </div>
+            <div class="aes-links">
+                <img class="aes-links-img" loading="lazy" src="./assets/cambios.svg">
+                <h3>Historial de tramitación</h3>
+            </div>
+            <div class="aes-links">
+                <img class="aes-links-img" loading="lazy" src="./assets/archivo.svg">
+                <h3>Documentación</h3>
+            </div>
+            <div class="aes-links">
+                <img class="aes-links-img" loading="lazy" src="./assets/calcular.svg">
+                <h3>Detalle cálculo AES</h3>
+            </div>
+            <div class="aes-links">
+                <img class="aes-links-img" loading="lazy" src="./assets/carpeta1.svg">
+                <h3>Gestión AES</h3>
+            </div>
+        </div>
+        <div class="mandatory-fields">
+            <div>Los campos marcados con (</div>
+            <div class="asterisk">*</div>
+            <div>) son obligatorios.</div>
+        </div>
+        <div class="display-list">
+            <img id="requested-help" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+            <h3 class="section">Ayuda solicitada</h3>
+        </div>
+        <div class="aes-displayer" id="requested-help-elements">
+            <div class="table">
+                <div class="first-row">Tipo de ayuda</div>
+                <div class="first-row">Concepto del gasto</div>
+                <div class="first-row">Detalle concepto</div>
+                <div class="first-row">Importe solicitado</div>
+                <div class="first-row">Fecha inicio</div>
+                <div class="first-row">Periodicidad</div>
+                <div class="first-row">Fecha fin</div>
+                <div class="first-row">Acciones</div>
+                <div class="normal-row">Alquiler</div>
+                <div class="normal-row">-</div>
+                <div class="normal-row">-</div>
+                <div class="normal-row">800,00€</div>
+                <div class="normal-row">01/10/2023</div>
+                <div class="normal-row">Mensual</div>
+                <div class="normal-row">01/11/2023</div>
+                <div class="normal-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="gray-row">Otros gastos</div>
+                <div class="gray-row">Otros</div>
+                <div class="gray-row">Gafas</div>
+                <div class="gray-row">200,00€</div>
+                <div class="gray-row">01/10/2023</div>
+                <div class="gray-row">Puntual</div>
+                <div class="gray-row">01/10/2023</div>
+                <div class="gray-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="darkgray-row">Total:</div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row">1000,00€</div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+            </div>
+        </div>
+        <div class="display-list">
+            <img id="owner-and-beneficiary-details" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+            <h3 class="section">Datos del titular y beneficiarios</h3>
+        </div>
+        <div class="aes-displayer" id="owner-and-beneficiary-details-elements">
+            <div class="small-table">
+                <div class="head-row">Unidad familiar</div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="first-row">Nombre</div>
+                <div class="first-row">Primer apellido</div>
+                <div class="first-row">Segundo apellido</div>
+                <div class="first-row">Parentesco</div>
+                <div class="first-row">Edad</div>
+                <div class="first-row"></div>
+                <div class="warning-row">José</div>
+                <div class="warning-row">Aranburu</div>
+                <div class="warning-row">Ruiz</div>
+                <div class="warning-row">P. Referencia</div>
+                <div class="warning-row">64</div>
+                <div class="warning-row"></div>
+                <div class="gray-row">Marisa</div>
+                <div class="gray-row">Ariza</div>
+                <div class="gray-row">Jimeno</div>
+                <div class="gray-row">Cónyuge / pareja</div>
+                <div class="gray-row">62</div>
+                <div class="gray-row"></div>
+                <div class="normal-row">Aritz</div>
+                <div class="normal-row">Aranburu</div>
+                <div class="normal-row">Ariza</div>
+                <div class="normal-row">Hijo/a</div>
+                <div class="normal-row">22</div>
+                <div class="normal-row new-request-actions">
+                    <img loading="lazy" src="./assets/más.svg">
+                    <div class="aes-option-link">Añadir a UC</div>
+                </div>
+            </div>
+            <div class="small-table">
+                <div class="head-row">Unidad Convivencia AES</div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row">
+                    <img loading="lazy" src="./assets/vista.svg">
+                </div>
+                <div class="first-row">Nombre</div>
+                <div class="first-row">Primer apellido</div>
+                <div class="first-row">Segundo apellido</div>
+                <div class="first-row">Parentesco</div>
+                <div class="first-row">Edad</div>
+                <div class="first-row">Acciones</div>
+                <div class="warning-row">José (titular)</div>
+                <div class="warning-row">Aranburu</div>
+                <div class="warning-row">Ruiz</div>
+                <div class="warning-row">P. Referencia</div>
+                <div class="warning-row">64</div>
+                <div class="warning-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="gray-row">Marisa</div>
+                <div class="gray-row">Ariza</div>
+                <div class="gray-row">Jimeno</div>
+                <div class="gray-row">Cónyuge / pareja</div>
+                <div class="gray-row">62</div>
+                <div class="gray-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+            </div>
+            <div class="aes-flex-end">
+                <button class="aes-option">
+                    <img loading="lazy" src="./assets/más.svg">
+                    <div>Crear persona</div>
+                </button>
+                <button class="aes-option">
+                    <img loading="lazy" src="./assets/más.svg">
+                    <div>Crear UC</div>
+                </button>
+            </div>
+        </div>
+        <div class="display-list">
+            <img id="legal-representative" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+            <h3 class="section">Representante legal</h3>
+        </div>
+        <div class="aes-displayer" id="legal-representative-elements">
+            <div class="very-small-table">
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Representante legal</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="options">
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Sí</div>
+                        </div>
+                        <div class="option">No</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Relación con el titular</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="">
+                </div>
+                <div></div>
+                <div></div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Nombre</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="José">
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Primer apellido</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="Aranburu">
+                </div>
+                <div class="field">
+                    <div>¿Tiene segundo apellido?</div>
+                    <div class="options">
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Sí</div>
+                        </div>
+                        <div class="option">No</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Segundo apellido</div>
+                    <input class="textbox" type="text" placeholder="Ruiz">
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Documento identificativo</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="display-box">
+                        <div>DNI</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Número de documento</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="options">
+                        <input class="small-textbox" type="text" placeholder="69569834P">
+                        <img loading="lazy" src="./assets/correcto.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Teléfono móvil</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="676 25 32 76">
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Correo electrónico</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="josearanburu@gmail.com">
+                </div>
+            </div>
+        </div>
+        <div class="display-list">
+            <img id="economical-data" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+            <h3 class="section">Datos económicos</h3>
+        </div>
+        <div class="aes-displayer" id="economical-data-elements">
+            
+        </div>
+        <div class="display-list">
+            <img id="census" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+            <h3 class="section">Empadronamiento</h3>
+        </div>
+        <div class="aes-displayer" id="census-elements">
+            
+        </div>
+        <div class="display-list">
+            <img id="cohabitation_home" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+            <h3 class="section">Domicilio convivencial</h3>
+        </div>
+        <div class="aes-displayer" id="cohabitation_home-elements">
+            
+        </div>
+        <div class="display-list">
+            <img id="application-summary" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+            <h3 class="section">Resumen de la solicitud</h3>
+        </div>
+        <div class="aes-displayer" id="application-summary-elements">
+            
+        </div>
+        <div class="display-list">
+            <img id="aid-payment" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+            <h3 class="section">Abono de la ayuda</h3>
+        </div>
+        <div class="aes-displayer" id="aid-payment-elements">
+            
+        </div>
+        <div class="display-list">
+            <img id="attached-documentation" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+            <h3 class="section">Documentación adjunta</h3>
+        </div>
+        <div class="aes-displayer" id="attached-documentation-elements">
+            
+        </div>
+        <div class="display-list">
+            <img id="generate-documentation" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+            <h3 class="section">Generar documentación</h3>
+        </div>
+        <div class="aes-displayer" id="generate-documentation-elements">
+            
+        </div>
+    </main>
+    <footer>
+        <div>>> Aviso Legal</div>
+        <div>&copy; 2023 - Eusko Jaurlaritza - Gobierno Vasco</div>
+    </footer>
+</body>
+</html>

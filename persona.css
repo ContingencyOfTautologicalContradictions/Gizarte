@@ -821,7 +821,9 @@
 #observations1-elements,
 #social-history-fields,
 #interventions-elements,
-#aes-elements
+#aes-elements,
+#documentation-fields,
+#personal-elements
 {
     display: none;
 }

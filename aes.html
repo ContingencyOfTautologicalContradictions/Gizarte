@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+    <title>Gizarte - AES</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./aes.css">
+    <script src="./header.js" defer></script>
+    <script src="./aes.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-element">
+            <div id="gizarte-logo">
+                <div>Gizarte</div>
+                <div id="gizarte-logo-plus">+</div>
+            </div>
+            <div id="gobierno-vasco-logo">
+                <div>Departamento de Igualdad, Justicia y Políticas sociales</div>
+                <img id="gobierno-vasco-logo-img" loading="lazy" alt="Logo del gobierno vasco" src="./assets/gobierno-vasco-logo.png">
+            </div>
+        </div>
+        <div class="header-element">
+            <div id="links">
+                <div id="inicio">Inicio</div>
+                <div id="aes" class="current">
+                    <div>AES</div>
+                    <div id="underline"></div>
+                </div>
+                <div id="censo-personas">Censo de personas</div>
+                <div>Estadísticas e informes</div>
+                <div id="agenda">Agenda</div>
+                <div>Tareas</div>
+                <div>Campus virtual</div>
+                <div>Administración</div>
+            </div>
+            <div id="icons">
+                <img id="notifications" loading="lazy" alt="Icono de notificaciones" src="./assets/notificaciones.svg">
+                <div id="icons-img">
+                    <img id="settings" loading="lazy" alt="Icono de configuración" src="./assets/configuración.svg">
+                    <img id="profile" loading="lazy" alt="Icono de perfil" src="./assets/perfil.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="aes-text">AES</div>
+        <div id="filter-info">
+            <div id="filter-head">
+                <h2>Filtros</h2>
+                <div id="less-filters">
+                    <div>Ver menos filtros</div>
+                    <img loading="lazy" src="./assets/flecha-arriba.svg">
+                </div>
+            </div>
+            <div id="filters-wrapper">
+                <div id="filters">
+                    <div class="field">
+                        <div>Municipio</div>
+                        <div class="display-box">
+                            <div>Basauri</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Fecha solicitud desde</div>
+                        <div class="calendar">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <div>10/09/2021</div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Fecha solicitud hasta</div>
+                        <div class="calendar">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <div>01/10/2023</div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Fecha resolución desde</div>
+                        <div class="calendar">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <div>10/09/2021</div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Fecha resolución hasta</div>
+                        <div class="calendar">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <div>01/10/2023</div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Documento identificativo</div>
+                        <div class="display-box">
+                            <div></div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Número documento</div>
+                        <input class="small-textbox" type="text" placeholder="">
+                    </div>
+                    <div class="field">
+                        <div>Nombre</div>
+                        <input class="small-textbox" type="text" placeholder="">
+                    </div>
+                    <div class="field">
+                        <div>Primer apellido</div>
+                        <input class="small-textbox" type="text" placeholder="">
+                    </div>
+                    <div class="field">
+                        <div>Segundo apellido</div>
+                        <input class="small-textbox" type="text" placeholder="">
+                    </div>
+                    <div class="field">
+                        <div>Número AES</div>
+                        <input class="textbox" type="text" placeholder="">
+                    </div>
+                    <div class="field">
+                        <div>Trámite</div>
+                        <div class="small-display-box">
+                            <div></div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Estado</div>
+                        <div class="small-display-box">
+                            <div></div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Tipo de ayuda</div>
+                        <div class="small-display-box">
+                            <div></div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Resolución</div>
+                        <div class="small-display-box">
+                            <div></div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Importe solicitado desde</div>
+                        <input class="textbox" type="text" placeholder="100,00€">
+                    </div>
+                    <div class="field">
+                        <div>Importe solicitado hasta</div>
+                        <input class="textbox" type="text" placeholder="800,00€">
+                    </div>
+                    <div class="field">
+                        <div>Tramitador</div>
+                        <div class="display-box">
+                            <div>María Sanz</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                </div>
+                <div id="filter-options">
+                    <button id="filter-search">Buscar</button>
+                    <button id="filter-clear">Limpiar</button>
+                </div>
+            </div>
+        </div>
+        <div id="aes-actions">
+            <button id="new-request" class="aes-option">
+                <img loading="lazy" src="./assets/más.svg">
+                <div>Nueva solicitud</div>
+            </button>
+            <button class="aes-option">
+                <img loading="lazy" src="./assets/masiva.svg">
+                <div>Acciones masivas</div>
+            </button>
+            <button class="aes-option">
+                <img loading="lazy" src="./assets/subida.svg">
+                <div>Exportar excel</div>
+            </button>
+        </div>
+        <div class="pending-tasks">
+            <div class="first-row">Número AES</div>
+            <div class="first-row">Número documento</div>
+            <div class="first-row">Nombre y apellidos</div>
+            <div class="first-row">Tipo ayuda</div>
+            <div class="first-row">Importe solicitado</div>
+            <div class="first-row">Fecha solicitud</div>
+            <div class="first-row">Fecha resolución</div>
+            <div class="first-row">Resolución</div>
+            <div class="first-row">Trámite</div>
+            <div class="first-row">Estado</div>
+            <div class="first-row">Tramitador</div>
+            <div class="normal-row checkbox">
+                <input type="checkbox">
+                <div>2024/00000001</div>
+            </div>
+            <div class="normal-row">30123442J</div>
+            <div class="normal-row">Juan García Pérez</div>
+            <div class="normal-row">Alquiler</div>
+            <div class="normal-row">800,00€</div>
+            <div class="normal-row">10/09/2022</div>
+            <div class="normal-row">14/10/2022</div>
+            <div class="normal-row"></div>
+            <div class="normal-row">Solicitud</div>
+            <div class="normal-row">Solicitud en revisión</div>
+            <div class="normal-row">María Sanz</div>
+            <div class="gray-row checkbox">
+                <input type="checkbox">
+                <div>2024/00000003</div>
+            </div>
+            <div class="gray-row">23453823T</div>
+            <div class="gray-row">José Encinas Ruiz</div>
+            <div class="gray-row">Necesidades Primarias</div>
+            <div class="gray-row">325,00€</div>
+            <div class="gray-row">12/05/2023</div>
+            <div class="gray-row">12/05/2023</div>
+            <div class="gray-row">Aceptada</div>
+            <div class="gray-row"></div>
+            <div class="gray-row">Finalizada</div>
+            <div class="gray-row">María Sanz</div>
+        </div>
+    </main>
+    <footer>
+        <div>>> Aviso Legal</div>
+        <div>&copy; 2023 - Eusko Jaurlaritza - Gobierno Vasco</div>
+    </footer>
+</body>
+</html>

@@ -35,6 +35,8 @@ let interventions_elements = document.getElementById("interventions-elements");
 let aes1 = document.getElementById("aes1");
 let aes_elements = document.getElementById("aes-elements");
 let documentation = document.getElementById("documentation");
+let documentation_fields = document.getElementById("documentation-fields");
+let personal_elements = document.getElementById("personal-elements");
 
 function remove_if_exists(element, name)
 {
@@ -139,6 +141,8 @@ if(person)
         social_history_fields.style.display = "none";
         interventions_elements.style.display = "none";
         aes_elements.style.display = "none";
+        documentation_fields.style.display = "none";
+        personal_elements.style.display = "none";
         person_fields.style.display = "flex";
         personal_data_elements.style.display = "inline";
     });
@@ -174,6 +178,8 @@ if(home_and_family)
         social_history_fields.style.display = "none";
         interventions_elements.style.display = "none";
         aes_elements.style.display = "none";
+        documentation_fields.style.display = "none";
+        personal_elements.style.display = "none";
         home_and_family_fields.style.display = "flex";
         cohabitation_home_elements.style.display = "inline";
     });
@@ -249,9 +255,12 @@ if(social_record)
         cohabitation_home_elements.style.display = "none";
         registered_address_elements.style.display = "none";
         notification_address_elements.style.display = "none";
+        observations1_elements.style.display = "none";
         social_history_fields.style.display = "none";
         interventions_elements.style.display = "none";
         aes_elements.style.display = "none";
+        documentation_fields.style.display = "none";
+        personal_elements.style.display = "none";
         social_record_fields.style.display = "flex";
         complementary_personal_data_elements.style.display = "inline";
     });
@@ -353,7 +362,9 @@ if(social_history)
         complementary_personal_data_elements.style.display = "none";
         socio_biographical_data_elements.style.display = "none";
         reason_for_attention_and_evaluation_elements.style.display = "none";
-        observations1.style.display = "none";
+        observations1_elements.style.display = "none";
+        documentation_fields.style.display = "none";
+        personal_elements.style.display = "none";
         social_history_fields.style.display = "flex";
         interventions_elements.style.display = "inline";
     });
@@ -378,4 +389,37 @@ if(aes1)
         add_if_not_exists(aes1, "selected-person-control-option");
         interventions_elements.style.display = "none";
         aes_elements.style.display = "inline";
+    });
+
+if(documentation)
+    documentation.addEventListener("click", function()
+    {
+        remove_if_exists(person, "selected-person-control");
+        add_if_not_exists(person, "person-control");
+        remove_if_exists(home_and_family, "selected-person-control");
+        add_if_not_exists(home_and_family, "person-control");
+        remove_if_exists(social_record, "selected-person-control");
+        add_if_not_exists(social_record, "person-control");
+        remove_if_exists(social_history, "person-control");
+        add_if_not_exists(social_history, "selected-person-control");
+        remove_if_exists(documentation, "person-control-option");
+        add_if_not_exists(documentation, "selected-person-control-option");
+        person_fields.style.display = "none";
+        personal_data_elements.style.display = "none";
+        advanced_data_elements.style.display = "none";
+        observations_elements.style.display = "none";
+        home_and_family_fields.style.display = "none";
+        cohabitation_home_elements.style.display = "none";
+        registered_address_elements.style.display = "none";
+        notification_address_elements.style.display = "none";
+        social_record_fields.style.display = "none";
+        complementary_personal_data_elements.style.display = "none";
+        socio_biographical_data_elements.style.display = "none";
+        reason_for_attention_and_evaluation_elements.style.display = "none";
+        observations1_elements.style.display = "none";
+        social_history_fields.style.display = "none";
+        interventions_elements.style.display = "none";
+        aes_elements.style.display = "none";
+        documentation_fields.style.display = "flex";
+        personal_elements.style.display = "inline";
     });
