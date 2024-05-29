@@ -14,6 +14,14 @@ let economical_data_display = false;
 let census = document.getElementById("census");
 let census_elements = document.getElementById("census-elements");
 let census_display = false;
+let edit_person = document.getElementById("edit-person");
+let personal_data_panel = document.getElementById("personal-data-panel");
+
+if(edit_person)
+    edit_person.addEventListener("click", function()
+    {
+        personal_data_panel.style.display = "flex";
+    });
 
 if(aes_link)
     aes_link.addEventListener("click", function()
@@ -106,8 +114,8 @@ if(census)
         }
     });
 
-let cohabitation_home = document.getElementById("");
-let cohabitation_home_elements = document.getElementById("-elements");
+let cohabitation_home = document.getElementById("cohabitation_home");
+let cohabitation_home_elements = document.getElementById("cohabitation_home-elements");
 let cohabitation_home_display = false;
 
 cohabitation_home.addEventListener("click", function()

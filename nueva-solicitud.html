@@ -50,6 +50,11 @@
         </div>
     </header>
     <main>
+        <div id="personal-data-panel">
+            <div id="personal-data-wrapper">
+
+            </div>
+        </div>
         <div id="aes-path">
             <div id="aes-link">AES</div>
             <img loading="lazy" alt="" src="./assets/flecha-derecha.svg">
@@ -213,7 +218,7 @@
                 <div class="normal-row">Ariza</div>
                 <div class="normal-row">Hijo/a</div>
                 <div class="normal-row">22</div>
-                <div class="normal-row new-request-actions">
+                <div id="add-to-uc" class="normal-row new-request-actions">
                     <img loading="lazy" src="./assets/más.svg">
                     <div class="aes-option-link">Añadir a UC</div>
                 </div>
@@ -239,7 +244,7 @@
                 <div class="warning-row">P. Referencia</div>
                 <div class="warning-row">64</div>
                 <div class="warning-row new-request-actions">
-                    <img loading="lazy" src="./assets/vista.svg">
+                    <img id="edit-person" loading="lazy" src="./assets/vista.svg">
                     <img loading="lazy" src="./assets/papelera.svg">
                 </div>
                 <div class="gray-row">Marisa</div>
@@ -360,35 +365,586 @@
             <h3 class="section">Datos económicos</h3>
         </div>
         <div class="aes-displayer" id="economical-data-elements">
-            
+            <div class="table">
+                <div class="head-row">Ingresos</div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="first-row">Nombre y apellidos</div>
+                <div class="first-row">Tipo ingreso</div>
+                <div class="first-row">Importe bruto mes</div>
+                <div class="first-row">Nº de pagas</div>
+                <div class="first-row">Desde</div>
+                <div class="first-row">Hasta</div>
+                <div class="first-row">Total</div>
+                <div class="first-row">Acciones</div>
+                <div class="normal-row">Juan Aranburu Pérez (titular)</div>
+                <div class="normal-row">Nómina</div>
+                <div class="normal-row">500,00€</div>
+                <div class="normal-row">14</div>
+                <div class="normal-row">01/01/2023</div>
+                <div class="normal-row">01/12/2023</div>
+                <div class="normal-row">7.000,00€</div>
+                <div class="normal-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="normal-row">Marisa Ariza Jimeno</div>
+                <div class="normal-row">Nómina</div>
+                <div class="normal-row">700,00€</div>
+                <div class="normal-row">12</div>
+                <div class="normal-row">01/01/2023</div>
+                <div class="normal-row">01/12/2023</div>
+                <div class="normal-row">8.400,00€</div>
+                <div class="normal-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="darkgray-row">Total ingresos:</div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row">15.400,00€</div>
+                <div class="darkgray-row"></div>
+            </div>
+            <div class="dotted-flexbox">
+                <img loading="lazy" src="./assets/más.svg">
+                <div>Añadir nueva declaración de ingresos</div>
+            </div>
+            <div class="table">
+                <div class="head-row">Ingresos</div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="first-row">Nombre y apellidos</div>
+                <div class="first-row">Tipo gasto o deducción</div>
+                <div class="first-row">Importe bruto mes</div>
+                <div class="first-row">Nº de pagas</div>
+                <div class="first-row">Desde</div>
+                <div class="first-row">Hasta</div>
+                <div class="first-row">Total</div>
+                <div class="first-row">Acciones</div>
+                <div class="normal-row">Juan Aranburu Pérez (titular)</div>
+                <div class="normal-row">IRPF</div>
+                <div class="normal-row">700,00€</div>
+                <div class="normal-row">14</div>
+                <div class="normal-row">01/01/2023</div>
+                <div class="normal-row">01/12/2023</div>
+                <div class="normal-row">8.000,00€</div>
+                <div class="normal-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="darkgray-row">Total deducciones y gastos:</div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row">8.000,00€</div>
+                <div class="darkgray-row"></div>
+            </div>
+            <div class="dotted-flexbox">
+                <img loading="lazy" src="./assets/más.svg">
+                <div>Añadir nueva declaración de deducciones y gastos</div>
+            </div>
+            <div class="small-table">
+                <div class="head-row">Patrimonio</div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="head-row"></div>
+                <div class="first-row">Nombre y apellidos</div>
+                <div class="first-row">Tipo de patrimonio</div>
+                <div class="first-row"></div>
+                <div class="first-row">Descripción</div>
+                <div class="first-row">Valor</div>
+                <div class="first-row">Acciones</div>
+                <div class="normal-row">Juan Aranburu Pérez (titular)</div>
+                <div class="normal-row">Inmuebles - Vivienda habitual</div>
+                <div class="normal-row"></div>
+                <div class="normal-row">Esta es la nómina...</div>
+                <div class="normal-row">6.000,00€</div>
+                <div class="normal-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="darkgray-row">Total patrimonio:</div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row"></div>
+                <div class="darkgray-row">6.000,00€</div>
+                <div class="darkgray-row"></div>
+            </div>
+            <div class="dotted-flexbox">
+                <img loading="lazy" src="./assets/más.svg">
+                <div>Añadir nueva declaración de patrimonio</div>
+            </div>
         </div>
         <div class="display-list">
             <img id="census" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
             <h3 class="section">Empadronamiento</h3>
         </div>
         <div class="aes-displayer" id="census-elements">
-            
+            <div class="very-small-table">
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha empadronamiento CAPV</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <h3>01/10/2023</h3>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha empadronamiento TH</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <h3>01/10/2023</h3>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha empadronamiento municipio</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <h3>01/10/2023</h3>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="display-list">
             <img id="cohabitation_home" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
             <h3 class="section">Domicilio convivencial</h3>
         </div>
         <div class="aes-displayer" id="cohabitation_home-elements">
-            
+            <div class="very-small-table">
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Territorio Histórico</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="options">
+                        <div class="option">Araba</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Bizcaia</div>
+                        </div>
+                        <div class="option">Guipuzkoa</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Municipio</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="display-box">
+                        <div>Lezama</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Localidad</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="display-box">
+                        <div>Lezama</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>¿Es una persona sin hogar?</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Calle</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="display-box">
+                        <div>Río Alto</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="flexbox">
+                    <div class="field">
+                        <div class="mandatory-fields">
+                            <div>Número</div>
+                            <div class="asterisk">*</div>
+                        </div>
+                        <div class="small-display-box">
+                            <div>23</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div>Bis</div>
+                        <input class="very-small-textbox" type="text" placeholder="">
+                    </div>
+                    <div class="field">
+                        <div>Piso</div>
+                        <input class="very-small-textbox" type="text" placeholder="2">
+                    </div>
+                </div>
+                <div class="flexbox">
+                    <div class="field">
+                        <div>Puerta</div>
+                        <input class="small-textbox" type="text" placeholder="Izquierda">
+                    </div>
+                    <div class="field">
+                        <div>Código postal</div>
+                        <div class="small-blocked-textbox">48196</div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="flexbox">
+                    <div class="field">
+                        <div>Bloque</div>
+                        <input class="very-small-textbox" type="text" placeholder="">
+                    </div>
+                    <div class="field">
+                        <div>Escalera</div>
+                        <input class="very-small-textbox" type="text" placeholder="">
+                    </div>
+                    <div class="field">
+                        <div>Mano</div>
+                        <input class="very-small-textbox" type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Kilómetro</div>
+                    <input class="very-small-textbox" type="text" placeholder="">
+                </div>
+                <div class="field">
+                    <div>Domicilio no regularizado</div>
+                    <div class="blocked-textbox"></div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Régimen de tendencia</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="display-box">
+                        <div>Vivienda en propiedad</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Nº de habitaciones</div>
+                    <input class="textbox" type="text" placeholder="1">
+                </div>
+                <div class="field">
+                    <div>Nº de personas que conviven</div>
+                    <input class="textbox" type="text" placeholder="1">
+                </div>
+                <div class="field">
+                    <div>Nº de UC</div>
+                    <input class="textbox" type="text" placeholder="1">
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Nº de habitaciones ocupadas por propietario</div>
+                    <input class="textbox" type="text" placeholder="1">
+                </div>
+                <div class="field">
+                    <div>Nº de habitaciones con contrato</div>
+                    <input class="textbox" type="text" placeholder="2">
+                </div>
+                <div></div>
+                <div></div>
+                <div class="field">
+                    <div>Precio mensual</div>
+                    <input class="textbox" type="text" placeholder="700">
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Gastos mensuales intereses y amortización crédito</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="">
+                </div>
+            </div>
         </div>
         <div class="display-list">
             <img id="application-summary" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
             <h3 class="section">Resumen de la solicitud</h3>
         </div>
         <div class="aes-displayer" id="application-summary-elements">
-            
+            <div class="very-small-table">
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha solicitud</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <h3>18/09/1960</h3>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha efecto solicitud</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <h3>18/09/1960</h3>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>¿Es una persona con discapacidad?</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>¿Es una persona con dependencia?</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Víctima de trata, explotación sexual, violencia de género o violencia doméstica</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Tener o adoptar al primer hijo</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Acoger con carácter permanente a una persona menor de edad</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Acoger con carácter permanente a una persona mayor de edad con discapacidad igual o superior al 33% o con dependencia</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Abandono de domicilio habitual por desahucio por impago, procedimiento de ejecución hipotecaria, inhabitabilidad o problemas de accesibilidad</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Especial vulnerabilidad, exclusión o necesaria convivencia en el mismo domicilio</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Pensionista</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Vivienda en propiedad o alquiler</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Relación con arrendador</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Colectividades vascas</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Inscripción en Etxebide</div>
+                    <div class="options">
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Sí</div>
+                        </div>
+                        <div class="option">No</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Excepción inscripción Etxebide</div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Vivienda de protección pública</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Algún beneficiario es perceptor de RGI</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Algún beneficiario es perceptor de PCV</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Algún beneficiario es perceptor de PEV</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Algún beneficiario es perceptor de otras ayudas al alquiler</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Fecha constitución UC</div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <h3>11/12/2023</h3>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Excepción fecha constitución UC</div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>UC monoparental</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="display-list">
             <img id="aid-payment" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
             <h3 class="section">Abono de la ayuda</h3>
         </div>
         <div class="aes-displayer" id="aid-payment-elements">
-            
+            <div class="very-small-table">
+                <div class="field">
+                    <div>Cuenta bancaria</div>
+                    <input class="textbox" type="text" placeholder="ES12 1234 1234 1234 1234 1234">
+                </div>
+            </div>
         </div>
         <div class="display-list">
             <img id="attached-documentation" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
@@ -402,7 +958,41 @@
             <h3 class="section">Generar documentación</h3>
         </div>
         <div class="aes-displayer" id="generate-documentation-elements">
-            
+            <div class="quite-small-table">
+                <div class="first-row">Documento</div>
+                <div class="first-row">Usuario</div>
+                <div class="first-row">Puesto</div>
+                <div class="first-row">Fecha</div>
+                <div class="first-row">Acciones</div>
+                <div class="normal-row">Justificante de recepción de AES</div>
+                <div class="normal-row">Juan García Pérez</div>
+                <div class="normal-row">Trabajador social</div>
+                <div class="normal-row">01/01/2023</div>
+                <div class="normal-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/descargar.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="gray-row">Solicitud AES</div>
+                <div class="gray-row">Marisa Ariza Jimeno</div>
+                <div class="gray-row">Auxiliar administrativo</div>
+                <div class="gray-row">01/01/2023</div>
+                <div class="gray-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/descargar.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+                <div class="normal-row">Requerimiento de subsanación</div>
+                <div class="normal-row">Aritz Ustáriz Rodríguez</div>
+                <div class="normal-row">Auxiliar administrativo</div>
+                <div class="normal-row">01/01/2023</div>
+                <div class="normal-row new-request-actions">
+                    <img loading="lazy" src="./assets/vista.svg">
+                    <img loading="lazy" src="./assets/descargar.svg">
+                    <img loading="lazy" src="./assets/papelera.svg">
+                </div>
+            </div>
+
         </div>
     </main>
     <footer>
