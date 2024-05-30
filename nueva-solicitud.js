@@ -15,12 +15,19 @@ let census = document.getElementById("census");
 let census_elements = document.getElementById("census-elements");
 let census_display = false;
 let edit_person = document.getElementById("edit-person");
-let personal_data_panel = document.getElementById("personal-data-panel");
+let personal_data_panel = document.getElementById("personal-data-panel1");
+let personal_data_close = document.getElementById("personal-data-close");
 
 if(edit_person)
     edit_person.addEventListener("click", function()
     {
         personal_data_panel.style.display = "flex";
+    });
+
+if(personal_data_close)
+    personal_data_close.addEventListener("click", function()
+    {
+        personal_data_panel.style.display = "none";
     });
 
 if(aes_link)

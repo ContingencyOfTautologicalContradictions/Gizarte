@@ -1,12 +1,15 @@
-#personal-data-panel
+#personal-data-panel1
 {
     z-index: 2;
-    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
     display: none;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-width: 100vw;
     max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
     top: 0;
     left: 0;
     background-color: rgba(220, 220, 220, 0.3);
@@ -14,10 +17,37 @@
 
 #personal-data-wrapper
 {
-    overflow-y: scroll;
+    position: fixed;
     background-color: white;
-    min-width: 60vw;
-    max-width: 60vw;
+    min-width: 70vw;
+    max-width: 70vw;
+    padding: 30px;
+}
+
+#personal-data-header
+{
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+#personal-data-close:hover
+{
+    cursor: pointer;
+}
+
+#personal-data-content
+{
+    margin-top: 20px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    min-width: calc(70vw - 60px);
+    max-width: calc(70vw - 60px);
+    row-gap: 30px;
 }
 
 #aes-path
@@ -539,10 +569,7 @@
     border-width: 1px;
     border-color: black;
     border-style: solid;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 10px;
 }
 
 .flexbox
@@ -551,5 +578,14 @@
     justify-content: flex-start;
     gap: 20px;
     align-items: flex-start;
+    flex-direction: row;
+}
+
+.flexbox1
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
     flex-direction: row;
 }

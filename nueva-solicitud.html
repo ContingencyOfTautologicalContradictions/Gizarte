@@ -15,6 +15,362 @@
     <script src="./nueva-solicitud.js" defer></script>
 </head>
 <body>
+    <div id="personal-data-panel1">
+        <div id="personal-data-wrapper">
+            <div id="personal-data-header">
+                <h2>Detalle datos beneficiario</h2>
+                <img id="personal-data-close" loading="lazy" src="./assets/cruz.svg">
+            </div>
+            <div id="personal-data-content">
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Nombre</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="José">
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Primer apellido</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="Aranburu">
+                </div>
+                <div></div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>¿Tiene segundo apellido?</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="options">
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Sí</div>
+                        </div>
+                        <div class="option">No</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Segundo apellido</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="Ruiz">
+                </div>
+                <div></div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Documento identificativo</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="display-box">
+                        <div>DNI</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Número de documento</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="flexbox1">
+                        <input class="small-textbox" type="text" placeholder="69569834P">
+                        <img loading="lazy" src="./assets/correcto.svg">
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha de nacimiento</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="flexbox1">
+                        <div class="calendar">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <div>18/09/1960</div>
+                        </div>
+                        <img loading="lazy" src="./assets/incorrecto.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Sexo</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="options">
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Hombre</div>
+                        </div>
+                        <div class="option">Mujer</div>
+                        <div class="option">Otro</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Estado civil</div>
+                    <div class="display-box">
+                        <div>Soltero</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Custodia compartida</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="option">No</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Parentesco</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="display-box">
+                        <div>Persona de referencia</div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Pensionista</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Vivienda en propiedad o alquiler</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Vivienda de protección pública</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Relación con arrendador</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>¿Es una persona con discapacidad?</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Tipo de discapacidad</div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Grado de discapacidad</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="display-box">
+                        <div></div>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>¿Es una persona con dependencia?</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="options">
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>Hombre</div>
+                        </div>
+                        <div class="option">Mujer</div>
+                        <div class="option">Otro</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Grado de dependencia</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <input class="textbox" type="text" placeholder="">
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>¿Es una víctima de trata, explotación sexual, violencia de género o violencia doméstica?</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha inicio</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div>18/09/1960</div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Tener o adoptar al primer hijo</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha inicio</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div>18/09/1960</div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Acoger con carácter permanente a una persona menor de edad</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha inicio</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div>18/09/1960</div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Acoger con carácter permanente a una persona mayor de edad con discapacidad igual o superior al 33% o con dependencia</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha inicio</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div>18/09/1960</div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Abandono de domicilio habitual por desahucio por impago, procedimiento de ejecución hipotecaria, inhabitabilidad o problemas de accesibilidad</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha inicio</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div>18/09/1960</div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Especial vulnerabilidad, exclusión o necesaria convivencia en el mismo domicilio</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="mandatory-fields">
+                        <div>Fecha inicio</div>
+                        <div class="asterisk">*</div>
+                    </div>
+                    <div class="calendar">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <div>18/09/1960</div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div>Colectividades vascas</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div>Inscripción en Etxebide</div>
+                    <div class="options">
+                        <div class="option">Sí</div>
+                        <div class="selected-option">
+                            <img loading="lazy" src="./assets/afirmativo.svg">
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="header-element">
             <div id="gizarte-logo">
@@ -50,11 +406,6 @@
         </div>
     </header>
     <main>
-        <div id="personal-data-panel">
-            <div id="personal-data-wrapper">
-
-            </div>
-        </div>
         <div id="aes-path">
             <div id="aes-link">AES</div>
             <img loading="lazy" alt="" src="./assets/flecha-derecha.svg">
