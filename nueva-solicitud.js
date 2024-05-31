@@ -17,6 +17,37 @@ let census_display = false;
 let edit_person = document.getElementById("edit-person");
 let personal_data_panel = document.getElementById("personal-data-panel1");
 let personal_data_close = document.getElementById("personal-data-close");
+let personal_data_wrapper = document.getElementById("personal-data-wrapper");
+let add_to_uc = document.getElementById("add-to-uc");
+let uc_rows = document.getElementsByClassName("uc-row");
+let uc_table = document.getElementById("uc-table");
+let uf_table = document.getElementById("uf-table");
+
+if(add_to_uc)
+    add_to_uc.addEventListener("click", function()
+    {
+        Array.from(uc_rows).forEach(element =>
+        {
+            uc_table.innerHTML += '<div class="' + element.className + '">' + element.innerHTML + '</div>';
+            element.className = "";
+            element.innerHTML = "";
+        });
+        add_to_uc.className = "";
+        add_to_uc.innerHTML = "";
+        /*uc_table.innerHTML += '<div class="normal-row new-request-actions"><img loading="lazy" src="./assets/vista.svg"><img id="eliminate-uc" loading="lazy" src="./assets/papelera.svg"></div>';
+        let eliminate_uc = document.getElementById("eliminate-uc");
+        if(eliminate_uc)
+            eliminate_uc.addEventListener("click", function()
+            {
+                let copied_uc_rows = document.getElementsByClassName("uc-row");
+                copied_uc_rows.forEach(element =>
+                {
+                    uf_table.innerHTML += element.innerHTML;
+                    element.innerHTML = "";
+                });
+                uf_table.innerHTML += '<div id="add-to-uc" class="normal-row new-request-actions"><img loading="lazy" src="./assets/más.svg"><div class="aes-option-link">Añadir a UC</div></div>';
+            });*/
+    });
 
 if(edit_person)
     edit_person.addEventListener("click", function()
@@ -28,6 +59,12 @@ if(personal_data_close)
     personal_data_close.addEventListener("click", function()
     {
         personal_data_panel.style.display = "none";
+    });
+
+if(personal_data_wrapper)
+    personal_data_wrapper.addEventListener("click", function()
+    {
+        
     });
 
 if(aes_link)
