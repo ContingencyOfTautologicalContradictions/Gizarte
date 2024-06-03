@@ -207,6 +207,11 @@
     display: none;
 }
 
+.hidden-row
+{
+    display: none;
+}
+
 .table
 {
     margin-top: 3vh;
