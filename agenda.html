@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+    <title>Gizarte - AES</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./agenda.css">
+    <script src="./header.js" defer></script>
+    <script src="./agenda.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-element">
+            <div id="gizarte-logo">
+                <div>Gizarte</div>
+                <div id="gizarte-logo-plus">+</div>
+            </div>
+            <div id="gobierno-vasco-logo">
+                <div>Departamento de Igualdad, Justicia y Políticas sociales</div>
+                <img id="gobierno-vasco-logo-img" loading="lazy" alt="Logo del gobierno vasco" src="./assets/gobierno-vasco-logo.png">
+            </div>
+        </div>
+        <div class="header-element">
+            <div id="links">
+                <div id="inicio">Inicio</div>
+                <div id="aes">AES</div>
+                <div id="censo-personas">Censo de personas</div>
+                <div>Estadísticas e informes</div>
+                <div id="agenda" class="current">
+                    <div>Agenda</div>
+                    <div id="underline"></div>
+                </div>
+                <div>Tareas</div>
+                <div>Campus virtual</div>
+                <div>Administración</div>
+            </div>
+            <div id="icons">
+                <img id="notifications" loading="lazy" alt="Icono de notificaciones" src="./assets/notificaciones.svg">
+                <div id="icons-img">
+                    <img id="settings" loading="lazy" alt="Icono de configuración" src="./assets/configuración.svg">
+                    <img id="profile" loading="lazy" alt="Icono de perfil" src="./assets/perfil.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="agenda-header">
+            <div id="agenda-filters">
+                <div id="agenda-filter">
+                    <div id="agenda-filter-search">
+                        <img id="agenda-filter-search-img" loading="lazy" src="./assets/búsqueda.png">
+                        <input id="agenda-filter-search-txb" type="text" placeholder="Busque citas por documento o nombre">
+                    </div>
+                    <div id="agenda-filter-wrapper">
+                        <img loading="lazy" src="./assets/filtro.svg">
+                        <h4 id="agenda-filter-txt">Filtros</h4>
+                    </div>
+                </div>
+                <div class="field">
+                    <p>Municipio</p>
+                    <div class="display-box">
+                        <p>Lezama</p>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div class="field">
+                    <p>Profesional</p>
+                    <div class="display-box">
+                        <p>Julia Pardo Iriondo</p>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+            </div>
+            <button class="button">
+                <img loading="lazy" src="./assets/plus.svg">
+                <p>Nueva cita</p>
+            </button>
+        </div>
+        <div id="agenda-">
+            <div id="agenda-dates">
+                <div id="agenda-dates-header">
+                    <div id="agenda-date-header">
+                        <div class="agenda-date">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <p>Hoy</p>
+                        </div>
+                        <div class="agenda-date">
+                            <img loading="lazy" src="./assets/flecha-izquierda.svg">
+                            <img loading="lazy" src="./assets/flecha-derecha.svg">
+                        </div>
+                        <p>6 de Marzo de 2024</p>
+                    </div>
+                    <div class="agenda-date">
+                        <img loading="lazy" src="./assets/calendario.svg">
+                        <p id="agenda-date-day">Día</p>
+                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    </div>
+                </div>
+                <div id="agenda-grid">
+                    <div></div>
+                    <p id="agenda-pro">Julia Pardo Iriondo</p>
+                    <p class="agenda-hour">8:00</p>
+                    <div class="agenda-content">
+                        <div class="agenda-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <p>Nueva cita</p>
+                        </div>
+                    </div>
+                    <p class="agenda-hour">9:00</p>
+                    <div class="agenda-content">
+                        <div class="agenda-blued">
+                            <h4>María Jesus Herranz Castro</h4>
+                            <p>Maltrato / Violencia</p>
+                        </div>
+                        <div class="half-agenda-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <p>Nueva cita</p>
+                        </div>
+                    </div>
+                    <p class="agenda-hour">10:00</p>
+                    <div class="agenda-content">
+                        <div class="agenda-red">
+                            <h4>Fuera de oficina</h4>
+                        </div>
+                        <div class="vertical-agenda-blued">
+                            <h4>Nekane Larrainzar Martinez</h4>
+                            <p id="vertical-text">Información / Orientación / Asesoramiento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>>> Aviso Legal</div>
+        <div>&copy; 2023 - Eusko Jaurlaritza - Gobierno Vasco</div>
+    </footer>
+</body>
