@@ -1,3 +1,282 @@
+#agenda-background
+{
+    display: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: rgba(150, 150, 150, 0.70);
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+#agenda-background-panel
+{
+    overflow: scroll;
+    z-index: 1;
+    background-color: var(--neutral-white);
+    min-width: 70vw;
+    max-width: 70vw;
+    min-height: 100%;
+    max-height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#agenda-panel-header
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-family: Roboto;
+}
+
+#agenda-panel-head
+{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: var(--sombra-1);
+    min-width: 90%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.field
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+.margin-top
+{
+    margin-top: 20px;
+}
+
+.asterisk
+{
+    color: red;
+}
+
+#agenda-panel-grid
+{
+    display: grid;
+    min-width: 90%;
+    max-width: 90%;
+    padding: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.flexbox
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.margin-element
+{
+    gap: 20px;
+}
+
+.small-margin-element
+{
+    gap: 10px;
+}
+
+.element
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-width: 100%;
+    max-width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    gap: 5px;
+}
+
+.small-element
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-width: 50%;
+    max-width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    gap: 5px;
+}
+
+.tiny-element
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-width: 25%;
+    max-width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    gap: 5px;
+}
+
+.options
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.selected-option
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: var(--neutral-white);
+    background-color: var(--brand-blue-900-aa);
+    border-radius: 50px;
+    padding: 10px;
+    min-width: 60px;
+}
+
+.option
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: var(--brand-blue-900-aa);
+    background-color: var(--brand-blue-100);
+    border-radius: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    min-width: 60px;
+}
+
+#table
+{
+    min-width: 90%;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.first-row
+{
+    background-color: var(--brand-blue-100);
+    text-align: left;
+    padding: 20px;
+}
+
+.normal-row
+{
+    text-align: left;
+    padding: 20px;
+    border-bottom-color:rgb(203, 200, 186);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: large;
+}
+
+.gray-row
+{
+    background-color: rgba(220, 220, 220, 0.3);
+    text-align: left;
+    padding: 20px;
+    border-bottom-color:rgb(203, 200, 186);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: large;
+}
+
+#agenda-panel-add
+{
+    display: flex;
+    min-width: 90%;
+    max-width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+#create-button
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    border: none;
+    background-color: var(--brand-blue-900-aa);
+    color: white;
+}
+
+.add-button
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--brand-blue-900-aa);
+    color: var(--brand-blue-900-aa);
+}
+
 #agenda-header
 {
     min-width: 90vw;
@@ -50,7 +329,7 @@
 #agenda-filter-search-txb
 {
     border: none;
-    font-family: Robotto;
+    font-family: Roboto;
     font-size: large;
     width: 300px;
 }
@@ -177,11 +456,11 @@
     min-width: 63vw;
     max-width: 63vw;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     row-gap: 0;
 }
 
-#agenda-pro
+.agenda-pro
 {
     font-family: Roboto;
     font-weight: lighter;
@@ -268,7 +547,7 @@
     align-items: center;
     flex-direction: row;
     border-color: red;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
 }
 
@@ -412,4 +691,13 @@ p
     color: white;
     background-color: var(--brand-blue-900-aa);
     border-radius: 50%;
+}
+
+#agenda-hidden
+{
+    display: none;
+    min-width: 63vw;
+    max-width: 63vw;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    row-gap: 0;
 }
