@@ -506,6 +506,22 @@
     flex-direction: row;
 }
 
+.big-agenda-dotted
+{
+    width: 100%;
+    min-height: 125%;
+    border-color: var(--brand-blue-900-aa);
+    border-width: 2px;
+    border-style: dashed;
+    background-color: var(--brand-blue-100);
+    color: var(--brand-blue-900-aa);
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+}
+
 .half-agenda-dotted
 {
     width: 100%;
@@ -551,6 +567,35 @@
     border-style: solid;
 }
 
+.big-agenda-red
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: red;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.big-agenda-blued
+{
+    width: 100%;
+    min-height: 200%;
+    background-color: var(--brand-blue-900-aa);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+
 .vertical-agenda-blued
 {
     width: 100%;
@@ -576,6 +621,35 @@
     color: gray;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.small-unavailable
+{
+    text-align: start;
+    padding-top: 10%;
+    margin-top: 10%;
+    width: 100%;
+    height: 75%;
+    background-color: lightgray;
+    color: gray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nsmall-unavailable
+{
+    text-align: start;
+    margin-top: -6%;
+    width: 100%;
+    height: 75%;
+    background-color: lightgray;
+    color: gray;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+    <title>Gizarte - Inicio</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./fusionar-persona.css">
+    <script src="./header.js" defer></script>
+    <script src="./fusionar-persona.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-element">
+            <div id="gizarte-logo">
+                <div>Gizarte</div>
+                <div id="gizarte-logo-plus">+</div>
+            </div>
+            <div id="gobierno-vasco-logo">
+                <div>Departamento de Igualdad, Justicia y Políticas sociales</div>
+                <img id="gobierno-vasco-logo-img" loading="lazy" alt="Logo del gobierno vasco" src="./assets/gobierno-vasco-logo.png">
+            </div>
+        </div>
+        <div class="header-element">
+            <div id="links">
+                <div id="inicio">Inicio</div>
+                <div id="aes">AES</div>
+                <div id="censo-personas" class="current">
+                    <div>Censo de personas</div>
+                    <div id="underline"></div>
+                </div>
+                <div>Estadísticas e informes</div>
+                <div id="agenda">Agenda</div>
+                <div>Tareas</div>
+                <div>Campus virtual</div>
+                <div>Administración</div>
+            </div>
+            <div id="icons">
+                <img id="notifications" loading="lazy" alt="Icono de notificaciones" src="./assets/notificaciones.svg">
+                <div id="icons-img">
+                    <img id="settings" loading="lazy" alt="Icono de configuración" src="./assets/configuración.svg">
+                    <img id="profile" loading="lazy" alt="Icono de perfil" src="./assets/perfil.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="fusion-hidden">
+
+        </div>
+        <div id="path">
+            <div id="inicio-link">Censo de personas</div>
+            <img loading="lazy" alt="" src="./assets/flecha-derecha.svg">
+            <div id="fusion-person-path">Fusionar personas</div>
+        </div>
+        <h1 id="fusion-person-text">Fusionar personas</h1>
+        <div id="fusion-person-line">
+            <p>Compare los datos de las personas a fusionar navegando por las pestañas y <b>marque</b> los que considere correctos. Cuando termine, pulse <b>Fusionar personas.</b></p>
+        </div>
+        <div class="person-sections">
+            <button class="selected-person-control">
+                <img loading="lazy" src="./assets/persona.svg">
+                <div>Persona</div>
+            </button>
+            <button class="person-control">
+                <img loading="lazy" src="./assets/casa.svg">
+                <div>Domicilio y Unidad Familiar</div>
+            </button>
+            <button class="person-control">
+                <img loading="lazy" src="./assets/documento.svg">
+                <div>Ficha Social</div>
+            </button>
+            <button class="person-control">
+                <img loading="lazy" src="./assets/intercambio.svg">
+                <div>Historial social</div>
+            </button>
+            <button class="person-control">
+                <img loading="lazy" src="./assets/carpeta.svg">
+                <div>Documentación</div>
+            </button>
+        </div>
+        <div class="person-fields-class">
+            <div class="selected-person-control-option">Datos personales</div>
+            <div class="person-control-option">Datos avanzados</div>
+            <div class="person-control-option">Observaciones</div>
+        </div>
+        <div id="fusion">
+            <div class="fusion-grid">
+                <div class="lightgray-row fusion-title element">Persona 1</div>
+                <div class="checkbox lightgray-row fusion-end">
+                    <input class="cb" type="checkbox">
+                    <p class="fusion-element">Seleccionar todo</p>
+                </div>
+                <div class="checkbox blue-row">
+                    <input class="cb" type="checkbox" checked>
+                    <p class="fusion-element">ID Persona Gizarte+</p>
+                </div>
+                <div class="fusion-element blue-row">
+                    <h4 class="fusion-end">90987654</h4>
+                </div>
+                <div class="checkbox normal-row">
+                    <input class="cb" type="checkbox">
+                    <p class="fusion-element">Nombre</p>
+                </div>
+                <div class="fusion-element normal-row">
+                    <h4 class="fusion-end">María</h4>
+                </div>
+                <div class="checkbox blue-row">
+                    <input class="cb" type="checkbox" checked>
+                    <p class="fusion-element">Primer apellido</p>
+                </div>
+                <div class="fusion-element blue-row">
+                    <h4 class="fusion-end">Gómez</h4>
+                </div>
+                <div class="checkbox normal-row">
+                    <input class="cb" type="checkbox">
+                    <p class="fusion-element">¿Tiene segundo apellido?</p>
+                </div>
+                <div class="fusion-element normal-row">
+                    <h4 class="fusion-end">No</h4>
+                </div>
+                <div class="checkbox normal-row">
+                    <input class="cb" type="checkbox">
+                    <p class="fusion-element">Segundo apellido</p>
+                </div>
+                <div class="fusion-element normal-row">
+                    <h4 class="fusion-end">No disponible</h4>
+                </div>
+                <div class="checkbox blue-row">
+                    <input class="cb" type="checkbox" checked>
+                    <p class="fusion-element">Documento identificativo</p>
+                </div>
+                <div class="fusion-element blue-row">
+                    <h4 class="fusion-end">DNI</h4>
+                </div>
+                <div class="checkbox blue-row">
+                    <input class="cb" type="checkbox" checked>
+                    <p class="fusion-element">Número de documento</p>
+                </div>
+                <div class="fusion-element blue-row">
+                    <h4 class="fusion-end">89445667K</h4>
+                </div>
+            </div>
+            <div class="fusion-grid">
+                <div class="lightgray-row fusion-title element">Persona 2</div>
+                <div class="checkbox lightgray-row fusion-end">
+                    <input class="cb" type="checkbox">
+                    <p class="fusion-element">Seleccionar todo</p>
+                </div>
+                <div class="checkbox normal-row">
+                    <input class="cb" type="checkbox">
+                    <p class="fusion-element">ID Persona Gizarte+</p>
+                </div>
+                <div class="fusion-element normal-row">
+                    <h4 class="fusion-end">64321233</h4>
+                </div>
+                <div class="checkbox blue-row">
+                    <input class="cb" type="checkbox" checked>
+                    <p class="fusion-element">Nombre</p>
+                </div>
+                <div class="fusion-element blue-row">
+                    <h4 class="fusion-end">María Cristina</h4>
+                </div>
+                <div class="checkbox normal-row">
+                    <input class="cb" type="checkbox">
+                    <p class="fusion-element">Primer apellido</p>
+                </div>
+                <div class="fusion-element normal-row">
+                    <h4 class="fusion-end">Gómez</h4>
+                </div>
+                <div class="checkbox blue-row">
+                    <input class="cb" type="checkbox" checked>
+                    <p class="fusion-element">¿Tiene segundo apellido?</p>
+                </div>
+                <div class="fusion-element blue-row">
+                    <h4 class="fusion-end">Sí</h4>
+                </div>
+                <div class="checkbox blue-row">
+                    <input class="cb" type="checkbox" checked>
+                    <p class="fusion-element">Segundo apellido</p>
+                </div>
+                <div class="fusion-element blue-row">
+                    <h4 class="fusion-end">Sanz</h4>
+                </div>
+                <div class="checkbox normal-row">
+                    <input class="cb" type="checkbox">
+                    <p class="fusion-element">Documento identificativo</p>
+                </div>
+                <div class="fusion-element normal-row">
+                    <h4 class="fusion-end">DNI</h4>
+                </div>
+                <div class="checkbox normal-row">
+                    <input class="cb" type="checkbox">
+                    <p class="fusion-element">Nº de documento</p>
+                </div>
+                <div class="fusion-element normal-row">
+                    <h4 class="fusion-end">No disponible</h4>
+                </div>
+            </div>
+        </div>
+        <div id="fusion-controls">
+            <div id="fusion-controls-head">
+                <button id="selected-fusion-action">Fusionar personas</button>
+                <button class="fusion-action">Guardar cambios</button>
+            </div>
+            <button class="fusion-action">Cancelar</button>
+        </div>
+    </main>
+    <footer>
+        <div>>> Aviso Legal</div>
+        <div>&copy; 2023 - Eusko Jaurlaritza - Gobierno Vasco</div>
+    </footer>
+</body>
+</html>

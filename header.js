@@ -18,7 +18,7 @@ if(aes)
 if(censo_personas)
     censo_personas.addEventListener("click", function(e)
     {
-        window.location.href = "./censo-personas-fusionar.html";
+        window.location.href = "./fusionar-persona.html";
     });
 
 if(agenda)
