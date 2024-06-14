@@ -402,6 +402,7 @@ if(documentation)
         add_if_not_exists(social_record, "person-control");
         remove_if_exists(social_history, "person-control");
         add_if_not_exists(social_history, "selected-person-control");
+        //remove_if_exists(in);
         remove_if_exists(documentation, "person-control-option");
         add_if_not_exists(documentation, "selected-person-control-option");
         person_fields.style.display = "none";

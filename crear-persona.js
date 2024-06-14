@@ -1,12 +1,12 @@
 let inicio_link = document.getElementById("inicio-link");
 let personal_data_arrow = document.getElementById("personal-data-arrow");
-let personal_data_elements = document.getElementsByClassName("personal-data");
+let personal_data_elements = document.getElementById("personal-data");
 let registration_data_arrow = document.getElementById("registration-data-arrow");
-let registration_data_elements = document.getElementsByClassName("registration-data");
+let registration_data_elements = document.getElementById("registration-data");
 let cohabitation_home_arrow = document.getElementById("cohabitation-home-arrow");
-let cohabitation_home_elements = document.getElementsByClassName("cohabitation-home");
+let cohabitation_home_elements = document.getElementById("cohabitation-home");
 let other_information_arrow = document.getElementById("other-information-arrow");
-let other_information_elements = document.getElementsByClassName("other-information");
+let other_information_elements = document.getElementById("other-information");
 let display_personal_data = true;
 let display_registration_data = true;
 let display_cohabitation_home = true;
@@ -27,15 +27,13 @@ if(personal_data_arrow)
         {
             display_personal_data = false;
             personal_data_arrow.style.transform = "rotate(180deg)";
-            for(let personal_data of personal_data_elements)
-                personal_data.style.display = "none";
+            personal_data_elements.style.display = "none";
         }
         else
         {
             display_personal_data = true;
             personal_data_arrow.style.transform = "rotate(0deg)";
-            for(let personal_data of personal_data_elements)
-                personal_data.style.display = "flex";
+            personal_data_elements.style.display = "grid";
         }
     });
 
@@ -46,15 +44,13 @@ if(registration_data_arrow)
         {
             display_registration_data = false;
             registration_data_arrow.style.transform = "rotate(180deg)";
-            for(let registration_data of registration_data_elements)
-                registration_data.style.display = "none";
+            registration_data_elements.style.display = "none";
         }
         else
         {
             display_registration_data = true;
             registration_data_arrow.style.transform = "rotate(0deg)";
-            for(let registration_data of registration_data_elements)
-                registration_data.style.display = "flex";
+            registration_data_elements.style.display = "grid";
         }
     });
 
@@ -65,15 +61,13 @@ if(cohabitation_home_arrow)
         {
             display_cohabitation_home = false;
             cohabitation_home_arrow.style.transform = "rotate(180deg)";
-            for(let cohabitation_home of cohabitation_home_elements)
-                cohabitation_home.style.display = "none";
+            cohabitation_home_elements.style.display = "none";
         }
         else
         {
             display_cohabitation_home = true;
             cohabitation_home_arrow.style.transform = "rotate(0deg)";
-            for(let cohabitation_home of cohabitation_home_elements)
-                cohabitation_home.style.display = "flex";
+            cohabitation_home_elements.style.display = "grid";
         }
     });
 
@@ -84,15 +78,13 @@ if(other_information_arrow)
         {
             display_other_information = false;
             other_information_arrow.style.transform = "rotate(180deg)";
-            for(let other_information of other_information_elements)
-                other_information.style.display = "none";
+            other_information_elements.style.display = "none";
         }
         else
         {
             display_other_information = true;
             other_information_arrow.style.transform = "rotate(0deg)";
-            for(let other_information of other_information_elements)
-                other_information.style.display = "flex";
+            other_information_elements.style.display = "grid";
         }
     });
 

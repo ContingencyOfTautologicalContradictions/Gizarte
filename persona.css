@@ -1,3 +1,19 @@
+.open-sans
+{
+    font-family: "Open sans";
+}
+
+.small
+{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.normal
+{
+    font-size: 16px;
+}
+
 #change-history-background
 {
     display: none;

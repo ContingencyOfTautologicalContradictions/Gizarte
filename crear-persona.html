@@ -55,111 +55,108 @@
             <img loading="lazy" alt="" src="./assets/flecha-derecha.svg">
             <div id="create-person-path">Crear persona</div>
         </div>
-        <h1 id="create-person-text">Crear persona</h1>
+        <h1 class="open-sans" id="create-person-text">Crear persona</h1>
         <div id="mandatory-fields">
-            <div>Los campos marcados con (</div>
-            <div class="asterisk">*</div>
-            <div>) son obligatorios.</div>
+            <div class="open-sans small">Los campos marcados con (</div>
+            <div class="asterisk open-sans small">*</div>
+            <div class="open-sans small">) son obligatorios.</div>
         </div>
         <div class="display-list">
             <img id="personal-data-arrow" loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
             <h3 class="section">Datos personales</h3>
         </div>
-        <div class="personal-data line">
+        <div id="personal-data">
             <div class="field">
                 <div class="mandatory">
-                    <div>Nombre</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Nombre</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
-                <input class="textbox" type="text" placeholder="José">
+                <input class="textbox open-sans normal" type="text" placeholder="José">
             </div>
             <div class="field">
                 <div class="mandatory">
-                    <div>Primer apellido</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Primer apellido</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
-                <input class="textbox" type="text" placeholder="Aranburu">
+                <input class="textbox open-sans normal" type="text" placeholder="Aranburu">
             </div>
             <div class="field">
                 <div class="mandatory">
-                    <div>¿Tiene segundo apellido?</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">¿Tiene segundo apellido?</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="options">
                     <div class="selected-option">
                         <img loading="lazy" src="./assets/afirmativo.svg">
-                        <div>Sí</div>
+                        <div class="open-sans normal">Sí</div>
                     </div>
-                    <div class="option">No</div>
+                    <div class="option open-sans normal">No</div>
                 </div>
             </div>
             <div class="field">
                 <div class="mandatory">
-                    <div>Segundo apellido</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Segundo apellido</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
-                <input class="textbox" type="text" placeholder="Ruiz">
+                <input class="textbox open-sans normal" type="text" placeholder="Ruiz">
             </div>
-        </div>
-        <div class="personal-data line">
             <div class="field">
                 <div class="mandatory">
-                    <div>Documento identificativo</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Documento identificativo</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="display-box">
-                    <div>DNI</div>
-                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    <div class="open-sans normal">DNI</div>
+                    <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
                 </div>
             </div>
-            <div id="document-number" class="field">
+            <div class="field">
                 <div class="mandatory">
-                    <div>Número de documento</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Número de documento</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="textbox-image">
-                    <input class="no-textbox" type="text" placeholder="69569834P">
+                    <input class="no-textbox open-sans normal" type="text" placeholder="69569834P">
                     <img loading="lazy" src="./assets/correcto.svg">
                 </div>
             </div>
-            <div id="date-birth" class="field">
+            <div class="field">
                 <div class="mandatory">
-                    <div>Fecha de nacimiento</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Fecha de nacimiento</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="textbox-image">
                     <div class="calendar">
                         <img loading="lazy" src="./assets/calendario.svg">
-                        <div>18/09/1960</div>
+                        <div class="open-sans normal">18/09/1960</div>
                     </div>
                     <img loading="lazy" src="./assets/incorrecto.svg">
                 </div>
             </div>
-        </div>
-        <div class="personal-data line">
+            <div></div>
             <div class="field">
-                <div>Número de tarjeta sanitaria</div>
-                <input class="no-textbox" type="text" placeholder="09787654">
+                <div class="open-sans small">Número de tarjeta sanitaria</div>
+                <input class="no-textbox open-sans normal" type="text" placeholder="09787654">
             </div>
-            <div id="sexo" class="field">
+            <div class="field">
                 <div class="mandatory">
-                    <div>Sexo</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Sexo</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="options">
                     <div class="selected-option">
                         <img loading="lazy" src="./assets/afirmativo.svg">
-                        <div>Hombre</div>
+                        <div class="open-sans normal">Hombre</div>
                     </div>
-                    <div class="option">Mujer</div>
-                    <div class="option">Otro</div>
+                    <div class="option open-sans normal">Mujer</div>
+                    <div class="option open-sans normal">Otro</div>
                 </div>
             </div>
             <div class="field">
-                <div>Estado civil</div>
+                <div class="open-sans small">Estado civil</div>
                 <div class="display-box">
-                    <div>Soltero</div>
-                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    <div class="open-sans normal">Soltero</div>
+                    <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
                 </div>
             </div>
         </div>
@@ -167,29 +164,29 @@
             <img id="registration-data-arrow" loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
             <h3 class="section">Datos de empadronamiento</h3>
         </div>
-        <div class="registration-data line">
+        <div id="registration-data">
             <div class="field">
-                <div>Fecha empadronamiento CAPV</div>
+                <div class="open-sans small">Fecha empadronamiento CAPV</div>
                 <div class="calendar">
                     <img loading="lazy" src="./assets/calendario.svg">
-                    <div>18/09/1960</div>
+                    <div class="open-sans normal">18/09/1960</div>
                 </div>
             </div>
-            <div id="registration-data-th" class="field">
-                <div>Fecha empadronamiento TH</div>
+            <div class="field">
+                <div class="open-sans small">Fecha empadronamiento TH</div>
                 <div class="calendar">
                     <img loading="lazy" src="./assets/calendario.svg">
-                    <div>18/09/1960</div>
+                    <div class="open-sans normal">18/09/1960</div>
                 </div>
             </div>
-            <div id="registration-data-municipality" class="field">
+            <div class="field">
                 <div class="mandatory">
-                    <div>Fecha empadronamiento municipio</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Fecha empadronamiento municipio</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="calendar">
                     <img loading="lazy" src="./assets/calendario.svg">
-                    <div>18/09/1960</div>
+                    <div class="open-sans normal">18/09/1960</div>
                 </div>
             </div>
         </div>
@@ -197,122 +194,124 @@
             <img id="cohabitation-home-arrow" loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
             <h3 class="section">Domicilio convivencial</h3>
         </div>
-        <div class="cohabitation-home line">
+        <div id="cohabitation-home">
             <div class="field">
-                <div class="mandatory">
+                <div class="mandatory open-sans small">
                     <div>Territorio Histórico</div>
-                    <div class="asterisk">*</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="options">
-                    <div class="option">Araba</div>
+                    <div class="option open-sans normal">Araba</div>
                     <div class="selected-option">
                         <img loading="lazy" src="./assets/afirmativo.svg">
-                        <div>Bizcaia</div>
+                        <div class="open-sans normal">Bizcaia</div>
                     </div>
-                    <div class="option">Guipuzkoa</div>
-                </div>
-            </div>
-            <div id="municipality" class="field">
-                <div class="mandatory">
-                    <div>Municipio</div>
-                    <div class="asterisk">*</div>
-                </div>
-                <div class="display-box">
-                    <div>Lezama</div>
-                    <img loading="lazy" src="./assets/flecha-abajo.svg">
-                </div>
-            </div>
-            <div id="location" class="field">
-                <div class="mandatory">
-                    <div>Localidad</div>
-                    <div class="asterisk">*</div>
-                </div>
-                <div class="display-box">
-                    <div>Lezama</div>
-                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    <div class="option open-sans normal">Guipuzkoa</div>
                 </div>
             </div>
             <div class="field">
                 <div class="mandatory">
-                    <div>¿Es una persona sin hogar?</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Municipio</div>
+                    <div class="asterisk open-sans small">*</div>
+                </div>
+                <div class="display-box">
+                    <div class="open-sans normal">Lezama</div>
+                    <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
+                </div>
+            </div>
+            <div class="field">
+                <div class="mandatory">
+                    <div class="open-sans small">Localidad</div>
+                    <div class="asterisk open-sans small">*</div>
+                </div>
+                <div class="display-box">
+                    <div class="open-sans normal">Lezama</div>
+                    <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
+                </div>
+            </div>
+            <div class="field">
+                <div class="mandatory">
+                    <div class="open-sans small">¿Es una persona sin hogar?</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="options">
-                    <div class="option">Sí</div>
+                    <div class="option open-sans normal">Sí</div>
                     <div class="selected-option">
                         <img loading="lazy" src="./assets/afirmativo.svg">
-                        <div>No</div>
+                        <div class="open-sans normal">No</div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="cohabitation-home line">
             <div class="field">
                 <div class="mandatory">
-                    <div>Fecha inicio</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Fecha inicio</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="calendar">
                     <img loading="lazy" src="./assets/calendario.svg">
-                    <div>12/03/2024</div>
+                    <div class="open-sans normal">12/03/2024</div>
                 </div>
             </div>
-            <div id="street" class="field">
+            <div class="field">
                 <div class="mandatory">
-                    <div>Calle</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Calle</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="display-box">
-                    <div>Río Alto</div>
-                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    <div class="open-sans normal">Río Alto</div>
+                    <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
                 </div>
             </div>
-            <div id="number" class="field">
-                <div class="mandatory">
-                    <div>Número</div>
-                    <div class="asterisk">*</div>
+            <div class="flexbox">
+                <div class="field">
+                    <div class="mandatory">
+                        <div class="open-sans small">Número</div>
+                        <div class="asterisk open-sans small">*</div>
+                    </div>
+                    <div class="small-display-box">
+                        <div class="open-sans normal">23</div>
+                        <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
+                    </div>
                 </div>
-                <div class="small-display-box">
-                    <div>23</div>
-                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                <div class="field">
+                    <div class="open-sans small">Bis</div>
+                    <input class="small-textbox" type="text" placeholder="">
+                </div>
+                <div class="field">
+                    <div class="open-sans small">Piso</div>
+                    <input class="small-textbox open-sans normal" type="text" placeholder="2">
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="field">
+                    <div class="open-sans small">Puerta</div>
+                    <input class="textbox open-sans normal" type="text" placeholder="Izquierda">
+                </div>
+                <div class="field">
+                    <div class="open-sans small">Código postal</div>
+                    <input class="small-blocked-textbox open-sans normal" type="text" placeholder="48196">
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="field">
+                    <div class="open-sans small">Bloque</div>
+                    <input class="small-textbox" type="text" placeholder="">
+                </div>
+                <div class="field">
+                    <div class="open-sans small">Escalera</div>
+                    <input class="small-textbox" type="text" placeholder="">
+                </div>
+                <div class="field">
+                    <div class="open-sans small">Mano</div>
+                    <input class="small-textbox" type="text" placeholder="">
                 </div>
             </div>
             <div class="field">
-                <div>Bis</div>
+                <div class="open-sans small">Kilómetro</div>
                 <input class="small-textbox" type="text" placeholder="">
             </div>
             <div class="field">
-                <div>Piso</div>
-                <input class="small-textbox" type="text" placeholder="2">
-            </div>
-            <div class="field">
-                <div>Puerta</div>
-                <input class="textbox" type="text" placeholder="Izquierda">
-            </div>
-            <div class="field">
-                <div>Código postal</div>
-                <input class="small-blocked-textbox" type="text" placeholder="48196">
-            </div>
-        </div>
-        <div class="cohabitation-home line">
-            <div class="field">
-                <div>Bloque</div>
-                <input class="small-textbox" type="text" placeholder="">
-            </div>
-            <div class="field">
-                <div>Escalera</div>
-                <input class="small-textbox" type="text" placeholder="">
-            </div>
-            <div class="field">
-                <div>Mano</div>
-                <input class="small-textbox" type="text" placeholder="">
-            </div>
-            <div class="field">
-                <div>Kilómetro</div>
-                <input class="small-textbox" type="text" placeholder="">
-            </div>
-            <div id="unregularized-home" class="field">
-                <div>Domicilio no regularizado</div>
+                <div class="open-sans small">Domicilio no regularizado</div>
                 <input class="blocked-textbox" type="text" placeholder="">
             </div>
         </div>
@@ -320,34 +319,34 @@
             <img id="other-information-arrow" loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
             <h3 class="section">Otra información</h3>
         </div>
-        <div class="other-information line">
+        <div id="other-information">
             <div class="field">
                 <div class="mandatory">
-                    <div>Número de referencia</div>
-                    <div class="asterisk">*</div>
+                    <div class="open-sans small">Número de referencia</div>
+                    <div class="asterisk open-sans small">*</div>
                 </div>
                 <div class="display-box">
-                    <div>Julia Pardo Iriondo</div>
-                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    <div class="open-sans small">Julia Pardo Iriondo</div>
+                    <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
                 </div>
             </div>
             <div class="field">
-                <div>Número de expediente municipal</div>
-                <input class="textbox" type="text" placeholder="83838783787">
+                <div class="open-sans small">Número de expediente municipal</div>
+                <input class="textbox open-sans normal" type="text" placeholder="83838783787">
             </div>
             <div class="field">
-                <div>Consentimiento informado</div>
+                <div class="open-sans small">Consentimiento informado</div>
                 <div class="options">
                     <div class="selected-option">
                         <img loading="lazy" src="./assets/afirmativo.svg">
-                        <div>Sí</div>
+                        <div class="open-sans small">Sí</div>
                     </div>
-                    <div class="option">No</div>
+                    <div class="option open-sans small">No</div>
                 </div>
             </div>
             <div id="download">
                 <img loading="lazy" alt="Icono de descarga" src="./assets/descargar.svg">
-                <div>Descargar documento</div>
+                <div class="open-sans small">Descargar documento</div>
             </div>
         </div>
         <div id="resolution">

@@ -62,7 +62,6 @@
     color: var(--neutral-white);
     background-color: var(--brand-blue-900-aa);
     font-size: medium;
-    width: 150px;
     border: none;
     border-radius: 10px;
     margin-left: 10px;
@@ -82,7 +81,6 @@
     color: var(--brand-blue-900-aa);
     background-color: var(--neutral-white);
     font-size: medium;
-    width: 150px;
     border-style: solid;
     border-width: 2px;
     border-color: var(--brand-blue-900-aa);
