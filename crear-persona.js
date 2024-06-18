@@ -13,6 +13,22 @@ let display_cohabitation_home = true;
 let display_other_information = true;
 let create_person = document.getElementById("create-person");
 let cancel_creation = document.getElementById("cancel-creation");
+let document_number_correct = document.getElementById("correct-display");
+let correct_panel = document.getElementById("correct-panel");
+
+if(document_number_correct)
+    document_number_correct.addEventListener("click", () =>
+    {
+        document_number_correct.style.display = "none";
+        correct_panel.style.display = "flex";
+    });
+
+if(correct_panel)
+    correct_panel.addEventListener("click", () =>
+    {
+        correct_panel.style.display = "none";
+        document_number_correct.style.display = "inline";
+    });
 
 if(inicio_link)
     inicio_link.addEventListener("click", function(e)

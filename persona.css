@@ -14,6 +14,23 @@
     font-size: 16px;
 }
 
+.bold
+{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.separate
+{
+    margin-top: 30px;
+}
+
+input::placeholder
+{
+    font-family: "Open sans";
+    font-size: 14px;
+}
+
 #change-history-background
 {
     display: none;
@@ -23,21 +40,31 @@
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: auto;
+    padding-bottom: 100px;
 }
 
 #change-history-panel
 {
-    overflow: scroll;
+    margin-top: 30px;
+    overflow-x: hidden;
+    overflow-y: scroll;
     z-index: 1;
     background-color: var(--neutral-white);
-    min-width: 90vw;
-    max-width: 90vw;
-    padding: 20px;
+    min-width: 80vw;
+    max-width: 80vw;
+    min-height: 100%;
+    max-height: 100%;
+    padding: 50px;
     border-radius: 10px;
+}
+
+#change-history-close:hover
+{
+    cursor: pointer;
 }
 
 #change-history-head
@@ -48,16 +75,13 @@
     flex-direction: row;
 }
 
-#change-history-close
+#history-grid
 {
-    font-size: x-large;
-    color: darkgray;
-    font-family: var(--font-montserrat);
-}
-
-#change-history-close:hover
-{
-    cursor: pointer;
+    min-width: 90%;
+    max-width: 90%;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .line
@@ -109,6 +133,7 @@
     border-color: black;
     border-style: solid;
     padding: 10px;
+    min-width: 120px;
 }
 
 #actions
@@ -266,6 +291,21 @@
     border-width: 1px;
 }
 
+.small-display-list
+{
+    min-width: 90%;
+    max-width: 90%;
+    margin-top: 4vh;
+    padding-left: 5px;
+    background-color: rgba(220, 220, 220, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+}
+
 .display-list
 {
     min-width: 90vw;
@@ -299,7 +339,6 @@
 
 #censo-personas-link
 {
-    font-size: large;
     color: var(--brand-blue-900-aa);
     text-decoration-line: underline;
     text-decoration-color: var(--brand-blue-900-aa);
@@ -317,6 +356,7 @@
 
 #person-info
 {
+    margin-top: 20px;
     background-color: white;
     min-width: 90vw;
     max-width: 90vw;
@@ -336,7 +376,7 @@
 {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     gap: 20px;
 }
@@ -351,6 +391,7 @@
     color: var(--brand-blue-900-aa);
     text-decoration-line: underline;
     text-decoration-color: var(--brand-blue-900-aa);
+    gap: 5px;
 }
 
 #change-history:hover
@@ -368,6 +409,7 @@
     color: red;
     text-decoration-line: underline;
     text-decoration-color: red;
+    gap: 5px;
 }
 
 #cancel-person:hover
@@ -869,7 +911,6 @@
     color: var(--neutral-white);
     background-color: var(--brand-blue-900-aa);
     font-size: medium;
-    width: 200px;
     border: none;
     border-radius: 10px;
     margin-left: 10px;
@@ -899,12 +940,10 @@
     color: var(--brand-blue-900-aa);
     background-color: var(--neutral-white);
     font-size: medium;
-    min-width: 250px;
     border-style: solid;
     border-width: 2px;
     border-color: var(--brand-blue-900-aa);
     border-radius: 10px;
-    margin-left: 10px;
     margin-left: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1017,9 +1056,10 @@
 
 #home-and-uf-history
 {
-    justify-self: flex-end;
+    min-width: 90vw;
+    max-width: 90vw;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row;
     color: var(--brand-blue-900-aa);
@@ -1087,4 +1127,41 @@
     width: 15px;
     height: 15px;
     object-fit: cover;
+}
+
+#correct-display:hover
+{
+    cursor: pointer;
+}
+
+#correct-panel
+{
+    display: none;
+    background-color: rgb(66, 65, 65);
+    position: absolute;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+}
+
+#correct-panel:hover
+{
+    cursor: pointer;
+}
+
+.correct-title
+{
+    font-size: 15px;
+}
+
+.correct-text
+{
+    color: white;
 }
