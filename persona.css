@@ -208,11 +208,43 @@ input::placeholder
     border-width: 1px;
 }
 
+#new-aes-container
+{
+    margin-top: 30px;
+    min-width: 90vw;
+    max-width: 90vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.new-aes
+{
+    color: var(--neutral-white);
+    background-color: var(--brand-blue-900-aa);
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
 .first-row
 {
     background-color: var(--brand-blue-100);
     text-align: center;
     padding: 20px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .warning-row
@@ -313,6 +345,55 @@ input::placeholder
     margin-top: 4vh;
     padding-left: 5px;
     background-color: rgba(220, 220, 220, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.info-logo
+{
+    width: 24px;
+    height: 24px;
+}
+
+.mono-display-list
+{
+    min-width: 85vw;
+    max-width: 85vw;
+    margin-top: 4vh;
+    padding-left: 5px;
+    background-color: rgba(220, 220, 220, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.padded-display-list
+{
+    min-width: 90vw;
+    max-width: 90vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.white-display-list
+{
+    min-width: 90vw;
+    max-width: 90vw;
+    margin-top: 4vh;
+    padding-left: 5px;
+    border-color: rgba(108, 108, 108, 0.3);
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
@@ -583,12 +664,13 @@ input::placeholder
 
 .data-displayer
 {
-    margin-top: 2vh;
+    margin-top: 30px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     min-width: 90vw;
     max-width: 90vw;
     row-gap: 30px;
+    column-gap: 30px;
 }
 
 .mandatory
@@ -1088,6 +1170,16 @@ input::placeholder
     object-fit: cover;
 }
 
+.mildly-separated-flexbox
+{
+    min-width: 90vw;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .separated-flexbox
 {
     padding-right: 40px;
@@ -1134,6 +1226,55 @@ input::placeholder
     cursor: pointer;
 }
 
+.info-logo:hover
+{
+    cursor: pointer;
+}
+
+#information-displayer
+{
+    display: none;
+    background-color: rgb(66, 65, 65);
+    position: absolute;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+}
+
+#information-displayer:hover
+{
+    cursor: pointer;
+}
+
+#information-displayer1
+{
+    display: none;
+    background-color: rgb(66, 65, 65);
+    position: absolute;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+}
+
+#information-displayer1:hover
+{
+    cursor: pointer;
+}
+
 #correct-panel
 {
     display: none;
@@ -1164,4 +1305,41 @@ input::placeholder
 .correct-text
 {
     color: white;
+}
+
+.doc-flexbox
+{
+    min-width: 90vw;
+    max-width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.doc-table
+{
+    min-width: 90vw;
+    max-width: 90vw;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr auto 1fr;
+    overflow: hidden;
+    border-color:rgb(203, 200, 186);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.checkbox
+{
+    min-width: 25px;
+    min-height: 25px;
+}
+
+#maximum
+{
+    padding-left: 10px;
+    border-left-color: var(--brand-blue-900-aa);
+    border-left-style: solid;
+    border-left-width: 1px;
 }
