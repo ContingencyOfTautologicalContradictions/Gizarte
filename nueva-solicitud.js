@@ -22,6 +22,21 @@ let add_uc = document.getElementById("add-to-uc");
 let eliminate_uc = document.getElementById("eliminate-uc-rows");
 let visible_row = document.getElementsByClassName("visible-row");
 let hidden_row = document.getElementsByClassName("hidden-row");
+let guide_displayer = document.getElementById("guide");
+let guide = document.getElementById("guide-background");
+let guide_close = document.getElementById("guide-close");
+
+if(guide_displayer)
+    guide_displayer.addEventListener("click", () =>
+    {
+        guide.style.display = "flex";
+    });
+
+if(guide_close)
+    guide_close.addEventListener("click", () =>
+    {
+        guide.style.display = "none";
+    });
 
 if(add_uc)
     add_uc.addEventListener("click", function()

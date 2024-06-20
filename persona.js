@@ -8,6 +8,9 @@ let information = document.getElementById("information");
 let information_displayer = document.getElementById("information-displayer");
 let information1 = document.getElementById("information1");
 let information_displayer1 = document.getElementById("information-displayer1");
+let home_uf_displayer = document.getElementById("home-and-uf-history");
+let home_uf = document.getElementById("home-uf-background");
+let home_uf_close = document.getElementById("home-uf-close");
 let person = document.getElementById("person");
 let personal_data = document.getElementById("personal-data");
 let advanced_data = document.getElementById("advanced-data");
@@ -203,4 +206,16 @@ if(information_displayer1)
     {
         information_displayer1.style.display = "none";
         information1.style.display = "inline";
+    });
+
+if(home_uf_displayer)
+    home_uf_displayer.addEventListener("click", () =>
+    {
+        home_uf.style.display = "flex";
+    });
+
+if(home_uf_close)
+    home_uf_close.addEventListener("click", () =>
+    {
+        home_uf.style.display = "none";
     });
