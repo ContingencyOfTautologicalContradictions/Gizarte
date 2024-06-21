@@ -775,3 +775,8 @@ p
     grid-template-columns: 1fr 2fr 2fr 2fr;
     row-gap: 0;
 }
+
+.separator
+{
+    margin-top: 50px;
+}
