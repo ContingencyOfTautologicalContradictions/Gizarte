@@ -50,591 +50,66 @@
         </div>
     </header>
     <main>
-        <div id="agenda-background">
-            <div id="agenda-background-panel">
-                <div id="agenda-panel-header">
-                    <h2>Nueva cita</h2>
-                    <img id="agenda-background-close" loading="lazy" src="./assets/cruz.svg">
-                </div>
-                <div id="agenda-panel-head">
-                    <div class="field">
-                        <p>Usuario alta</p>
-                        <div>Julia Pardo Iriondo</div>
-                    </div>
-                    <div class="field">
-                        <p>Municipio</p>
-                        <div>Lezama</div>
-                    </div>
-                    <div class="field">
-                        <p>Fecha alta</p>
-                        <div>-</div>
-                    </div>
-                </div>
-                <div class="flexbox margin-top">
-                    <div>Los campos marcados con (</div>
-                    <div class="asterisk">*</div>
-                    <div>) son obligatorios.</div>
-                </div>
-                <div id="agenda-panel-grid" class="margin-top">
-                    <div class="field">
-                        <div class="flexbox">
-                            <p>Profesional</p>
-                            <p class="asterisk">*</p>
-                        </div>
-                        <div class="element">
-                            <p>Julia Pardo Iriondo</p>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
-                        </div>
-                    </div>
-                    <div class="flexbox margin-element">
-                        <div class="field">
-                            <div class="flexbox">
-                                <p>Fecha de la cita</p>
-                                <p class="asterisk">*</p>
-                            </div>
-                            <div class="small-element">
-                                <img loading="lazy" src="./assets/calendario.svg">
-                                <p>06/03/2024</p>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <div class="flexbox">
-                                <p>Hora</p>
-                                <p class="asterisk">*</p>
-                            </div>
-                            <div class="tiny-element">
-                                <p>09:30</p>
-                                <img loading="lazy" src="./assets/flecha-abajo.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flexbox margin-element">
-                        <div class="field">
-                            <div class="flexbox">
-                                <p>Duración</p>
-                                <p class="asterisk">*</p>
-                            </div>
-                            <div class="flexbox small-margin-element">
-                                <div class="tiny-element">
-                                    <p>30</p>
-                                </div>
-                                <p>minutos</p>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <p>¿Genera actuación?</p>
-                            <div class="options">
-                                <p class="option">Sí</p>
-                                <div class="selected-option">
-                                    <img loading="lazy" src="./assets/afirmativo.svg">
-                                    <p>No</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <p>Documento identificativo</p>
-                        <div class="small-element">
-                            <p>DNI</p>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="flexbox">
-                            <p>Número de documento</p>
-                            <p class="asterisk">*</p>
-                        </div>
-                        <div class="flexbox margin-element">
-                            <div class="tiny-element">
-                                <p>69569834P</p>
-                            </div>
-                            <img loading="lazy" src="./assets/correcto.svg">
-                        </div>
-                    </div>
-                    <div></div>
-                    <div class="field">
-                        <p>Nombre de la persona citada</p>
-                        <div class="element">
-                            <p>Pedro</p>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <p>Primer apellido</p>
-                        <div class="element">
-                            <p>Ochoa</p>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <p>Segundo apellido</p>
-                        <div class="element">
-                            <p>Ezeia</p>
-                        </div>
-                    </div>
-                    <div class="flexbox margin-element">
-                        <div class="field">
-                            <p>Teléfono móvil</p>
-                            <div class="small-element">
-                                <p>676 25 32 76</p>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <p>¿Enviar SMS?</p>
-                            <div class="options">
-                                <div class="selected-option">
-                                    <img loading="lazy" src="./assets/afirmativo.svg">
-                                    <p>Sí</p>
-                                </div>
-                                <p class="option">No</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <p>Correo electrónico</p>
-                        <div class="element">
-                            <p>pochoaezeia@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <p>¿Notificar por correo electrónico?</p>
-                        <div class="options">
-                            <div class="selected-option">
-                                <img loading="lazy" src="./assets/afirmativo.svg">
-                                <p>Sí</p>
-                            </div>
-                            <div class="option">
-                                <p>No</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <p>Intervención</p>
-                        <div class="element">
-                            <p>General</p>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <p>¿Es una cita planificada?</p>
-                        <div class="options">
-                            <div class="option">
-                                <p>Sí</p>
-                            </div>
-                            <div class="selected-option">
-                                <img loading="lazy" src="./assets/afirmativo.svg">
-                                <p>No</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <p>¿Es una cita urgente?</p>
-                        <div class="options">
-                            <div class="option">
-                                <p>Sí</p>
-                            </div>
-                            <div class="selected-option">
-                                <img loading="lazy" src="./assets/afirmativo.svg">
-                                <p>No</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <p>Tipo de actuación</p>
-                        <div class="options">
-                            <div class="selected-option">
-                                <img loading="lazy" src="./assets/afirmativo.svg">
-                                <p>General</p>
-                            </div>
-                            <div class="option">
-                                <p>Individual</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="margin-top">Añada las personas involucradas en la actuación.</p>
-                <div id="table" class="margin-top">
-                    <div class="first-row">Nombre</div>
-                    <div class="first-row">Primer apellido</div>
-                    <div class="first-row">Segundo apellido</div>
-                    <div class="first-row">Parentesco</div>
-                    <div class="first-row">Acciones</div>
-                    <div class="normal-row">Pedro</div>
-                    <div class="normal-row">Ochoa</div>
-                    <div class="normal-row">Ezeia</div>
-                    <div class="normal-row">P. Referencia</div>
-                    <div class="normal-row">
-                        <img loading="lazy" src="./assets/papelera.svg">
-                    </div>
-                    <div class="gray-row">Marisa</div>
-                    <div class="gray-row">Pérez</div>
-                    <div class="gray-row">Goicoechea</div>
-                    <div class="gray-row">Hija</div>
-                    <div class="gray-row">
-                        <img loading="lazy" src="./assets/papelera.svg">
-                    </div>
-                </div>
-                <div id="agenda-panel-add" class="margin-top">
-                    <div class="field">
-                        <div class="flexbox">
-                            <p>Actuación</p>
-                            <p class="asterisk">*</p>
-                        </div>
-                        <div class="element">
-                            <p>Información / Orientación</p>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
-                        </div>
-                    </div>
-                    <div class="add-button">
-                        <img loading="lazy" src="./assets/más.svg">
-                        <p>Añadir</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="agenda-header">
-            <div id="agenda-filters">
-                <div id="agenda-filter">
-                    <div id="agenda-filter-search">
-                        <img id="agenda-filter-search-img" loading="lazy" src="./assets/búsqueda.png">
-                        <input id="agenda-filter-search-txb" type="text" placeholder="Busque citas por documento o nombre">
-                    </div>
-                    <div id="agenda-filter-wrapper">
-                        <img loading="lazy" src="./assets/filtro.svg">
-                        <h4 id="agenda-filter-txt">Filtros</h4>
-                    </div>
-                </div>
+        <div id="diary">
+            <div id="diary-header">
                 <div class="field">
-                    <p>Municipio</p>
-                    <div class="display-box">
-                        <p>Lezama</p>
-                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    <div></div>
+                    <div class="flexbox">
+                        <div class="container">
+                            <img id="search" loading="lazy" src="./assets/búsqueda.png">
+                            <input id="diary-header-textbox" class="no-border" type="text" placeholder="Busque citas por documento o nombre">
+                        </div>
+                        <div class="container2">
+                            <img loading="lazy" src="./assets/filtro.svg">
+                            <div class="open-sans bold normal blue">Filtros</div>
+                        </div>
                     </div>
                 </div>
+                <div></div>
                 <div class="field">
-                    <p>Profesional</p>
-                    <div id="agenda-profesional" class="display-box">
-                        <p id="agenda-profesional-text">Julia Pardo Iriondo</p>
-                        <img loading="lazy" src="./assets/flecha-abajo.svg">
+                    <div class="open-sans small gray">Municipio</div>
+                    <div class="flexbox">
+                        <div class="open-sans normal">Lezama</div>
+                        <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
+                    </div>
+                </div>
+                <div></div>
+                <div class="field">
+                    <div class="open-sans small gray">Profesional</div>
+                    <div id="diary-profesional" class="flexbox">
+                        <div class="open-sans normal">Julia Pardo Iriondo</div>
+                        <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
                     </div>
                 </div>
             </div>
-            <button class="button agenda-background-printer">
-                <img loading="lazy" src="./assets/plus.svg">
-                <p>Nueva cita</p>
-            </button>
-        </div>
-        <div id="agenda-">
-            <div id="agenda-dates">
-                <div id="agenda-dates-header">
-                    <div id="agenda-date-header">
-                        <div class="agenda-date">
-                            <img loading="lazy" src="./assets/calendario.svg">
-                            <p>Hoy</p>
-                        </div>
-                        <div class="agenda-date">
-                            <img loading="lazy" src="./assets/flecha-izquierda.svg">
-                            <img loading="lazy" src="./assets/flecha-derecha.svg">
-                        </div>
-                        <p>6 de Marzo de 2024</p>
-                    </div>
-                    <div class="agenda-date">
-                        <img loading="lazy" src="./assets/calendario.svg">
-                        <p id="agenda-date-day">Día</p>
-                        <img loading="lazy" src="./assets/flecha-abajo.svg">
-                    </div>
+            <div id="diary-new-date">
+                <button id="diary-new-date-action">
+                    <img loading="lazy" src="./assets/más-blanco.svg">
+                    <div class="open-sans normal">Nueva cita</div>
+                </button>
+            </div>
+            <div id="diary-controls">
+                <div class="separated">
+                    <img loading="lazy" src="./assets/calendario-hoy.svg">
+                    <div class="open-sans normal bold">Hoy</div>
+                    <img loading="lazy" src="./assets/flecha-izquierda.svg">
+                    <img loading="lazy" src="./assets/flecha-derecha.svg">
+                    <div class="open-sans normal bold">6 de Marzo de 2024</div>
                 </div>
-                <div id="agenda-hidden">
-                    <div></div>
-                    <p class="agenda-pro">Julia Pardo Iriondo</p>
-                    <p class="agenda-pro">Mikel Alonso García</p>
-                    <p class="agenda-pro">Aitziber Galdeano Ortiz</p>
-                    <p class="agenda-hour">8:00</p>
-                    <div class="agenda-content">
-                        <div class="agenda-dotted">
-                            <img loading="lazy" src="./assets/más.svg">
-                            <p>Nueva cita</p>
-                        </div>
-                    </div>
-                    <div class="agenda-content">
-                        <div class="big-agenda-red">
-                            <p>Fuera de oficina</p>
-                        </div>
-                    </div>
-                    <div class="agenda-content">
-                        <div class="big-agenda-dotted">
-                            <img loading="lazy" src="./assets/más.svg">
-                            <p>Nueva cita</p>
-                        </div>
-                    </div>
-                    <div class="agenda-hour">9:00</div>
-                    <div class="agenda-content">
-                        <div class="agenda-blued">
-                            <h4>María Jesus Herranz Castro</h4>
-                            <p>Maltrato / Violencia</p>
-                        </div>
-                        <div class="half-agenda-dotted agenda-background-printer">
-                            <img loading="lazy" src="./assets/más.svg">
-                            <p>Nueva cita</p>
-                        </div>
-                    </div>
-                    <div class="agenda-content">
-                        <div class="agenda-dotted">
-                            <img loading="lazy" src="./assets/más.svg">
-                            <p>Nueva cita</p>
-                        </div>
-                    </div>
-                    <div class="agenda-content">
-                        <div class="small-unavailable">
-                            No disponible
-                        </div>
-                    </div>
-                    <div class="agenda-hour">10:00</div>
-                    <div class="agenda-content">
-                        <div class="agenda-red">
-                            <p>Fuera de oficina</p>
-                        </div>
-                        <div class="agenda-blued">
-                            <h4>Nekane Larrainzar Martinez</h4>
-                            <p>Información / Orientación / Asesoramiento</p>
-                        </div>
-                    </div>
-                    <div class="agenda-content">
-                        <div class="big-agenda-blued">
-                            <h4>Juan Carlos Huerta Castillo</h4>
-                            <p>Información / Orientación / Asesoramiento</p>
-                        </div>
-                    </div>
-                    <div class="agenda-content">
-                        <div class="agenda-dotted">
-                            <img loading="lazy" src="./assets/más.svg">
-                            <p>Nueva cita</p>
-                        </div>
-                    </div>
-                    <div class="agenda-hour">11:00</div>
-                    <div class="agenda-content">
-                        <div class="nsmall-unavailable">
-                            No disponible
-                        </div>
-                    </div>
-                    <div></div>
-                    <div class="agenda-content">
-                        <div class="agenda-blued">
-                            <h4>José Encinas Ruiz</h4>
-                            <p>Maltrato / Violencia</p>
-                        </div>
-                        <div class="agenda-blued">
-                            <h4>Ana María Rodriguez Peña</h4>
-                            <p>Información / Orientación / Asesoramiento</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="agenda-grid">
-                    <div></div>
-                    <p class="agenda-pro">Julia Pardo Iriondo</p>
-                    <p class="agenda-hour">8:00</p>
-                    <div class="agenda-content">
-                        <div class="agenda-dotted">
-                            <img loading="lazy" src="./assets/más.svg">
-                            <p>Nueva cita</p>
-                        </div>
-                    </div>
-                    <p class="agenda-hour">9:00</p>
-                    <div class="agenda-content">
-                        <div class="agenda-blued">
-                            <h4>María Jesus Herranz Castro</h4>
-                            <p>Maltrato / Violencia</p>
-                        </div>
-                        <div class="half-agenda-dotted agenda-background-printer">
-                            <img loading="lazy" src="./assets/más.svg">
-                            <p>Nueva cita</p>
-                        </div>
-                    </div>
-                    <p class="agenda-hour">10:00</p>
-                    <div class="agenda-content">
-                        <div class="agenda-red">
-                            <h4>Fuera de oficina</h4>
-                        </div>
-                        <div class="vertical-agenda-blued">
-                            <h4>Nekane Larrainzar Martinez</h4>
-                            <p id="vertical-text">Información / Orientación / Asesoramiento</p>
-                        </div>
-                    </div>
-                    <p class="agenda-hour">11:00</p>
-                    <div class="agenda-content">
-                        <div class="unavailable">
-                            <h4>No disponible</h4>
-                        </div>
-                        <div class="agenda-blued">
-                            <h4>Manuel Rodríguez Alonso</h4>
-                            <p>Maltrato / Violencia</p>
-                        </div>
-                    </div>
-                    <p class="agenda-hour">12:00</p>
-                    <div class="double-agenda-dotted">
-                        <img loading="lazy" src="./assets/más.svg">
-                        <p>Nueva cita</p>
-                    </div>
-                    <p class="agenda-hour">13:00</p>
-                    <div class=""></div>
-                    <div class="agenda-hour">14:00</div>
-                    <div class="double-unavailable">
-                        <h4>No disponible</h4>
-                    </div>
-                    <div class="agenda-hour">15:00</div>
+                <div class="separated">
+                    <img loading="lazy" src="./assets/calendario-hoy-azul.svg">
+                    <div class="open-sans normal blue">Día</div>
+                    <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
                 </div>
             </div>
-            <div id="agenda-calendars">
-                <div class="agenda-calendar">
-                    <div class="agenda-calendar-header agenda-first-month">
-                        <img loading="lazy" src="./assets/flecha-izquierda.svg">
-                        <h4>Marzo 2024</h4>
-                        <img loading="lazy" src="./assets/flecha-derecha.svg">
-                    </div>
-                    <div class="agenda-calendar-data">
-                        <p class="agenda-day">L</p>
-                        <p class="agenda-day">M</p>
-                        <p class="agenda-day">X</p>
-                        <p class="agenda-day">J</p>
-                        <p class="agenda-day">V</p>
-                        <p class="agenda-day">S</p>
-                        <p class="agenda-day">D</p>
-                        <p class="previous-day">26</p>
-                        <p class="previous-day">27</p>
-                        <p class="previous-day">28</p>
-                        <p class="previous-day">29</p>
-                        <p>1</p>
-                        <p>2</p>
-                        <p>3</p>
-                        <p>4</p>
-                        <p>5</p>
-                        <p class="today">6</p>
-                        <p>7</p>
-                        <p>8</p>
-                        <p>9</p>
-                        <p>10</p>
-                        <p>11</p>
-                        <p>12</p>
-                        <p>13</p>
-                        <p>14</p>
-                        <p>15</p>
-                        <p>16</p>
-                        <p>17</p>
-                        <p>18</p>
-                        <p>19</p>
-                        <p>20</p>
-                        <p>21</p>
-                        <p>22</p>
-                        <p>23</p>
-                        <p>24</p>
-                        <p>25</p>
-                        <p>26</p>
-                        <p>27</p>
-                        <p>28</p>
-                        <p>29</p>
-                        <p>30</p>
-                        <p>31</p>
-                    </div>
-                </div>
-                <div class="agenda-calendar">
-                    <div class="agenda-calendar-header agenda-month">
-                        <h4>Abril 2024</h4>
-                    </div>
-                    <div class="agenda-calendar-data">
-                        <p class="agenda-day">L</p>
-                        <p class="agenda-day">M</p>
-                        <p class="agenda-day">X</p>
-                        <p class="agenda-day">J</p>
-                        <p class="agenda-day">V</p>
-                        <p class="agenda-day">S</p>
-                        <p class="agenda-day">D</p>
-                        <p>1</p>
-                        <p>2</p>
-                        <p>3</p>
-                        <p>4</p>
-                        <p>5</p>
-                        <p>6</p>
-                        <p>7</p>
-                        <p>8</p>
-                        <p>9</p>
-                        <p>10</p>
-                        <p>11</p>
-                        <p>12</p>
-                        <p>13</p>
-                        <p>14</p>
-                        <p>15</p>
-                        <p>16</p>
-                        <p>17</p>
-                        <p>18</p>
-                        <p>19</p>
-                        <p>20</p>
-                        <p>21</p>
-                        <p>22</p>
-                        <p>23</p>
-                        <p>24</p>
-                        <p>25</p>
-                        <p>26</p>
-                        <p>27</p>
-                        <p>28</p>
-                        <p>29</p>
-                        <p>30</p>
-                        <p class="previous-day">1</p>
-                        <p class="previous-day">2</p>
-                        <p class="previous-day">3</p>
-                        <p class="previous-day">4</p>
-                        <p class="previous-day">5</p>
-                    </div>
-                </div>
-                <div class="agenda-calendar">
-                    <div class="agenda-calendar-header agenda-month">
-                        <h4>Mayo 2024</h4>
-                    </div>
-                    <div class="agenda-calendar-data">
-                        <p class="agenda-day">L</p>
-                        <p class="agenda-day">M</p>
-                        <p class="agenda-day">X</p>
-                        <p class="agenda-day">J</p>
-                        <p class="agenda-day">V</p>
-                        <p class="agenda-day">S</p>
-                        <p class="agenda-day">D</p>
-                        <p class="previous-day">29</p>
-                        <p class="previous-day">30</p>
-                        <p>1</p>
-                        <p>2</p>
-                        <p>3</p>
-                        <p>4</p>
-                        <p>5</p>
-                        <p>6</p>
-                        <p>7</p>
-                        <p>8</p>
-                        <p>9</p>
-                        <p>10</p>
-                        <p>11</p>
-                        <p>12</p>
-                        <p>13</p>
-                        <p>14</p>
-                        <p>15</p>
-                        <p>16</p>
-                        <p>17</p>
-                        <p>18</p>
-                        <p>19</p>
-                        <p>20</p>
-                        <p>21</p>
-                        <p>22</p>
-                        <p>23</p>
-                        <p>24</p>
-                        <p>25</p>
-                        <p>26</p>
-                        <p>27</p>
-                        <p>28</p>
-                        <p>29</p>
-                        <p>30</p>
-                        <p>31</p>
-                        <p class="previous-day">1</p>
-                        <p class="previous-day">2</p>
+            <div id="calendar">
+                <div class="month">
+                    <div class="month-header">
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
     </main>
     <footer>
         <div>>> Aviso Legal</div>

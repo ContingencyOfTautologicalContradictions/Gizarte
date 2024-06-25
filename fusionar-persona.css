@@ -38,7 +38,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-family: Roboto;
+    font-family: "Open sans";
 }
 
 .person-sections
@@ -112,7 +112,7 @@
 
 .selected-person-control-option
 {
-    font-family: var(--font-open-sans);
+    font-family: "Open sans";
     color: var(--brand-blue-900-aa);
     padding-bottom: 10px;
     border-bottom-color: var(--brand-blue-900-aa);
@@ -127,7 +127,7 @@
 
 .person-control-option
 {
-    font-family: var(--font-open-sans);
+    font-family: "Open sans";
     color: var(--brand-blue-900-aa);
     padding-bottom: 10px;
 }
@@ -174,7 +174,7 @@ p
 
 .lightgray-row
 {
-    background-color: lightgrey;
+    background-color: rgb(238, 238, 238);
 }
 
 .gray-row
@@ -209,6 +209,7 @@ p
 
 .fusion-element
 {
+    height: 100%;
     font-family: "Open sans";
     font-size: small;
 }
@@ -258,7 +259,7 @@ p
     border: none;
     background-color: var(--brand-blue-900-aa);
     color: white;
-    font-family: Roboto;
+    font-family: "Open sans";
     font-size: large;
     margin-bottom: 50px;
 }
@@ -280,7 +281,7 @@ p
     border-color: var(--brand-blue-900-aa);
     color: var(--brand-blue-900-aa);
     background-color: white;
-    font-family: Roboto;
+    font-family: "Open sans";
     font-size: large;
     margin-bottom: 50px;
 }
@@ -288,4 +289,14 @@ p
 .fusion-action:hover
 {
     cursor: pointer;
+}
+
+.result-title
+{
+    padding: 20px;
+    background-color: lightgray;
+    width: 200%;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Open sans";
 }
