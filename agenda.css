@@ -32,16 +32,18 @@ input::placeholder
     min-width: 90vw;
     max-width: 90vw;
     row-gap: 50px;
+    column-gap: 30px;
     display: grid;
     grid-template-columns: 4fr 2fr;
+    align-items: flex-start;
 }
 
 #diary-header
 {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 95%;
+    max-width: 95%;
     display: grid;
-    grid-template-columns: 8fr 1fr 2fr 1fr 3fr;
+    grid-template-columns: 9fr 1fr 2fr 1fr 4fr;
     align-items: flex-end;
 }
 
@@ -121,7 +123,7 @@ input::placeholder
     color: var(--brand-blue-900-aa);
 }
 
-#diary-profesional:hover
+#diary-professional:hover
 {
     cursor: pointer;
 }
@@ -134,6 +136,7 @@ input::placeholder
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+    align-self: flex-end;
 }
 
 #diary-new-date-action
@@ -151,6 +154,17 @@ input::placeholder
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+}
+
+#diary-content
+{
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
 }
 
 #diary-controls
@@ -179,19 +193,19 @@ input::placeholder
     gap: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .month
 {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 70%;
+    max-width: 70%;
     gap: 5px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .month-header
@@ -204,4 +218,117 @@ input::placeholder
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.month-content
+{
+    padding: 5px;
+    min-width: 100%;
+    max-width: 100%;
+    display: grid;
+    row-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.invalid-day
+{
+    color: #DDDDDD;
+}
+
+#today
+{
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    background-color: var(--brand-blue-900-aa);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1px;
+}
+
+#diary-grid-hidden
+{
+    display: none;
+}
+
+.diary-table
+{
+    overflow-y: scroll;
+    min-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.diary-hours
+{
+    margin-top: 50px;
+    min-width: 10%;
+    max-width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1px;
+}
+
+.diary-hour
+{
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.diary-task
+{
+    min-width: 87%;
+    max-width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1px;
+}
+
+.diary-author
+{
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 30px;
+    max-height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.diary-task-dotted
+{
+    min-width: 100%;
+    max-width: 100%;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: var(--brand-blue-900-aa);
+    background-color: var(--brand-blue-100);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
 }

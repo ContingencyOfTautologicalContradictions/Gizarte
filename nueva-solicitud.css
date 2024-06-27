@@ -393,7 +393,7 @@
     border-bottom-color:rgb(203, 200, 186);
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    font-size: large;
+    font-weight: 600;
 }
 
 #hidden-container

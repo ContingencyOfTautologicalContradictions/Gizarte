@@ -300,3 +300,13 @@ p
     font-size: 18px;
     font-family: "Open sans";
 }
+
+.padded
+{
+    padding-left: 5px;
+}
+
+.box-shadow
+{
+    box-shadow: var(--sombra-1);
+}

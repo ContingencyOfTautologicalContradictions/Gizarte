@@ -1427,3 +1427,13 @@ input::placeholder
     align-items: center;
     justify-content: flex-end;
 }
+
+#rio-alto:hover, #additional-information:hover
+{
+    cursor: pointer;
+}
+
+#rio-alto-data, #additional-information-data
+{
+    display: none;
+}

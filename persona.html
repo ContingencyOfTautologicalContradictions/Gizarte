@@ -797,257 +797,261 @@
                 <div class="open-sans normal">Histórico de domicilios y UF</div>
             </div>
             <div class="display-list">
-                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
+                <img id="rio-alto" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo-azul.svg">
                 <div class="separated-flexbox">
                     <h3 class="section open-sans small">Río Alto 23, 2 izquierda</h3>
                     <h3 class="section open-sans small">Desde 12/03/2024 hasta la actualidad</h3>
                 </div>
             </div>
-            <div class="data-displayer">
-                <div class="field">
-                    <div class="mandatory">
-                        <div class="open-sans small">Fecha inicio</div>
-                        <div class="asterisk open-sans small">*</div>
-                    </div>
-                    <div class="calendar">
-                        <img loading="lazy" src="./assets/calendario.svg">
-                        <div class="open-sans small">12/03/2024</div>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="open-sans small">Fecha fin</div>
-                    <div class="calendar">
-                        <img loading="lazy" src="./assets/calendario.svg">
-                        <div class="open-sans small">actualmente</div>
-                    </div>
-                </div>
-                <div></div>
-                <div></div>
-                <div class="field">
-                    <div class="mandatory">
-                        <div class="open-sans small">Territorio Histórico</div>
-                        <div class="asterisk open-sans small">*</div>
-                    </div>
-                    <div class="options">
-                        <div class="option open-sans small">Araba</div>
-                        <div class="selected-option">
-                            <img loading="lazy" src="./assets/afirmativo.svg">
-                            <div class="open-sans small">Bizkaia</div>
-                        </div>
-                        <div class="option open-sans small">Gipuzkoa</div>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="mandatory">
-                        <div class="open-sans small">Municipio</div>
-                        <div class="asterisk open-sans small">*</div>
-                    </div>
-                    <div class="display-box">
-                        <div class="open-sans small">Lezama</div>
-                        <img loading="lazy" src="./assets/flecha-abajo.svg">
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="mandatory">
-                        <div class="open-sans small">Localidad</div>
-                        <div class="asterisk open-sans small">*</div>
-                    </div>
-                    <div class="display-box">
-                        <div class="open-sans small">Lezama</div>
-                        <img loading="lazy" src="./assets/flecha-abajo.svg">
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="mandatory">
-                        <div class="open-sans small">¿Es una persona sin hogar?</div>
-                        <div class="asterisk open-sans small">*</div>
-                    </div>
-                    <div class="options">
-                        <div class="option open-sans small">Sí</div>
-                        <div class="selected-option">
-                            <img loading="lazy" src="./assets/afirmativo.svg">
-                            <div class="open-sans small">No</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="mandatory">
-                        <div class="open-sans small">Calle</div>
-                        <div class="asterisk open-sans small">*</div>
-                    </div>
-                    <div class="display-box">
-                        <div class="open-sans small">Río Alto</div>
-                        <img loading="lazy" src="./assets/flecha-abajo.svg">
-                    </div>
-                </div>
-                <div class="flexbox">
-                    <div class="field">
-                        <div class="mandatory">
-                            <div class="open-sans small">Número</div>
-                            <div class="asterisk open-sans small">*</div>
-                        </div>
-                        <div class="small-display-box">
-                            <div class="open-sans small">23</div>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Bis</div>
-                        <input class="small-textbox" type="text" placeholder="">
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Piso</div>
-                        <input class="small-textbox" type="text" placeholder="2">
-                    </div>
-                </div>
-                <div class="flexbox">
-                    <div class="field">
-                        <div class="open-sans small">Puerta</div>
-                        <input class="textbox" type="text" placeholder="Izquierda">
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Código postal</div>
-                        <input class="small-blocked-textbox" type="text" placeholder="48196">
-                    </div>
-                </div>
-                <div></div>
-                <div class="flexbox">
-                    <div class="field">
-                        <div class="open-sans small">Bloque</div>
-                        <input class="small-textbox" type="text" placeholder="">
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Escalera</div>
-                        <input class="small-textbox" type="text" placeholder="">
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Mano</div>
-                        <input class="small-textbox" type="text" placeholder="">
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="open-sans small">Kilómetro</div>
-                    <input class="small-textbox" type="text" placeholder="">
-                </div>
-                <div class="field">
-                    <div class="open-sans small">Domicilio no regularizado</div>
-                    <input class="blocked-textbox" type="text" placeholder="">
-                </div>
-            </div>
-            <div class="white-display-list">
-                <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-arriba.svg">
-                <h3 class="section">Información adicional del Domicilio convivencial</h3>
-            </div>
-            <div class="field separate">
+            <div id="rio-alto-data">
                 <div class="data-displayer">
                     <div class="field">
-                        <div class="open-sans small">Tipo de domicilio</div>
-                        <div class="display-box">
-                            <div class="open-sans small">Domicilio de la unidad familiar/convivencial</div>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        <div class="mandatory">
+                            <div class="open-sans small">Fecha inicio</div>
+                            <div class="asterisk open-sans small">*</div>
+                        </div>
+                        <div class="calendar">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <div class="open-sans small">12/03/2024</div>
                         </div>
                     </div>
                     <div class="field">
-                        <div class="open-sans small">Nombre del centro</div>
-                        <input class="blocked-textbox" type="text" placeholder="">
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Régimen de tenencia</div>
-                        <div class="display-box">
-                            <div class="open-sans small">Vivienda en alquiler</div>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        <div class="open-sans small">Fecha fin</div>
+                        <div class="calendar">
+                            <img loading="lazy" src="./assets/calendario.svg">
+                            <div class="open-sans small">actualmente</div>
                         </div>
                     </div>
+                    <div></div>
+                    <div></div>
                     <div class="field">
-                        <div class="open-sans small">Situación del alojamiento</div>
-                        <div class="display-box">
-                            <div></div>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        <div class="mandatory">
+                            <div class="open-sans small">Territorio Histórico</div>
+                            <div class="asterisk open-sans small">*</div>
                         </div>
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Superficie en m2</div>
-                        <input class="textbox" type="text" placeholder="80">
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Nº de habitaciones</div>
-                        <input class="textbox" type="text" placeholder="3">
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Nº de habitaciones ocupadas por propietario</div>
-                        <input class="textbox" type="text" placeholder="1">
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Nº de habitaciones con contrato</div>
-                        <input class="textbox" type="text" placeholder="2">
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Condiciones habitabilidad</div>
-                        <div class="display-box">
-                            <div></div>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Accesibilidad interior</div>
-                        <div class="display-box">
-                            <div></div>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Accesibilidad exterior</div>
-                        <div class="display-box">
-                            <div></div>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Equipamiento</div>
-                        <div class="display-box">
-                            <div></div>
-                            <img loading="lazy" src="./assets/flecha-abajo.svg">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="open-sans small">Vivienda de protección pública</div>
                         <div class="options">
+                            <div class="option open-sans small">Araba</div>
                             <div class="selected-option">
                                 <img loading="lazy" src="./assets/afirmativo.svg">
-                                <div class="open-sans small">Sí</div>
+                                <div class="open-sans small">Bizkaia</div>
                             </div>
-                            <div class="option open-sans small">No</div>
+                            <div class="option open-sans small">Gipuzkoa</div>
                         </div>
                     </div>
                     <div class="field">
-                        <div class="open-sans small">Precio mensual</div>
-                        <input class="textbox" type="text" placeholder="700,00€">
+                        <div class="mandatory">
+                            <div class="open-sans small">Municipio</div>
+                            <div class="asterisk open-sans small">*</div>
+                        </div>
+                        <div class="display-box">
+                            <div class="open-sans small">Lezama</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
                     </div>
                     <div class="field">
-                        <div class="open-sans small">Gastos mensuales intereses y amortización crédito</div>
-                        <input class="textbox" type="text" placeholder="">
+                        <div class="mandatory">
+                            <div class="open-sans small">Localidad</div>
+                            <div class="asterisk open-sans small">*</div>
+                        </div>
+                        <div class="display-box">
+                            <div class="open-sans small">Lezama</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="mandatory">
+                            <div class="open-sans small">¿Es una persona sin hogar?</div>
+                            <div class="asterisk open-sans small">*</div>
+                        </div>
+                        <div class="options">
+                            <div class="option open-sans small">Sí</div>
+                            <div class="selected-option">
+                                <img loading="lazy" src="./assets/afirmativo.svg">
+                                <div class="open-sans small">No</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="mandatory">
+                            <div class="open-sans small">Calle</div>
+                            <div class="asterisk open-sans small">*</div>
+                        </div>
+                        <div class="display-box">
+                            <div class="open-sans small">Río Alto</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="flexbox">
+                        <div class="field">
+                            <div class="mandatory">
+                                <div class="open-sans small">Número</div>
+                                <div class="asterisk open-sans small">*</div>
+                            </div>
+                            <div class="small-display-box">
+                                <div class="open-sans small">23</div>
+                                <img loading="lazy" src="./assets/flecha-abajo.svg">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="open-sans small">Bis</div>
+                            <input class="small-textbox" type="text" placeholder="">
+                        </div>
+                        <div class="field">
+                            <div class="open-sans small">Piso</div>
+                            <input class="small-textbox" type="text" placeholder="2">
+                        </div>
+                    </div>
+                    <div class="flexbox">
+                        <div class="field">
+                            <div class="open-sans small">Puerta</div>
+                            <input class="textbox" type="text" placeholder="Izquierda">
+                        </div>
+                        <div class="field">
+                            <div class="open-sans small">Código postal</div>
+                            <input class="small-blocked-textbox" type="text" placeholder="48196">
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="flexbox">
+                        <div class="field">
+                            <div class="open-sans small">Bloque</div>
+                            <input class="small-textbox" type="text" placeholder="">
+                        </div>
+                        <div class="field">
+                            <div class="open-sans small">Escalera</div>
+                            <input class="small-textbox" type="text" placeholder="">
+                        </div>
+                        <div class="field">
+                            <div class="open-sans small">Mano</div>
+                            <input class="small-textbox" type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="open-sans small">Kilómetro</div>
+                        <input class="small-textbox" type="text" placeholder="">
+                    </div>
+                    <div class="field">
+                        <div class="open-sans small">Domicilio no regularizado</div>
+                        <input class="blocked-textbox" type="text" placeholder="">
                     </div>
                 </div>
-                <div class="observations-block field">
-                    <div class="open-sans small">Observaciones</div>
-                    <textarea class="observations-text open-sans small" type="text" placeholder="Añada comentarios adicionales..."></textarea>
+                <div class="white-display-list">
+                    <img id="additional-information" loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo-azul.svg">
+                    <h3 class="section">Información adicional del Domicilio convivencial</h3>
                 </div>
-            </div>
-            <div class="padded-display-list">
-                <div class="mono-display-list">
-                    <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
-                    <div class="separated-flexbox">
-                        <h3 class="section open-sans small">Domicilio padronal: Río Alto 23, 21</h3>
-                        <h3 class="section open-sans small">10/09/2021 - Actualmente</h3>
+                <div id="additional-information-data">
+                    <div class="field separate">
+                        <div class="data-displayer">
+                            <div class="field">
+                                <div class="open-sans small">Tipo de domicilio</div>
+                                <div class="display-box">
+                                    <div class="open-sans small">Domicilio de la unidad familiar/convivencial</div>
+                                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Nombre del centro</div>
+                                <input class="blocked-textbox" type="text" placeholder="">
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Régimen de tenencia</div>
+                                <div class="display-box">
+                                    <div class="open-sans small">Vivienda en alquiler</div>
+                                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Situación del alojamiento</div>
+                                <div class="display-box">
+                                    <div></div>
+                                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Superficie en m2</div>
+                                <input class="textbox" type="text" placeholder="80">
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Nº de habitaciones</div>
+                                <input class="textbox" type="text" placeholder="3">
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Nº de habitaciones ocupadas por propietario</div>
+                                <input class="textbox" type="text" placeholder="1">
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Nº de habitaciones con contrato</div>
+                                <input class="textbox" type="text" placeholder="2">
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Condiciones habitabilidad</div>
+                                <div class="display-box">
+                                    <div></div>
+                                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Accesibilidad interior</div>
+                                <div class="display-box">
+                                    <div></div>
+                                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Accesibilidad exterior</div>
+                                <div class="display-box">
+                                    <div></div>
+                                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Equipamiento</div>
+                                <div class="display-box">
+                                    <div></div>
+                                    <img loading="lazy" src="./assets/flecha-abajo.svg">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Vivienda de protección pública</div>
+                                <div class="options">
+                                    <div class="selected-option">
+                                        <img loading="lazy" src="./assets/afirmativo.svg">
+                                        <div class="open-sans small">Sí</div>
+                                    </div>
+                                    <div class="option open-sans small">No</div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Precio mensual</div>
+                                <input class="textbox" type="text" placeholder="700,00€">
+                            </div>
+                            <div class="field">
+                                <div class="open-sans small">Gastos mensuales intereses y amortización crédito</div>
+                                <input class="textbox" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="observations-block field">
+                            <div class="open-sans small">Observaciones</div>
+                            <textarea class="observations-text open-sans small" type="text" placeholder="Añada comentarios adicionales..."></textarea>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="padded-display-list">
-                <div class="mono-display-list">
-                    <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
-                    <div class="separated-flexbox">
-                        <h3 class="section open-sans small">Domicilio de notificación: Río Alto 23, 21</h3>
-                        <h3 class="section open-sans small">10/09/2021 - Actualmente</h3>
+                <div class="padded-display-list">
+                    <div class="mono-display-list">
+                        <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+                        <div class="separated-flexbox">
+                            <h3 class="section open-sans small">Domicilio padronal: Río Alto 23, 21</h3>
+                            <h3 class="section open-sans small">10/09/2021 - Actualmente</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="padded-display-list">
+                    <div class="mono-display-list">
+                        <img loading="lazy" alt="Botón desplegable" src="./assets/flecha-abajo.svg">
+                        <div class="separated-flexbox">
+                            <h3 class="section open-sans small">Domicilio de notificación: Río Alto 23, 21</h3>
+                            <h3 class="section open-sans small">10/09/2021 - Actualmente</h3>
+                        </div>
                     </div>
                 </div>
             </div>

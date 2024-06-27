@@ -76,8 +76,8 @@
                 <div></div>
                 <div class="field">
                     <div class="open-sans small gray">Profesional</div>
-                    <div id="diary-profesional" class="flexbox">
-                        <div class="open-sans normal">Julia Pardo Iriondo</div>
+                    <div id="diary-professional" class="flexbox">
+                        <div id="diary-professional-text" class="open-sans normal">Julia Pardo Iriondo</div>
                         <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
                     </div>
                 </div>
@@ -88,24 +88,208 @@
                     <div class="open-sans normal">Nueva cita</div>
                 </button>
             </div>
-            <div id="diary-controls">
-                <div class="separated">
-                    <img loading="lazy" src="./assets/calendario-hoy.svg">
-                    <div class="open-sans normal bold">Hoy</div>
-                    <img loading="lazy" src="./assets/flecha-izquierda.svg">
-                    <img loading="lazy" src="./assets/flecha-derecha.svg">
-                    <div class="open-sans normal bold">6 de Marzo de 2024</div>
+            <div id="diary-content">
+                <div id="diary-controls">
+                    <div class="separated">
+                        <img loading="lazy" src="./assets/calendario-hoy.svg">
+                        <div class="open-sans normal bold">Hoy</div>
+                        <img loading="lazy" src="./assets/flecha-izquierda.svg">
+                        <img loading="lazy" src="./assets/flecha-derecha.svg">
+                        <div class="open-sans normal bold">6 de Marzo de 2024</div>
+                    </div>
+                    <div class="separated">
+                        <img loading="lazy" src="./assets/calendario-hoy-azul.svg">
+                        <div class="open-sans normal blue">Día</div>
+                        <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
+                    </div>
                 </div>
-                <div class="separated">
-                    <img loading="lazy" src="./assets/calendario-hoy-azul.svg">
-                    <div class="open-sans normal blue">Día</div>
-                    <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
+                <div id="diary-grid-hidden" class="diary-table"></div>
+                <div id="diary-grid" class="diary-table">
+                    <div class="diary-hours">
+                        <div class="diary-hour">
+                            <div class="open-sans normal">8:00</div>
+                        </div>
+                        <div class="diary-hour">
+                            <div class="open-sans normal">9:00</div>
+                        </div>
+                        <div class="diary-hour">
+                            <div class="open-sans normal">10:00</div>
+                        </div>
+                        <div class="diary-hour">
+                            <div class="open-sans normal">11:00</div>
+                        </div>
+                        <div class="diary-hour">
+                            <div class="open-sans normal">12:00</div>
+                        </div>
+                        <div class="diary-hour">
+                            <div class="open-sans normal">13:00</div>
+                        </div>
+                        <div class="diary-hour">
+                            <div class="open-sans normal">14:00</div>
+                        </div>
+                        <div class="diary-hour">
+                            <div class="open-sans normal">15:00</div>
+                        </div>
+                    </div>
+                    <div class="diary-task">
+                        <div class="diary-author">
+                            <div class="open-sans normal">Julia Pardo Iriondo</div>
+                        </div>
+                        <div class="single diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="calendar">
                 <div class="month">
                     <div class="month-header">
-                        
+                        <img loading="lazy" src="./assets/flecha-izquierda.svg">
+                        <div class="open-sans normal blue bold">Marzo 2024</div>
+                        <img loading="lazy" src="./assets/flecha-derecha.svg">
+                    </div>
+                    <div class="month-content">
+                        <div class="open-sans small">L</div>
+                        <div class="open-sans small">M</div>
+                        <div class="open-sans small">X</div>
+                        <div class="open-sans small">J</div>
+                        <div class="open-sans small">V</div>
+                        <div class="open-sans small">S</div>
+                        <div class="open-sans small">D</div>
+                        <div class="open-sans small invalid-day">26</div>
+                        <div class="open-sans small invalid-day">27</div>
+                        <div class="open-sans small invalid-day">28</div>
+                        <div class="open-sans small invalid-day">29</div>
+                        <div class="open-sans small">1</div>
+                        <div class="open-sans small">2</div>
+                        <div class="open-sans small">3</div>
+                        <div class="open-sans small">4</div>
+                        <div class="open-sans small">5</div>
+                        <div id="today" class="open-sans small">6</div>
+                        <div class="open-sans small">7</div>
+                        <div class="open-sans small">8</div>
+                        <div class="open-sans small">9</div>
+                        <div class="open-sans small">10</div>
+                        <div class="open-sans small">11</div>
+                        <div class="open-sans small">12</div>
+                        <div class="open-sans small">13</div>
+                        <div class="open-sans small">14</div>
+                        <div class="open-sans small">15</div>
+                        <div class="open-sans small">16</div>
+                        <div class="open-sans small">17</div>
+                        <div class="open-sans small">18</div>
+                        <div class="open-sans small">19</div>
+                        <div class="open-sans small">20</div>
+                        <div class="open-sans small">21</div>
+                        <div class="open-sans small">22</div>
+                        <div class="open-sans small">23</div>
+                        <div class="open-sans small">24</div>
+                        <div class="open-sans small">25</div>
+                        <div class="open-sans small">26</div>
+                        <div class="open-sans small">27</div>
+                        <div class="open-sans small">28</div>
+                        <div class="open-sans small">29</div>
+                        <div class="open-sans small">30</div>
+                        <div class="open-sans small">31</div>
+                    </div>
+                </div>
+                <div class="month">
+                    <div class="month-header">
+                        <div class="open-sans normal blue bold">Abril 2024</div>
+                    </div>
+                    <div class="month-content">
+                        <div class="open-sans small">L</div>
+                        <div class="open-sans small">M</div>
+                        <div class="open-sans small">X</div>
+                        <div class="open-sans small">J</div>
+                        <div class="open-sans small">V</div>
+                        <div class="open-sans small">S</div>
+                        <div class="open-sans small">D</div>
+                        <div class="open-sans small">1</div>
+                        <div class="open-sans small">2</div>
+                        <div class="open-sans small">3</div>
+                        <div class="open-sans small">4</div>
+                        <div class="open-sans small">5</div>
+                        <div class="open-sans small">6</div>
+                        <div class="open-sans small">7</div>
+                        <div class="open-sans small">8</div>
+                        <div class="open-sans small">9</div>
+                        <div class="open-sans small">10</div>
+                        <div class="open-sans small">11</div>
+                        <div class="open-sans small">12</div>
+                        <div class="open-sans small">13</div>
+                        <div class="open-sans small">14</div>
+                        <div class="open-sans small">15</div>
+                        <div class="open-sans small">16</div>
+                        <div class="open-sans small">17</div>
+                        <div class="open-sans small">18</div>
+                        <div class="open-sans small">19</div>
+                        <div class="open-sans small">20</div>
+                        <div class="open-sans small">21</div>
+                        <div class="open-sans small">22</div>
+                        <div class="open-sans small">23</div>
+                        <div class="open-sans small">24</div>
+                        <div class="open-sans small">25</div>
+                        <div class="open-sans small">26</div>
+                        <div class="open-sans small">27</div>
+                        <div class="open-sans small">28</div>
+                        <div class="open-sans small">29</div>
+                        <div class="open-sans small">30</div>
+                        <div class="open-sans small invalid-day">1</div>
+                        <div class="open-sans small invalid-day">2</div>
+                        <div class="open-sans small invalid-day">3</div>
+                        <div class="open-sans small invalid-day">4</div>
+                        <div class="open-sans small invalid-day">5</div>
+                    </div>
+                </div>
+                <div class="month">
+                    <div class="month-header">
+                        <div class="open-sans normal blue bold">Mayo 2024</div>
+                    </div>
+                    <div class="month-content">
+                        <div class="open-sans small">L</div>
+                        <div class="open-sans small">M</div>
+                        <div class="open-sans small">X</div>
+                        <div class="open-sans small">J</div>
+                        <div class="open-sans small">V</div>
+                        <div class="open-sans small">S</div>
+                        <div class="open-sans small">D</div>
+                        <div class="open-sans small invalid-day">29</div>
+                        <div class="open-sans small invalid-day">30</div>
+                        <div class="open-sans small">1</div>
+                        <div class="open-sans small">2</div>
+                        <div class="open-sans small">3</div>
+                        <div class="open-sans small">4</div>
+                        <div class="open-sans small">5</div>
+                        <div class="open-sans small">6</div>
+                        <div class="open-sans small">7</div>
+                        <div class="open-sans small">8</div>
+                        <div class="open-sans small">9</div>
+                        <div class="open-sans small">10</div>
+                        <div class="open-sans small">11</div>
+                        <div class="open-sans small">12</div>
+                        <div class="open-sans small">13</div>
+                        <div class="open-sans small">14</div>
+                        <div class="open-sans small">15</div>
+                        <div class="open-sans small">16</div>
+                        <div class="open-sans small">17</div>
+                        <div class="open-sans small">18</div>
+                        <div class="open-sans small">19</div>
+                        <div class="open-sans small">20</div>
+                        <div class="open-sans small">21</div>
+                        <div class="open-sans small">22</div>
+                        <div class="open-sans small">23</div>
+                        <div class="open-sans small">24</div>
+                        <div class="open-sans small">25</div>
+                        <div class="open-sans small">26</div>
+                        <div class="open-sans small">27</div>
+                        <div class="open-sans small">28</div>
+                        <div class="open-sans small">29</div>
+                        <div class="open-sans small">30</div>
+                        <div class="open-sans small">31</div>
+                        <div class="open-sans small invalid-day">1</div>
+                        <div class="open-sans small invalid-day">2</div>
                     </div>
                 </div>
             </div>

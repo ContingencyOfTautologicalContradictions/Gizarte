@@ -29,6 +29,46 @@ let last_section = "person";
 let last_field = "person-fields";
 let last_option = "personal-data";
 let last_elements = "personal-data-elements";
+let additional_information = document.getElementById("additional-information");
+let additional_information_data = document.getElementById("additional-information-data");
+let rio_alto = document.getElementById("rio-alto");
+let rio_alto_data = document.getElementById("rio-alto-data");
+let show_additional_information = false;
+let show_rio_alto = false;
+
+if(additional_information)
+    additional_information.addEventListener("click", () =>
+    {
+        if(!show_additional_information)
+        {
+            show_additional_information = true;
+            additional_information.style.rotate = "180deg";
+            additional_information_data.style.display = "inline";
+        }
+        else
+        {
+            show_additional_information = false;
+            additional_information.style.rotate = "0deg";
+            additional_information_data.style.display = "none";
+        }
+    });
+
+if(rio_alto)
+    rio_alto.addEventListener("click", () =>
+    {
+        if(!show_rio_alto)
+        {
+            show_rio_alto = true;
+            rio_alto.style.rotate = "180deg";
+            rio_alto_data.style.display = "inline";
+        }
+        else
+        {
+            show_rio_alto = false;
+            rio_alto.style.rotate = "0deg";
+            rio_alto_data.style.display = "none";
+        }
+    });
 
 function update_section(mono_section, new_section, new_field, new_option, new_elements)
 {
