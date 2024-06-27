@@ -25,6 +25,294 @@ input::placeholder
     font-size: 15px;
 }
 
+.diary-panel-manager:hover
+{
+    cursor: pointer;
+}
+
+#diary-panel
+{
+    display: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: rgba(150, 150, 150, 0.70);
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: auto;
+    padding-bottom: 100px;
+}
+
+#agenda-background-panel
+{
+    overflow: scroll;
+    z-index: 1;
+    background-color: var(--neutral-white);
+    min-width: 70vw;
+    max-width: 70vw;
+    min-height: 100%;
+    max-height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#agenda-panel-header
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-family: Roboto;
+}
+
+#agenda-panel-head
+{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: var(--sombra-1);
+    min-width: 90%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hfield
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+.margin-top
+{
+    margin-top: 20px;
+}
+
+.asterisk
+{
+    color: red;
+}
+
+#agenda-panel-grid
+{
+    display: grid;
+    min-width: 90%;
+    max-width: 90%;
+    padding: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.margin-element
+{
+    gap: 20px;
+}
+
+.small-margin-element
+{
+    gap: 10px;
+}
+
+.element
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-width: 100%;
+    max-width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    gap: 5px;
+}
+
+.small-element
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-width: 50%;
+    max-width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    gap: 5px;
+}
+
+.tiny-element
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-width: 25%;
+    max-width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    gap: 5px;
+}
+
+.options
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.selected-option
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: var(--neutral-white);
+    background-color: var(--brand-blue-900-aa);
+    border-radius: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    min-width: 60px;
+}
+
+.option
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: var(--brand-blue-900-aa);
+    background-color: var(--brand-blue-100);
+    border-radius: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    min-width: 60px;
+}
+
+#table
+{
+    min-width: 90%;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.first-row
+{
+    background-color: var(--brand-blue-100);
+    text-align: left;
+    padding: 20px;
+}
+
+.normal-row
+{
+    text-align: left;
+    padding: 20px;
+    border-bottom-color:rgb(203, 200, 186);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: large;
+}
+
+.gray-row
+{
+    background-color: rgba(220, 220, 220, 0.3);
+    text-align: left;
+    padding: 20px;
+    border-bottom-color:rgb(203, 200, 186);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: large;
+}
+
+#agenda-panel-add
+{
+    display: flex;
+    min-width: 90%;
+    max-width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+#create-button
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    border: none;
+    background-color: var(--brand-blue-900-aa);
+    color: white;
+}
+
+.add-button
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--brand-blue-900-aa);
+    color: var(--brand-blue-900-aa);
+}
+
 #diary
 {
     padding-top: 20px;
@@ -40,8 +328,8 @@ input::placeholder
 
 #diary-header
 {
-    min-width: 95%;
-    max-width: 95%;
+    min-width: 105%;
+    max-width: 105%;
     display: grid;
     grid-template-columns: 9fr 1fr 2fr 1fr 4fr;
     align-items: flex-end;
@@ -169,8 +457,8 @@ input::placeholder
 
 #diary-controls
 {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 110%;
+    max-width: 110%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -258,8 +546,8 @@ input::placeholder
 
 .diary-table
 {
-    overflow-y: scroll;
-    min-width: 100%;
+    overflow-x: scroll;
+    min-width: 110%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -302,6 +590,22 @@ input::placeholder
     gap: 1px;
 }
 
+.small-diary-task
+{
+    min-width: 27%;
+    max-width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1px;
+}
+
+.separator
+{
+    margin-left: 25px;
+}
+
 .diary-author
 {
     border-color: #DDDDDD;
@@ -331,4 +635,114 @@ input::placeholder
     justify-content: flex-start;
     align-items: center;
     gap: 5px;
+}
+
+.white
+{
+    color: white;
+}
+
+.diary-task-blue
+{
+    min-width: 100%;
+    max-width: 100%;
+    background-color: var(--brand-blue-900-aa);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.diary-task-red
+{
+    min-width: 100%;
+    max-width: 100%;
+    background-color: white;
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.diary-task-vertical-blue
+{
+    min-width: 100%;
+    max-width: 100%;
+    background-color: var(--brand-blue-900-aa);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.red
+{
+    color: red;
+}
+
+.diary-task-gray
+{
+    min-width: 100%;
+    max-width: 100%;
+    background-color: #DDDDDD;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.grey
+{
+    color: gray;
+}
+
+.single
+{
+    min-height: 70px;
+    max-height: 70px;
+}
+
+.one
+{
+    min-height: 56px;
+    max-height: 56px;
+}
+
+.half
+{
+    min-height: 20px;
+    max-height: 20px;
+}
+
+.double
+{
+    min-height: 144px;
+    max-height: 144px;
+}
+
+.semi-double
+{
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.semi-triple
+{
+    min-height: 224px;
+    max-height: 224px;
+}
+
+.triple
+{
+    min-height: 270px;
+    max-height: 270px;
 }

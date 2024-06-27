@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
-    <title>Gizarte - AES</title>
+    <title>Gizarte - Agenda</title>
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./agenda.css">
@@ -50,6 +50,246 @@
         </div>
     </header>
     <main>
+        <div id="diary-panel">
+            <div id="agenda-background-panel">
+                <div id="agenda-panel-header">
+                    <h2 class="open-sans">Nueva cita</h2>
+                    <img id="agenda-background-close" loading="lazy" src="./assets/cruz.svg">
+                </div>
+                <div id="agenda-panel-head">
+                    <div class="hfield">
+                        <div class="open-sans normal">Usuario alta</div>
+                        <div class="open-sans normal">Julia Pardo Iriondo</div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans normal">Municipio</div>
+                        <div class="open-sans normal">Lezama</div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans normal">Fecha alta</div>
+                        <div class="open-sans normal">-</div>
+                    </div>
+                </div>
+                <div class="flex margin-top">
+                    <div class="open-sans small">Los campos marcados con (</div>
+                    <div class="asterisk open-sans small">*</div>
+                    <div class="open-sans small">) son obligatorios.</div>
+                </div>
+                <div id="agenda-panel-grid" class="margin-top">
+                    <div class="hfield">
+                        <div class="flex">
+                            <div class="open-sans small">Profesional</div>
+                            <p class="asterisk open-sans small">*</p>
+                        </div>
+                        <div class="element">
+                            <div class="open-sans normal">Julia Pardo Iriondo</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="flex margin-element">
+                        <div class="hfield">
+                            <div class="flex">
+                                <div class="open-sans small">Fecha de la cita</div>
+                                <div class="asterisk open-sans small">*</div>
+                            </div>
+                            <div class="small-element">
+                                <img loading="lazy" src="./assets/calendario.svg">
+                                <div class="open-sans normal">06/03/2024</div>
+                            </div>
+                        </div>
+                        <div class="hfield">
+                            <div class="flex">
+                                <div class="open-sans small">Hora</div>
+                                <div class="asterisk open-sans small">*</div>
+                            </div>
+                            <div class="tiny-element">
+                                <div class="open-sans small">09:30</div>
+                                <img loading="lazy" src="./assets/flecha-abajo.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex margin-element">
+                        <div class="hfield">
+                            <div class="flex">
+                                <div class="open-sans small">Duración</div>
+                                <div class="asterisk open-sans small">*</div>
+                            </div>
+                            <div class="flex small-margin-element">
+                                <div class="tiny-element">
+                                    <div class="open-sans normal">30</div>
+                                </div>
+                                <div class="open-sans normal">minutos</div>
+                            </div>
+                        </div>
+                        <div class="hfield">
+                            <div class="open-sans small">¿Genera actuación?</div>
+                            <div class="options">
+                                <div class="option open-sans small">Sí</div>
+                                <div class="selected-option">
+                                    <img loading="lazy" src="./assets/afirmativo.svg">
+                                    <div class="open-sans small">No</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans small">Documento identificativo</div>
+                        <div class="small-element">
+                            <div class="open-sans normal">DNI</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="hfield">
+                        <div class="flex">
+                            <div class="open-sans small">Número de documento</div>
+                            <div class="asterisk open-sans small">*</div>
+                        </div>
+                        <div class="flex margin-element">
+                            <div class="tiny-element">
+                                <div class="open-sans normal">69569834P</div>
+                            </div>
+                            <img loading="lazy" src="./assets/correcto.svg">
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="hfield">
+                        <div class="open-sans small">Nombre de la persona citada</div>
+                        <div class="element">
+                            <div class="open-sans normal">Pedro</div>
+                        </div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans small">Primer apellido</div>
+                        <div class="element">
+                            <div class="open-sans normal">Ochoa</div>
+                        </div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans small">Segundo apellido</div>
+                        <div class="element">
+                            <div class="open-sans normal">Ezeia</div>
+                        </div>
+                    </div>
+                    <div class="flex margin-element">
+                        <div class="hfield">
+                            <div class="open-sans small">Teléfono móvil</div>
+                            <div class="small-element">
+                                <div clas="open-sans normal">676 25 32 76</div>
+                            </div>
+                        </div>
+                        <div class="hfield">
+                            <div class="open-sans small">¿Enviar SMS?</div>
+                            <div class="options">
+                                <div class="selected-option">
+                                    <img loading="lazy" src="./assets/afirmativo.svg">
+                                    <div class="open-sans small">Sí</div>
+                                </div>
+                                <div class="option open-sans small">No</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans small">Correo electrónico</div>
+                        <div class="element">
+                            <div class="open-sans normal">pochoaezeia@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans small">¿Notificar por correo electrónico?</div>
+                        <div class="options">
+                            <div class="selected-option">
+                                <img loading="lazy" src="./assets/afirmativo.svg">
+                                <div class="open-sans small">Sí</div>
+                            </div>
+                            <div class="option">
+                                <div class="open-sans small">No</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans small">Intervención</div>
+                        <div class="element">
+                            <div class="open-sans normal">General</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans small">¿Es una cita planificada?</div>
+                        <div class="options">
+                            <div class="option">
+                                <div class="open-sans small">Sí</div>
+                            </div>
+                            <div class="selected-option">
+                                <img loading="lazy" src="./assets/afirmativo.svg">
+                                <div class="open-sans small">No</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans small">¿Es una cita urgente?</div>
+                        <div class="options">
+                            <div class="option">
+                                <div class="obligatorios small">Sí</div>
+                            </div>
+                            <div class="selected-option">
+                                <img loading="lazy" src="./assets/afirmativo.svg">
+                                <div class="open-sans small">No</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hfield">
+                        <div class="open-sans small">Tipo de actuación</div>
+                        <div class="options">
+                            <div class="selected-option">
+                                <img loading="lazy" src="./assets/afirmativo.svg">
+                                <div class="open-sans small">General</div>
+                            </div>
+                            <div class="option">
+                                <div class="open-sans small">Individual</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin-top open-sans small">Añada las personas involucradas en la actuación.</div>
+                <div id="table" class="margin-top">
+                    <div class="first-row open-sans small bold">Nombre</div>
+                    <div class="first-row open-sans small bold">Primer apellido</div>
+                    <div class="first-row open-sans small bold">Segundo apellido</div>
+                    <div class="first-row open-sans small bold">Parentesco</div>
+                    <div class="first-row open-sans small bold">Acciones</div>
+                    <div class="normal-row open-sans small">Pedro</div>
+                    <div class="normal-row open-sans small">Ochoa</div>
+                    <div class="normal-row open-sans small">Ezeia</div>
+                    <div class="normal-row open-sans small">P. Referencia</div>
+                    <div class="normal-row">
+                        <img loading="lazy" src="./assets/papelera.svg">
+                    </div>
+                    <div class="gray-row open-sans small">Marisa</div>
+                    <div class="gray-row open-sans small">Pérez</div>
+                    <div class="gray-row open-sans small">Goicoechea</div>
+                    <div class="gray-row open-sans small">Hija</div>
+                    <div class="gray-row">
+                        <img loading="lazy" src="./assets/papelera.svg">
+                    </div>
+                </div>
+                <div id="agenda-panel-add" class="margin-top">
+                    <div class="hfield">
+                        <div class="flex">
+                            <div class="open-sans normal">Actuación</div>
+                            <div class="asterisk open-sans normal">*</div>
+                        </div>
+                        <div class="element">
+                            <div class="open-sans normal">Información / Orientación</div>
+                            <img loading="lazy" src="./assets/flecha-abajo.svg">
+                        </div>
+                    </div>
+                    <div class="add-button">
+                        <img loading="lazy" src="./assets/más.svg">
+                        <div class="open-sans normal bold">Añadir</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="diary">
             <div id="diary-header">
                 <div class="field">
@@ -83,7 +323,7 @@
                 </div>
             </div>
             <div id="diary-new-date">
-                <button id="diary-new-date-action">
+                <button id="diary-new-date-action" class="diary-panel-manager">
                     <img loading="lazy" src="./assets/más-blanco.svg">
                     <div class="open-sans normal">Nueva cita</div>
                 </button>
@@ -103,31 +343,214 @@
                         <img loading="lazy" src="./assets/flecha-abajo-azul.svg">
                     </div>
                 </div>
-                <div id="diary-grid-hidden" class="diary-table"></div>
-                <div id="diary-grid" class="diary-table">
+                <div id="diary-grid-hidden" class="diary-table">
                     <div class="diary-hours">
-                        <div class="diary-hour">
+                        <div class="single diary-hour">
                             <div class="open-sans normal">8:00</div>
                         </div>
-                        <div class="diary-hour">
+                        <div class="single diary-hour">
                             <div class="open-sans normal">9:00</div>
                         </div>
-                        <div class="diary-hour">
+                        <div class="single diary-hour">
                             <div class="open-sans normal">10:00</div>
                         </div>
-                        <div class="diary-hour">
+                        <div class="single diary-hour">
                             <div class="open-sans normal">11:00</div>
                         </div>
-                        <div class="diary-hour">
+                        <div class="single diary-hour">
                             <div class="open-sans normal">12:00</div>
                         </div>
-                        <div class="diary-hour">
+                        <div class="single diary-hour">
                             <div class="open-sans normal">13:00</div>
                         </div>
-                        <div class="diary-hour">
+                        <div class="single diary-hour">
                             <div class="open-sans normal">14:00</div>
                         </div>
-                        <div class="diary-hour">
+                        <div class="single diary-hour">
+                            <div class="open-sans normal">15:00</div>
+                        </div>
+                    </div>
+                    <div class="small-diary-task">
+                        <div class="diary-author">
+                            <div class="open-sans normal">Julia Pardo Iriondo</div>
+                        </div>
+                        <div class="one diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="half diary-task-blue">
+                            <div class="open-sans small bold white">María Jesus Herranz Castro</div>
+                            <div class="open-sans small white">Maltrato / Violencia</div>
+                        </div>
+                        <div class="half diary-task-dotted diary-panel-manager">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="half diary-task-red">
+                            <div class="open-sans small red">Fuera de oficina</div>
+                        </div>
+                        <div class="one diary-task-vertical-blue">
+                            <div class="open-sans small white bold">Nekane Larrainzar Martinez</div>
+                            <div class="open-sans small white">Información / Orientación / Asesoramiento</div>
+                        </div>
+                        <div class="half diary-task-gray">
+                            <div class="open-sans small grey bold">No disponible</div>
+                        </div>
+                        <div class="half diary-task-blue">
+                            <div class="open-sans small bold white">Manuel Rodríguez Alonso</div>
+                            <div class="open-sans small white">Maltrato / Violencia</div>
+                        </div>
+                        <div class="double diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="semi-double diary-task-gray">
+                            <div class="open-sans small grey bold">No disponible</div>
+                        </div>
+                    </div>
+                    <div class="small-diary-task separator">
+                        <div class="diary-author">
+                            <div class="open-sans normal">Mikel Alonso Garcia</div>
+                        </div>
+                        <div class="one diary-task-red">
+                            <div class="open-sans small red">Fuera de oficina</div>
+                        </div>
+                        <div class="half diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="semi-triple diary-task-vertical-blue">
+                            <div class="open-sans small white bold">Juan Carlos Huerta Castilo</div>
+                            <div class="open-sans small white">Información / Orientación / Asesoramiento</div>
+                        </div>
+                        <div class="half diary-task-gray">
+                            <div class="open-sans small grey bold">No disponible</div>
+                        </div>
+                        <div class="double diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="half diary-task-blue">
+                            <div class="open-sans small white bold">Iñigo Ajurjagerra Mattín</div>
+                            <div class="open-sans small white">Maltrato / Violencia</div>
+                        </div>
+                        <div class="half diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                    </div>
+                    <div class="small-diary-task separator">
+                        <div class="diary-author">
+                            <div class="open-sans normal">Aitziber Galdeano Ortiz</div>
+                        </div>
+                        <div class="semi-double diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="half diary-task-gray">
+                            <div class="open-sans small grey bold">No disponible</div>
+                        </div>
+                        <div class="one diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="half diary-task-blue">
+                            <div class="open-sans small white bold">José Encinas Ruiz</div>
+                            <div class="open-sans small white">Maltrato / Violencia</div>
+                        </div>
+                        <div class="one diary-task-vertical-blue">
+                            <div class="open-sans small white bold">Ana María Rodriguez Peña</div>
+                            <div class="open-sans small white">Información / Orientación / Asesoramiento</div>
+                        </div>
+                        <div class="triple diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                    </div>
+                    <div class="small-diary-task separator">
+                        <div class="diary-author">
+                            <div class="open-sans normal">Trabajador social 4</div>
+                        </div>
+                        <div class="half diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="half diary-task-blue">
+                            <div class="open-sans small white bold">María Jesus Herranz Castro</div>
+                            <div class="open-sans small white">Maltrato / Violencia</div>
+                        </div>
+                        <div class="semi-double diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="one diary-task-gray">
+                            <div class="open-sans small grey bold">No disponible</div>
+                        </div>
+                        <div class="triple diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="semi-double diary-task-red">
+                            <div class="open-sans small red">Fuera de oficina</div>
+                        </div>
+                    </div>
+                    <div class="small-diary-task separator">
+                        <div class="diary-author">
+                            <div class="open-sans normal">Trabajador social 5</div>
+                        </div>
+                        <div class="one diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="one diary-task-vertical-blue">
+                            <div class="open-sans small white bold">María Jesus Herranz Castro</div>
+                            <div class="open-sans small white">Maltrato / Violencia</div>
+                        </div>
+                        <div class="half diary-task-blue">
+                            <div class="open-sans small white bold">María Jesus Herranz Castro</div>
+                            <div class="open-sans small white">Maltrato / Violencia</div>
+                        </div>
+                        <div class="triple diary-task-gray">
+                            <div class="open-sans small grey bold">No disponible</div>
+                        </div>
+                        <div class="half diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="one diary-task-vertical-blue">
+                            <div class="open-sans small white bold">María Jesus Herranz Castro</div>
+                            <div class="open-sans small white">Maltrato / Violencia</div>
+                        </div>
+                        <div class="one diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="diary-grid" class="diary-table">
+                    <div class="diary-hours">
+                        <div class="single diary-hour">
+                            <div class="open-sans normal">8:00</div>
+                        </div>
+                        <div class="single diary-hour">
+                            <div class="open-sans normal">9:00</div>
+                        </div>
+                        <div class="single diary-hour">
+                            <div class="open-sans normal">10:00</div>
+                        </div>
+                        <div class="single diary-hour">
+                            <div class="open-sans normal">11:00</div>
+                        </div>
+                        <div class="single diary-hour">
+                            <div class="open-sans normal">12:00</div>
+                        </div>
+                        <div class="single diary-hour">
+                            <div class="open-sans normal">13:00</div>
+                        </div>
+                        <div class="single diary-hour">
+                            <div class="open-sans normal">14:00</div>
+                        </div>
+                        <div class="single diary-hour">
                             <div class="open-sans normal">15:00</div>
                         </div>
                     </div>
@@ -135,9 +558,38 @@
                         <div class="diary-author">
                             <div class="open-sans normal">Julia Pardo Iriondo</div>
                         </div>
-                        <div class="single diary-task-dotted">
+                        <div class="one diary-task-dotted">
                             <img loading="lazy" src="./assets/más.svg">
                             <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="half diary-task-blue">
+                            <div class="open-sans small bold white">María Jesus Herranz Castro</div>
+                            <div class="open-sans small white">Maltrato / Violencia</div>
+                        </div>
+                        <div class="half diary-task-dotted diary-panel-manager">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="half diary-task-red">
+                            <div class="open-sans small red">Fuera de oficina</div>
+                        </div>
+                        <div class="one diary-task-vertical-blue">
+                            <div class="open-sans small white bold">Nekane Larrainzar Martinez</div>
+                            <div class="open-sans small white">Información / Orientación / Asesoramiento</div>
+                        </div>
+                        <div class="half diary-task-gray">
+                            <div class="open-sans small grey bold">No disponible</div>
+                        </div>
+                        <div class="half diary-task-blue">
+                            <div class="open-sans small bold white">Manuel Rodríguez Alonso</div>
+                            <div class="open-sans small white">Maltrato / Violencia</div>
+                        </div>
+                        <div class="double diary-task-dotted">
+                            <img loading="lazy" src="./assets/más.svg">
+                            <div class="open-sans small blue">Nueva cita</div>
+                        </div>
+                        <div class="semi-double diary-task-gray">
+                            <div class="open-sans small grey bold">No disponible</div>
                         </div>
                     </div>
                 </div>
