@@ -291,7 +291,9 @@
     background-color: var(--brand-blue-100);
     text-align: left;
     padding: 20px;
-    font-size: medium;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Open sans";
 }
 
 .normal-row
@@ -301,7 +303,8 @@
     border-bottom-color:rgb(203, 200, 186);
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    font-size: large;
+    font-size: 15px;
+    font-family: "Open sans";
 }
 
 .gray-row
@@ -312,7 +315,8 @@
     border-bottom-color:rgb(203, 200, 186);
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    font-size: large;
+    font-size: 15px;
+    font-family: "Open sans";
 }
 
 .checkbox

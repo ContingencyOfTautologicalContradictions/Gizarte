@@ -297,10 +297,10 @@ input::placeholder
 .first-row
 {
     background-color: var(--brand-blue-100);
-    text-align: center;
+    text-align: left;
     padding: 20px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .warning-row
@@ -311,7 +311,8 @@ input::placeholder
     border-bottom-color:rgb(203, 200, 186);
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    font-size: large;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .normal-row
@@ -332,7 +333,7 @@ input::placeholder
     border-bottom-color:rgb(203, 200, 186);
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    font-size: large;
+    font-size: 16px;
 }
 
 #results-navigator
@@ -984,14 +985,6 @@ input::placeholder
     gap: 50px;
 }
 
-.first-row
-{
-    background-color: var(--brand-blue-100);
-    justify-content: flex-start;
-    padding: 20px;
-    text-align: left;
-}
-
 .normal-row
 {
     justify-content: flex-start;
@@ -1266,10 +1259,13 @@ input::placeholder
 
 .dotted-flexbox
 {
-    min-width: 90vw;
-    max-width: 90vw;
-    margin-top: 4vh;
-    padding: 10px;
+    min-width: calc(90vw - 10px);
+    max-width: calc(90vw - 10px);
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: var(--brand-blue-100);
     border-color: var(--brand-blue-900-aa);
     color: var(--brand-blue-900-aa);
